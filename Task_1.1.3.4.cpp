@@ -12,6 +12,7 @@ void RoundToTens(int& value)
 	}
 	else
 	{
+		//TODO: если эта строка дублируется в обоих ветках if, может её вынести за if?
 		value -= value % 10;
 	}
 	cout << value << endl << endl;

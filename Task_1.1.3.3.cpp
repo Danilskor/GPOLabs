@@ -12,7 +12,7 @@ double GetPower(double base, int exponent)
 	return base;
 }
 
-void DemoGetPower()
+void DemoGetPower() //TODO: неправильно сделал задачу, читай задание
 {
 	double base;
 	cout << "Enter value: ";

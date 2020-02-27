@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+	//TODO: каша, тяжело читать. Раздели логические блоки пустыми строками
     int a[10] = { 1, 2, 7, -1, 5, 3, -1, 7, 1, 6 };
     cout << "Size of int type: " << sizeof(int) << endl;
     for (int i = 0; i < 10; i++)

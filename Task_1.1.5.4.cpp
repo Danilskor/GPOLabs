@@ -4,6 +4,7 @@ using namespace std;
 
 void main()
 {
+	//TODO: 10 в переменную и использовать далее
 	double* array = new double[10];
 
 	for (int i = 0; i < 10; i++)
@@ -23,6 +24,7 @@ void main()
 		{
 			if (array[j] > array[j + 1])
 			{
+				//TODO: грам. ошибка
 				double tempoarry = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = tempoarry;

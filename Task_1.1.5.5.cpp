@@ -4,6 +4,7 @@ using namespace std;
 
 void main()
 {
+	//TODO: 10 в переменную и использовать далее
 	int* array = new int[10];
 	for (int i = 0; i < 10; i++)
 	{
