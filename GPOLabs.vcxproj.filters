@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab1">
+      <UniqueIdentifier>{d275872f-a87c-436e-885c-7d870a02a68c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab2">
+      <UniqueIdentifier>{e06c0e00-a8ae-47ba-b675-201f6a4e8e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Common">
+      <UniqueIdentifier>{fe8ab35a-eea5-4e21-92d3-5cb0964e160d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Menues">
+      <UniqueIdentifier>{b8383f74-bb7e-41fc-8780-26f19d3e9b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab1">
+      <UniqueIdentifier>{ef1dc8cc-36fa-4bc4-b769-6337fd95bf4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab2">
+      <UniqueIdentifier>{f6332065-5b79-4d10-94c0-77ae8625b559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Common">
+      <UniqueIdentifier>{7e43eef1-9462-4cd2-bf80-aecfb1461bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Menues">
+      <UniqueIdentifier>{76b3f92e-4452-4469-99fa-526b8da16205}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.4\Task_1.1.5.4.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.5\Task_1.1.5.5.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.6\Task_1.1.5.6.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.7\Task_1.1.5.7.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.8\Task_1.1.5.8.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.2.1\Task_1.1.2.1.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.2.2\Task_1.1.2.2.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.2.3\Task_1.1.2.3.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.3.3\Task_1.1.3.3.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.3.4\Task_1.1.3.4.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.1\Task_1.1.4.1.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.2\Task_1.1.4.2.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.3\Task_1.1.4.3.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.4\Task_1.1.4.4.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.5\Task_1.1.4.5.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.6\Task_1.1.4.6.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.4.8\Task_1.1.4.8.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.1\Task_1.1.5.1.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.2\Task_1.1.5.2.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab1\1.1.5.3\Task_1.1.5.3.cpp">
+      <Filter>Исходные файлы\Lab1</Filter>
+    </ClCompile>
+    <ClCompile Include="Menues\Menu.cpp">
+      <Filter>Исходные файлы\Menues</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Input.cpp">
+      <Filter>Исходные файлы\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Time.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Circle.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\DynamicStructure.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Enum.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Exception.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Flight.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\FunctionStructure.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Movie.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Rectangle.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Structure.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Execute.cpp">
+      <Filter>Исходные файлы\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Menues\Menu.h">
+      <Filter>Файлы заголовков\Menues</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Input.h">
+      <Filter>Файлы заголовков\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\FunctionStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Movie.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Rectangle.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Structure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Task_2.2.2.2.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Time.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Circle.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\DynamicStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enum.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Exception.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Flight.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Lab1Header.h">
+      <Filter>Файлы заголовков\Lab1</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Execute.h">
+      <Filter>Файлы заголовков\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
