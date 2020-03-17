@@ -99,6 +99,7 @@ void DemoMovieWithGenre()
 		", ðåéòèíã " << bestGenreMovie->Rating << endl;
 	delete movie1;
 	delete movie;
+	delete[] movies;
 	// TODO: утечка памяти
 }
 
