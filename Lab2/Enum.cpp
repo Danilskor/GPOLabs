@@ -1,4 +1,4 @@
-#include "Enum.h"
+ï»¿#include "Enum.h"
 #include <iostream>
 
 using namespace std;
@@ -62,8 +62,8 @@ void DemoEnums()
 	seasons[4] = Summer;
 	seasons[5] = Spring;
 
-	cout << "Êðàññíûõ öâåòîâ â ìàññèâå " << CountRed(colors, 6) << endl;
-	cout << "Ñèíèõ öâåòîâ â ìàññèâå " << CountColor(colors, 6, Blue) << endl;
+	cout << "ÃŠÃ°Ã Ã±Ã±Ã­Ã»Ãµ Ã¶Ã¢Ã¥Ã²Ã®Ã¢ Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ " << CountRed(colors, 6) << endl;
+	cout << "Ã‘Ã¨Ã­Ã¨Ãµ Ã¶Ã¢Ã¥Ã²Ã®Ã¢ Ã¢ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã¥ " << CountColor(colors, 6, Blue) << endl;
 
 	delete[] colors;
 	delete[] weekDays;
@@ -79,37 +79,37 @@ void WriteColor(Color color)
 	{
 		case Red:
 		{
-			cout << "Êðàññíûé" << endl;
+			cout << "ÃŠÃ°Ã Ã±Ã±Ã­Ã»Ã©" << endl;
 			break;
 		}
 		case Orange:
 		{
-			cout << "Îðàíæåâûé" << endl;
+			cout << "ÃŽÃ°Ã Ã­Ã¦Ã¥Ã¢Ã»Ã©" << endl;
 			break;
 		}
 		case Yellow:
 		{
-			cout << "Æ¸ëòûé" << endl;
+			cout << "Ã†Â¸Ã«Ã²Ã»Ã©" << endl;
 			break;
 		}
 		case Green:
 		{
-			cout << "Çåë¸íûé" << endl;
+			cout << "Ã‡Ã¥Ã«Â¸Ã­Ã»Ã©" << endl;
 			break;
 		}
 		case Blue:
 		{
-			cout << "Ñèíèé" << endl;
+			cout << "Ã‘Ã¨Ã­Ã¨Ã©" << endl;
 			break;
 		}
 		case LightBlue:
 		{
-			cout << "Ãîëóáîé" << endl;
+			cout << "ÃƒÃ®Ã«Ã³Ã¡Ã®Ã©" << endl;
 			break;
 		}
 		case Purple:
 		{
-			cout << "Ôèîëåòîâûé" << endl;
+			cout << "Ã”Ã¨Ã®Ã«Ã¥Ã²Ã®Ã¢Ã»Ã©" << endl;
 			break;
 		}
 	}
@@ -117,14 +117,14 @@ void WriteColor(Color color)
 
 Color ReadColor()
 {
-	cout << "Ââåäèòå öèôðó îò 0 äî 6 " 
-		<<"0 - êðàññíûé" << endl
-		<<"1 - îðàíæåâûé" << endl
-		<< "2 - æåëòûé" << endl
-		<< "3 - çåë¸íûé" << endl
-		<<"4 - ñèíèé" << endl
-		<< "5 - ãîëóáîé" << endl
-		<< "6 - ôèîëåòîââûé" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¶Ã¨Ã´Ã°Ã³ Ã®Ã² 0 Ã¤Ã® 6 " 
+		<<"0 - ÃªÃ°Ã Ã±Ã±Ã­Ã»Ã©" << endl
+		<<"1 - Ã®Ã°Ã Ã­Ã¦Ã¥Ã¢Ã»Ã©" << endl
+		<< "2 - Ã¦Ã¥Ã«Ã²Ã»Ã©" << endl
+		<< "3 - Ã§Ã¥Ã«Â¸Ã­Ã»Ã©" << endl
+		<<"4 - Ã±Ã¨Ã­Ã¨Ã©" << endl
+		<< "5 - Ã£Ã®Ã«Ã³Ã¡Ã®Ã©" << endl
+		<< "6 - Ã´Ã¨Ã®Ã«Ã¥Ã²Ã®Ã¢Ã¢Ã»Ã©" << endl;
 	int colorNumber;
 	cin >> colorNumber;
 	switch (colorNumber)
@@ -162,13 +162,13 @@ Color ReadColor()
 
 Genre ReadGenre()
 {
-	cout << "Ââåäèòå öìôðó 0-5" 
-		<< "0 - Êîìåäèÿ" << endl 
-		<< "1 - Äðàìà" << endl
-		<< "2 - Òðèëëåð" << endl
-		<< "3 - Ýêøí" << endl
-		<< "4 - Õîððîð" << endl
-		<< "5 - Áëîêáàñòåð" << endl;
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¶Ã¬Ã´Ã°Ã³ 0-5" 
+		<< "0 - ÃŠÃ®Ã¬Ã¥Ã¤Ã¨Ã¿" << endl 
+		<< "1 - Ã„Ã°Ã Ã¬Ã " << endl
+		<< "2 - Ã’Ã°Ã¨Ã«Ã«Ã¥Ã°" << endl
+		<< "3 - ÃÃªÃ¸Ã­" << endl
+		<< "4 - Ã•Ã®Ã°Ã°Ã®Ã°" << endl
+		<< "5 - ÃÃ«Ã®ÃªÃ¡Ã Ã±Ã²Ã¥Ã°" << endl;
 	int genreNumber;
 	cin >> genreNumber;
 	switch (genreNumber)
@@ -206,32 +206,32 @@ void WriteGenre(Genre genre)
 	{
 		case Comedy:
 		{
-			cout << "Êîìåäèÿ";
+			cout << "ÃŠÃ®Ã¬Ã¥Ã¤Ã¨Ã¿";
 			break;
 		}
 		case Drama:
 		{
-			cout << "Äðàìà";
+			cout << "Ã„Ã°Ã Ã¬Ã ";
 			break;
 		}
 		case Thriller:
 		{
-			cout << "Òðèëëåð";
+			cout << "Ã’Ã°Ã¨Ã«Ã«Ã¥Ã°";
 			break;
 		}
 		case Action:
 		{
-			cout << "Ýêøí";
+			cout << "ÃÃªÃ¸Ã­";
 			break;
 		}
 		case Horror:
 		{
-			cout << "Õîððîð";
+			cout << "Ã•Ã®Ã°Ã°Ã®Ã°";
 			break;
 		}
 		case BlockBuster:
 		{
-			cout << "Áëîêáàñòåð";
+			cout << "ÃÃ«Ã®ÃªÃ¡Ã Ã±Ã²Ã¥Ã°";
 			break;
 		}
 	}
@@ -241,6 +241,7 @@ void WriteGenre(Genre genre)
 //TODO:
 int CountRed(Color* color, int count)
 {
+	// TODO: Ð¸Ð·Ð±Ð°Ð²Ð¸Ñ‚ÑŒÑÑ Ð¾Ñ‚ Ð´ÑƒÐ±Ð»Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ ÑÐ¾ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰ÐµÐ¹ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÐµÐ¹
 	int redCounter = 0;
 	for (int i = 0; i < count; i++)
 	{

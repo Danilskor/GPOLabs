@@ -1,4 +1,4 @@
-#include "Circle.h"
+п»ї#include "Circle.h"
 
 //2.2.7.1
 Circle* MakeCircle(double x, double y, double radius, string color)
@@ -23,11 +23,13 @@ Circle* CopyCircle(Circle* circle)
 
 void DemoCircle()
 {
-	Circle* circle1 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
-	Circle* circle2 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
-	Circle* circle3 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
+	Circle* circle1 = MakeCircle(5.0, 7.0, 7.5, "ГЉГ°Г Г±Г±Г­Г»Г©");
+	Circle* circle2 = MakeCircle(5.0, 7.0, 7.5, "ГЉГ°Г Г±Г±Г­Г»Г©");
+	Circle* circle3 = MakeCircle(5.0, 7.0, 7.5, "ГЉГ°Г Г±Г±Г­Г»Г©");
 
 	Circle* copyCircle1 = CopyCircle(circle1);
 	Circle* copyCircle2 = CopyCircle(circle2);
 	Circle* copyCircle3 = CopyCircle(circle3);
+
+	// TODO: СѓС‚РµС‡РєР° РїР°РјСЏС‚Рё, РёСЃРїСЂР°РІРёС‚СЊ
 }

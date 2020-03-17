@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 
 using namespace std;
-
+// TODO: грам ошибка в названии
 struct Rectanglee
 {
 	double Length = 0;

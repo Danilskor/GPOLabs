@@ -1,8 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include "Rectangle.h"
 
 // 2.2.5.1
+// TODO: все функции в файл с прямоугольником
 void WriteRectangle(Rectanglee& rectangle);
 
 // 2.2.5.2

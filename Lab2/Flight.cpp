@@ -1,5 +1,5 @@
-#include "Flight.h"
-
+﻿#include "Flight.h"
+// TODO: аргументы должны именоваться как поля
 Flight* MakeFlight(string departure, string arrival, int minutesTimeOfFlight)
 {
 	Flight* flight = new Flight;

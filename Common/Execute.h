@@ -1,5 +1,5 @@
-#pragma once
-
+﻿#pragma once
+// TODO: если подключает только вторую лабу, тогда это должно быть в папке второй лабы
 #include "..\Lab2\Circle.h"
 #include "..\Lab2\Enum.h"
 #include "..\Lab2\Exception.h"

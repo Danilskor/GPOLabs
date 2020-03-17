@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 
@@ -8,8 +8,8 @@ struct Flight
 {
 	string Departure;
 	string Destination;
-	int FlifhtTimeMinutes;
+	int FlifhtTimeMinutes; // TODO: грам ошибка
 };
 
-Flight* MakeFlight(string departure, string arrival, int minutesTimeOfFlight);
+Flight* MakeFlight(string departure, string arrival, int minutesTimeOfFlight); // TODO: аргументы должны именоваться как поля
 Flight* CopyFlight(Flight* flight);

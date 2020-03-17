@@ -1,9 +1,9 @@
-#pragma once
+﻿#pragma once
 
 #include <string>
 
 using namespace std;
-
+// TODO: каждую структуру в свой файл
 struct Contact
 {
 	string Name;
@@ -23,5 +23,5 @@ struct Subject
 	string Name;
 	int StudyHours;
 	string TeacherName;
-	short int Score;
+	short int Score; // TODO: Mark. Score - это счет в игре
 };

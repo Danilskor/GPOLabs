@@ -194,6 +194,7 @@ int FirstLabMenu()
 
 void PrintFirstLabMenu()
 {
+	// TODO: везде грам ошибка
 	cout << "0. Выход" << endl;
 	cout << "1. Лаборатоная 1.1" << endl;
 	cout << "2. Лаборатоная 1.2" << endl;
