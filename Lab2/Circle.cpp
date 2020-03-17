@@ -31,5 +31,12 @@ void DemoCircle()
 	Circle* copyCircle2 = CopyCircle(circle2);
 	Circle* copyCircle3 = CopyCircle(circle3);
 
+	delete circle1;
+	delete circle2;
+	delete circle3;
+
+	delete copyCircle1;
+	delete copyCircle2;
+	delete copyCircle3;
 	// TODO: утечка памяти, исправить
 }
