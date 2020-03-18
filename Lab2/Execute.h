@@ -5,10 +5,8 @@
 #include "Exception.h"
 #include "Flight.h"
 #include "Movie.h"
-#include "Rectangle.h"
+#include "Square.h"
 #include "DynamicStructure.h"
-#include "FunctionStructure.h"
-#include "Structure.h"
 #include "Time.h"
 
 void Lab2();

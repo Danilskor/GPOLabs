@@ -192,7 +192,7 @@
     <ClInclude Include="Lab2\Execute.h" />
     <ClInclude Include="Lab2\Flight.h" />
     <ClInclude Include="Lab2\Movie.h" />
-    <ClInclude Include="Lab2\Rectangle.h" />
+    <ClInclude Include="Lab2\Square.h" />
     <ClInclude Include="Lab2\SongStructure.h" />
     <ClInclude Include="Lab2\SubjectStructure.h" />
     <ClInclude Include="Lab2\Time.h" />

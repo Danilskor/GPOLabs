@@ -1,140 +1,140 @@
-#include "Flight.h"
+п»ї#include "Flight.h"
 #include "Movie.h"
-#include "Rectangle.h"
+#include "Square.h"
 
 using namespace std;
 
-void DemoRectangle()
+void DemoSquare()
 {
 	//2.2.3.1
-	Rectangle rectangle;
-	rectangle.Color = "Красный";
-	rectangle.Length = 5;
-	rectangle.Width = 9;
+	Square square;
+	square.Color = "РљСЂР°СЃРЅС‹Р№";
+	square.Length = 5;
+	square.Width = 9;
 
 	//2.2.3.2
-	Rectangle rectangleInputValue;
-	cout << "Введите параметры прямоугольника:" << endl;
+	Square squareInputValue;
+	cout << "Р’РІРµРґРёС‚Рµ РїР°СЂР°РјРµС‚СЂС‹ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 
-	cout << "Введите цвет прямоугольника: ";
-	getline(cin, rectangleInputValue.Color);
+	cout << "Р’РІРµРґРёС‚Рµ С†РІРµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°: ";
+	getline(cin, squareInputValue.Color);
 
-	cout << "Введите длину прямоугольника (положительное число): " 
+	cout << "Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° (РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ): " 
 		<< endl << '>';
-	cin >> rectangleInputValue.Length;
+	cin >> squareInputValue.Length;
 
-	cout << "Введите ширину прямоугольника (положительное число):" 
+	cout << "Р’РІРµРґРёС‚Рµ С€РёСЂРёРЅСѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° (РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ):" 
 		<< endl << '>';
-	cin >> rectangleInputValue.Width;
+	cin >> squareInputValue.Width;
 
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-	cout << "Цвет прямоугольника: " << rectangleInputValue.Color 
-		<< ", размеры: " << rectangleInputValue.Length << 'x' 
-		<< rectangleInputValue.Width << endl << endl;
+	cout << "Р¦РІРµС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°: " << squareInputValue.Color 
+		<< ", СЂР°Р·РјРµСЂС‹: " << squareInputValue.Length << 'x' 
+		<< squareInputValue.Width << endl << endl;
 
 	//2.2.3.3
-	Rectangle* arrayRectangles = new Rectangle[3];
-	arrayRectangles[0].Color = "Белый";
-	arrayRectangles[0].Length = 12;
-	arrayRectangles[0].Width = 3;
+	Square* arraySquares = new Square[3];
+	arraySquares[0].Color = "Р‘РµР»С‹Р№";
+	arraySquares[0].Length = 12;
+	arraySquares[0].Width = 3;
 
-	arrayRectangles[1].Color = "Синий";
-	arrayRectangles[1].Length = 32;
-	arrayRectangles[1].Width = 2;
+	arraySquares[1].Color = "РЎРёРЅРёР№";
+	arraySquares[1].Length = 32;
+	arraySquares[1].Width = 2;
 
-	arrayRectangles[2].Color = "Крассный";
-	arrayRectangles[2].Length = 22;
-	arrayRectangles[2].Width = 8;
+	arraySquares[2].Color = "РљСЂР°СЃСЃРЅС‹Р№";
+	arraySquares[2].Length = 22;
+	arraySquares[2].Width = 8;
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "Прямоугольник " << i << " цвет - " << arrayRectangles[i].Color 
-			<<", размер - : " << arrayRectangles[i].Length << 'x' 
-			<< arrayRectangles[i].Width << endl;
+		cout << "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє " << i << " С†РІРµС‚ - " << arraySquares[i].Color 
+			<<", СЂР°Р·РјРµСЂ - : " << arraySquares[i].Length << 'x' 
+			<< arraySquares[i].Width << endl;
 	}
 	cout << endl;
-	delete[] arrayRectangles;
+	delete[] arraySquares;
 
 	//2.2.4.1
-	Rectangle* pointerRectangle = &rectangle;
-	cout << "Task_2.2.3.1 прямоугольник:" << endl << "Цвет " << pointerRectangle->Color 
-		<<", размеры " << pointerRectangle->Length << 'x' << pointerRectangle->Width << endl;
-	pointerRectangle->Color = "Фиолетовый";
-	pointerRectangle->Length = 13,5;
-	pointerRectangle->Width = 11;
+	Square* pointerSquare = &square;
+	cout << "Task_2.2.3.1 РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє:" << endl << "Р¦РІРµС‚ " << pointerSquare->Color 
+		<<", СЂР°Р·РјРµСЂС‹ " << pointerSquare->Length << 'x' << pointerSquare->Width << endl;
+	pointerSquare->Color = "Р¤РёРѕР»РµС‚РѕРІС‹Р№";
+	pointerSquare->Length = 13,5;
+	pointerSquare->Width = 11;
 
 	//2.2.4.2
-	Rectangle* secondPointer = &rectangle;
-	cout << endl << "Адрес первого указателя: " << pointerRectangle 
-		<< endl << "Адрес второго указателя: " << secondPointer << endl;
+	Square* secondPointer = &square;
+	cout << endl << "РђРґСЂРµСЃ РїРµСЂРІРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << pointerSquare 
+		<< endl << "РђРґСЂРµСЃ РІС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << secondPointer << endl;
 
 	//2.2.5.4
 	cout << endl << "Task_2.2.5.4." << endl;
-	WriteRectangle(rectangle);
-	WriteRectangle(rectangleInputValue);
-	Exchange(rectangle, rectangleInputValue);
-	cout << "После перестановки:" << endl;
-	WriteRectangle(rectangle);
-	WriteRectangle(rectangleInputValue);
+	WriteSquare(square);
+	WriteSquare(squareInputValue);
+	Exchange(square, squareInputValue);
+	cout << "РџРѕСЃР»Рµ РїРµСЂРµСЃС‚Р°РЅРѕРІРєРё:" << endl;
+	WriteSquare(square);
+	WriteSquare(squareInputValue);
 }
 
 void DemoFligth()
 {
 	//2.2.3.1
 	Flight flight;
-	flight.Destination = "Тыва";
-	flight.Departure = "Лондон";
+	flight.Destination = "РўС‹РІР°";
+	flight.Departure = "Р›РѕРЅРґРѕРЅ";
 	flight.FlightTimeMinutes = 255;
 
 	//2.2.3.2
 	Flight flightKeyInput;
-	cout << endl << "Введите праметры рейса: " << endl;
-	cout << "Пункт вылета ";
+	cout << endl << "Р’РІРµРґРёС‚Рµ РїСЂР°РјРµС‚СЂС‹ СЂРµР№СЃР°: " << endl;
+	cout << "РџСѓРЅРєС‚ РІС‹Р»РµС‚Р° ";
 	getline(cin, flightKeyInput.Departure);
-	cout << "Пункт назначения: ";
+	cout << "РџСѓРЅРєС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ: ";
 	getline(cin, flightKeyInput.Destination);
-	cout <<"Время полета (в минутах): ";
+	cout <<"Р’СЂРµРјСЏ РїРѕР»РµС‚Р° (РІ РјРёРЅСѓС‚Р°С…): ";
 	cin >> flightKeyInput.FlightTimeMinutes;
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-	cout << "Рейс " << flightKeyInput.Departure <<
-		" - " << flightKeyInput.Destination << " находится в полёте " <<
-		flightKeyInput.FlightTimeMinutes << " минут(ы)" << endl;
+	cout << "Р РµР№СЃ " << flightKeyInput.Departure <<
+		" - " << flightKeyInput.Destination << " РЅР°С…РѕРґРёС‚СЃСЏ РІ РїРѕР»С‘С‚Рµ " <<
+		flightKeyInput.FlightTimeMinutes << " РјРёРЅСѓС‚(С‹)" << endl;
 
 	//2.2.3.3
 	Flight* arrayFilghts = new Flight[3];
-	arrayFilghts[0].Departure = "Томск";
-	arrayFilghts[0].Destination = "Кемерово";
+	arrayFilghts[0].Departure = "РўРѕРјСЃРє";
+	arrayFilghts[0].Destination = "РљРµРјРµСЂРѕРІРѕ";
 	arrayFilghts[0].FlightTimeMinutes = 200;
 
-	arrayFilghts[1].Departure = "Кемерово";
-	arrayFilghts[1].Destination = "Томск";
+	arrayFilghts[1].Departure = "РљРµРјРµСЂРѕРІРѕ";
+	arrayFilghts[1].Destination = "РўРѕРјСЃРє";
 	arrayFilghts[1].FlightTimeMinutes = 200;
 
-	arrayFilghts[2].Departure = "Новокузнецк";
-	arrayFilghts[2].Destination = "Междуреченск";
+	arrayFilghts[2].Departure = "РќРѕРІРѕРєСѓР·РЅРµС†Рє";
+	arrayFilghts[2].Destination = "РњРµР¶РґСѓСЂРµС‡РµРЅСЃРє";
 	arrayFilghts[2].FlightTimeMinutes = 7;
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << "Рейс " << i << ' ' << arrayFilghts[i].Departure <<
-			" - " << arrayFilghts[i].Destination << " находится в полёте " <<
-			arrayFilghts[i].FlightTimeMinutes << " минут(ы)" << endl;
+		cout << "Р РµР№СЃ " << i << ' ' << arrayFilghts[i].Departure <<
+			" - " << arrayFilghts[i].Destination << " РЅР°С…РѕРґРёС‚СЃСЏ РІ РїРѕР»С‘С‚Рµ " <<
+			arrayFilghts[i].FlightTimeMinutes << " РјРёРЅСѓС‚(С‹)" << endl;
 	}
 	delete[] arrayFilghts;
 
 	//2.2.4.3
 	Flight* pointerFlight = &flight;
-	cout << "2.2.3.1 Рейс " << pointerFlight->Departure <<
-		" - " << pointerFlight->Destination << " находится в полёте " <<
-		pointerFlight->FlightTimeMinutes << " минут(ы)" << endl;
-	pointerFlight->Destination = "Астана";
-	pointerFlight->Departure = "Нур-Султан";
+	cout << "2.2.3.1 Р РµР№СЃ " << pointerFlight->Departure <<
+		" - " << pointerFlight->Destination << " РЅР°С…РѕРґРёС‚СЃСЏ РІ РїРѕР»С‘С‚Рµ " <<
+		pointerFlight->FlightTimeMinutes << " РјРёРЅСѓС‚(С‹)" << endl;
+	pointerFlight->Destination = "РђСЃС‚Р°РЅР°";
+	pointerFlight->Departure = "РќСѓСЂ-РЎСѓР»С‚Р°РЅ";
 	pointerFlight->FlightTimeMinutes = 322;
 
 	Flight* secondPointer = &flight;
-	cout << endl << "Адрес первого указателя: " << pointerFlight << endl <<
-		"Адрес второго указателя: " << secondPointer << endl;
+	cout << endl << "РђРґСЂРµСЃ РїРµСЂРІРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << pointerFlight << endl <<
+		"РђРґСЂРµСЃ РІС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << secondPointer << endl;
 }
 
 void DemoMovie()
@@ -143,51 +143,51 @@ void DemoMovie()
 	Movie movie;
 	movie.Genre = Drama;
 	movie.DurationMinutes = 120;
-	movie.Name = "Джокер";
+	movie.Name = "Р”Р¶РѕРєРµСЂ";
 	movie.Rating = 5.6;
 	movie.Year = 2019;
 
 	//2.2.3.2
 	Movie movieKeyboardInput;
-	cout << endl << "Введите параметры фильма:" << endl;
+	cout << endl << "Р’РІРµРґРёС‚Рµ РїР°СЂР°РјРµС‚СЂС‹ С„РёР»СЊРјР°:" << endl;
 
-	cout << "Введите название: ";
+	cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ: ";
 	getline(cin, movieKeyboardInput.Name);
 
-	cout << "Введите год выпуска: ";
+	cout << "Р’РІРµРґРёС‚Рµ РіРѕРґ РІС‹РїСѓСЃРєР°: ";
 	cin >> movieKeyboardInput.Year;
 
-	cout <<"Введите рейтинг: ";
+	cout <<"Р’РІРµРґРёС‚Рµ СЂРµР№С‚РёРЅРі: ";
 	cin >> movieKeyboardInput.Rating;
 
-	cout << "Введите жанр: ";
+	cout << "Р’РІРµРґРёС‚Рµ Р¶Р°РЅСЂ: ";
 	movieKeyboardInput.Genre = ReadGenre();
 
-	cout << "Введите длительность фильма (в минутах): ";
+	cout << "Р’РІРµРґРёС‚Рµ РґР»РёС‚РµР»СЊРЅРѕСЃС‚СЊ С„РёР»СЊРјР° (РІ РјРёРЅСѓС‚Р°С…): ";
 	cin >> movieKeyboardInput.DurationMinutes;
 
-	cout << " Фильм " << movieKeyboardInput.Name << ", ";
+	cout << " Р¤РёР»СЊРј " << movieKeyboardInput.Name << ", ";
 	WriteGenre(movieKeyboardInput.Genre);
 
-	cout << ", год " << movieKeyboardInput.Year <<
-		", продолжительность " << movieKeyboardInput.DurationMinutes
-		<< ", рейтинг " << movieKeyboardInput.Rating << endl;
+	cout << ", РіРѕРґ " << movieKeyboardInput.Year <<
+		", РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ " << movieKeyboardInput.DurationMinutes
+		<< ", СЂРµР№С‚РёРЅРі " << movieKeyboardInput.Rating << endl;
 
 	//2.2.3.3
 	Movie* arrayMovies = new Movie[3];
-	arrayMovies[0].Name = "Мне";
+	arrayMovies[0].Name = "РњРЅРµ";
 	arrayMovies[0].Genre = Horror;
 	arrayMovies[0].DurationMinutes = 178;
 	arrayMovies[0].Rating = 8.3;
 	arrayMovies[0].Year = 2013;
 
-	arrayMovies[1].Name = "Лень";
+	arrayMovies[1].Name = "Р›РµРЅСЊ";
 	arrayMovies[1].Genre = Horror;
 	arrayMovies[1].DurationMinutes = 138;
 	arrayMovies[1].Rating = 7.6;
 	arrayMovies[1].Year = 2010;
 
-	arrayMovies[2].Name = "Гуглить названия фильмов";
+	arrayMovies[2].Name = "Р“СѓРіР»РёС‚СЊ РЅР°Р·РІР°РЅРёСЏ С„РёР»СЊРјРѕРІ";
 	arrayMovies[2].Genre = BlockBuster;
 	arrayMovies[2].DurationMinutes = 210;
 	arrayMovies[2].Rating = 9.1;
@@ -195,20 +195,20 @@ void DemoMovie()
 
 	for (int i = 0; i < 3; i++)
 	{
-		cout << i << " Фильм " << arrayMovies[i].Name << ", ";
+		cout << i << " Р¤РёР»СЊРј " << arrayMovies[i].Name << ", ";
 		WriteGenre(arrayMovies[i].Genre);
-		cout << ", год " << arrayMovies[i].Year << ", длительность " <<
+		cout << ", РіРѕРґ " << arrayMovies[i].Year << ", РґР»РёС‚РµР»СЊРЅРѕСЃС‚СЊ " <<
 			arrayMovies[i].DurationMinutes
-			<< ", рейтинг " << arrayMovies[i].Rating << endl;
+			<< ", СЂРµР№С‚РёРЅРі " << arrayMovies[i].Rating << endl;
 	}
 	delete[] arrayMovies;
 
 	//2.2.3.4
 	Movie* pointerMovie = &movie;
-	cout << " Фильм " << pointerMovie->Name << ", ";
+	cout << " Р¤РёР»СЊРј " << pointerMovie->Name << ", ";
 	WriteGenre(pointerMovie->Genre);
-	cout << ", год " << pointerMovie->Year << ", продолжительность " << pointerMovie->DurationMinutes
-		<< ", реётинг " << pointerMovie->Rating << endl;
+	cout << ", РіРѕРґ " << pointerMovie->Year << ", РїСЂРѕРґРѕР»Р¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ " << pointerMovie->DurationMinutes
+		<< ", СЂРµС‘С‚РёРЅРі " << pointerMovie->Rating << endl;
 	pointerMovie->Name = "Ford v Ferrari";
 	pointerMovie->Genre = Action;
 	pointerMovie->DurationMinutes = 152;
@@ -216,8 +216,8 @@ void DemoMovie()
 	pointerMovie->Year = 2019;
 
 	Movie* secondPointer = &movie;
-	cout << endl << "Адресс первого указателя: " << pointerMovie << endl <<
-		"Адресс второго указателя: " << secondPointer << endl;
+	cout << endl << "РђРґСЂРµСЃСЃ РїРµСЂРІРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << pointerMovie << endl <<
+		"РђРґСЂРµСЃСЃ РІС‚РѕСЂРѕРіРѕ СѓРєР°Р·Р°С‚РµР»СЏ: " << secondPointer << endl;
 }
 
 //2.2.4.4

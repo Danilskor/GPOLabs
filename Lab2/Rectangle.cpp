@@ -1,19 +1,19 @@
-#include "Rectangle.h"
+﻿#include "Square.h"
 
-Rectangle* MakeRectangle(double length, double width, string color)
+Square* MakeSquare(double length, double width, string color)
 {
-	Rectangle* rectangle = new Rectangle;
-	rectangle->Length = length;
-	rectangle->Width = width;
-	rectangle->Color = color;
-	return rectangle;
+	Square* square = new Square;
+	square->Length = length;
+	square->Width = width;
+	square->Color = color;
+	return square;
 }
 
-Rectangle* CopyRectangle(Rectangle* rectangle)
+Square* CopySquare(Square* square)
 {
-	Rectangle* copiedRectangle = new Rectangle;
-	copiedRectangle->Length = rectangle->Length;
-	copiedRectangle->Width = rectangle->Width;
-	copiedRectangle->Color = rectangle->Color;
-	return copiedRectangle;
+	Square* copiedSquare = new Square;
+	copiedSquare->Length = square->Length;
+	copiedSquare->Width = square->Width;
+	copiedSquare->Color = square->Color;
+	return copiedSquare;
 }

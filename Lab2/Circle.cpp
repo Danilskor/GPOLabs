@@ -23,9 +23,9 @@ Circle* CopyCircle(Circle* circle)
 
 void DemoCircle()
 {
-	Circle* circle1 = MakeCircle(5.0, 7.0, 7.5, "Êðàññíûé");
-	Circle* circle2 = MakeCircle(5.0, 7.0, 7.5, "Êðàññíûé");
-	Circle* circle3 = MakeCircle(5.0, 7.0, 7.5, "Êðàññíûé");
+	Circle* circle1 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
+	Circle* circle2 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
+	Circle* circle3 = MakeCircle(5.0, 7.0, 7.5, "Крассный");
 
 	Circle* copyCircle1 = CopyCircle(circle1);
 	Circle* copyCircle2 = CopyCircle(circle2);

@@ -164,9 +164,6 @@
     <ClInclude Include="Lab2\Movie.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\Rectangle.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Time.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
@@ -216,6 +213,9 @@
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
     <ClInclude Include="Lab2\SubjectStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Square.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
   </ItemGroup>

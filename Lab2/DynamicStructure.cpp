@@ -7,11 +7,11 @@ using namespace std;
 void DemoDynamicFlight()
 {
 	Flight* flight = new Flight;
-	flight->Departure = "Ìîñêâà";
-	flight->Destination = "Ñàíêò-Ïåòåðáóðã";
+	flight->Departure = "Москва";
+	flight->Destination = "Санкт-Петербург";
 	flight->FlightTimeMinutes = 45;
-	cout << "Ðåéñ " << flight->Departure << " - " << flight->Destination <<
-		", íàõîäèòñÿ â ïîë¸òå " << flight->FlightTimeMinutes << endl;
+	cout << "Рейс " << flight->Departure << " - " << flight->Destination <<
+		", находится в полёте " << flight->FlightTimeMinutes << endl;
 	delete flight;
 }
 
@@ -20,26 +20,26 @@ void DemoDynamicFlights()
 {
 	// TODO: если массив, то в множественном числе
 	Flight* flights = new Flight[4];
-	flights[0].Departure = "Ìîñêâà";
-	flights[0].Destination = "Ñàíêò-Ïåòåðáóðã";
+	flights[0].Departure = "Москва";
+	flights[0].Destination = "Санкт-Петербург";
 	flights[0].FlightTimeMinutes = 45;
 
-	flights[1].Departure = "Òîìñê";
-	flights[1].Destination = "Ìîñêâà";
+	flights[1].Departure = "Томск";
+	flights[1].Destination = "Москва";
 	flights[1].FlightTimeMinutes = 190;
 
-	flights[2].Departure = "Áåðëèí";
-	flights[2].Destination = "Ëîíäîí";
+	flights[2].Departure = "Берлин";
+	flights[2].Destination = "Лондон";
 	flights[2].FlightTimeMinutes = 105;
 
-	flights[3].Departure = "Ìîñêâà";
-	flights[3].Destination = "Áàðñåëîíà";
+	flights[3].Departure = "Москва";
+	flights[3].Destination = "Барселона";
 	flights[3].FlightTimeMinutes = 100;
 
 	for (int i = 0; i < 4; i++)
 	{
-		cout << "Ðåéñ " << i << ' ' << flights[i].Departure <<
-			" - " << flights[i].Destination << " íàõîäèòñÿ â ïîë¸òå " <<
+		cout << "Рейс " << i << ' ' << flights[i].Departure <<
+			" - " << flights[i].Destination << " находится в полёте " <<
 			flights[i].FlightTimeMinutes << endl;
 	}
 	FindShortestFlight(flights, 4);
@@ -62,8 +62,8 @@ void FindShortestFlight(Flight* flights, int count)
 			shortestFlight.FlightTimeMinutes = flights[i].FlightTimeMinutes;
 		}
 	}
-	cout << "Ñàìûé êîðîòêèé ðåéñ " << shortestFlight.Departure << " - " <<
-		shortestFlight.Destination << ", íàõîäèòñÿ â ïîëåòå " <<
+	cout << "Самый короткий рейс " << shortestFlight.Departure << " - " <<
+		shortestFlight.Destination << ", находится в полете " <<
 		shortestFlight.FlightTimeMinutes << endl;
 }
 
@@ -72,31 +72,31 @@ void DemoMovieWithGenre()
 	Movie* movie1 = new Movie;
 	movie1->Genre = Horror;
 	movie1->Rating = 5.2;
-	movie1->Name = "Îíî";
+	movie1->Name = "Оно";
 	movie1->Year = 2000;
 	movie1->DurationMinutes = 166;
 
-	Movie* movie = MakeMovie("Îíî", 64, 1365, Action, 3.2);
+	Movie* movie = MakeMovie("Оно", 64, 1365, Action, 3.2);
 
 	Movie* movies = new Movie[10];
-	movies[0] = *MakeMovie("ß", 123, 2020, Comedy, 0.1);
-	movies[1] = *MakeMovie("Íå", 159, 2036, Thriller, 2.3);
-	movies[2] = *MakeMovie("Çíàþ", 20, 2020, Horror, 5.0);
-	movies[3] = *MakeMovie("Òàê", 90, 2028, BlockBuster, 3.2);
-	movies[4] = *MakeMovie("Ìíîãî", 50, 2078, Action, 10.0);
-	movies[5] = *MakeMovie("Ôèëüìîâ", 94, 1999, Action, 7.6);
-	movies[6] = *MakeMovie("Çà÷åì", 36, 1520, Horror, 7.77);
-	movies[7] = *MakeMovie("Èõ", 987, 2013, Comedy, 3.33);
-	movies[8] = *MakeMovie("Äåñÿòü", 143, 2020, Comedy, 2.72);
-	movies[9] = *MakeMovie("Øòóê?", 211, 2007, Comedy, 6.66);
+	movies[0] = *MakeMovie("Я", 123, 2020, Comedy, 0.1);
+	movies[1] = *MakeMovie("Не", 159, 2036, Thriller, 2.3);
+	movies[2] = *MakeMovie("Знаю", 20, 2020, Horror, 5.0);
+	movies[3] = *MakeMovie("Так", 90, 2028, BlockBuster, 3.2);
+	movies[4] = *MakeMovie("Много", 50, 2078, Action, 10.0);
+	movies[5] = *MakeMovie("Фильмов", 94, 1999, Action, 7.6);
+	movies[6] = *MakeMovie("Зачем", 36, 1520, Horror, 7.77);
+	movies[7] = *MakeMovie("Их", 987, 2013, Comedy, 3.33);
+	movies[8] = *MakeMovie("Десять", 143, 2020, Comedy, 2.72);
+	movies[9] = *MakeMovie("Штук?", 211, 2007, Comedy, 6.66);
 
-	cout << "Êîëè÷åñòâî êîìåäèéíûõ ôèëüìîâ " << CountMoviesByGenre(movies, 10, Comedy) << endl;
+	cout << "Количество комедийных фильмов " << CountMoviesByGenre(movies, 10, Comedy) << endl;
 
 	Movie* bestGenreMovie = FindBestGenreMovie(movies, 10, Horror);
-	cout << "Ëó÷øèé õîððîð: " << bestGenreMovie->Name << ",  ";
+	cout << "Лучший хоррор: " << bestGenreMovie->Name << ",  ";
 	WriteGenre(bestGenreMovie->Genre);
-	cout  << ", " << bestGenreMovie->Year << ", ïðîäîëæèòåëüíîñòü " << bestGenreMovie->DurationMinutes <<
-		", ðåéòèíã " << bestGenreMovie->Rating << endl;
+	cout  << ", " << bestGenreMovie->Year << ", продолжительность " << bestGenreMovie->DurationMinutes <<
+		", рейтинг " << bestGenreMovie->Rating << endl;
 	delete movie1;
 	delete movie;
 	delete[] movies;

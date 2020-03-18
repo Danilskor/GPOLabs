@@ -1,106 +1,106 @@
-#include "Rectangle.h"
+ï»¿#include "Square.h"
 #include <iostream>
 #include <limits>
 
 using namespace std;
 
 //2.2.5.1
-void WriteRectangle(Rectangle& rectangle)
+void WriteSquare(Square& square)
 {
-	cout << "Öâåò ïðÿìîóãîëüíèêà " << rectangle.Color << ", ðàçìåð " <<
-		rectangle.Length << 'x' << rectangle.Width << endl;
+	cout << "Ð¦Ð²ÐµÑ‚ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° " << square.Color << ", Ñ€Ð°Ð·Ð¼ÐµÑ€ " <<
+		square.Length << 'x' << square.Width << endl;
 }
 
 //2.2.5.2
-void ReadRectangle(Rectangle& rectangle)
+void ReadSquare(Square& square)
 {
-	cout << "Ââåäèòå öâåò ïðÿñîóãîëüíèêà: ";
-	getline(cin, rectangle.Color);
-	cout << "Ââåäèòå äëèíó ïðÿñîóãîëüíèêà: ";
-	cin >> rectangle.Length;
-	cout << "Ââåäèòå øèðèíó ïðÿñîóãîëüíèêà: ";
-	cin >> rectangle.Width;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†Ð²ÐµÑ‚ Ð¿Ñ€ÑÑÐ¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°: ";
+	getline(cin, square.Color);
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ð¿Ñ€ÑÑÐ¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°: ";
+	cin >> square.Length;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ Ð¿Ñ€ÑÑÐ¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°: ";
+	cin >> square.Width;
 }
 
 //2.2.5.3
-void DemoReadAndWriteRectangles()
+void DemoReadAndWriteSquares()
 {
-	Rectangle* arrayRectangle = new Rectangle[5];
+	Square* arraySquare = new Square[5];
 	for (int i = 0; i < 5; i++)
 	{
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		cout << "Ââåäèòå " << i + 1 << " ïðÿìîóãîëüíèê" << endl;
-		ReadRectangle(arrayRectangle[i]);
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i + 1 << " Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº" << endl;
+		ReadSquare(arraySquare[i]);
 	}
 	for (int i = 0; i < 5; i++)
 	{
 		cout << i + 1 << ": ";
-		WriteRectangle(arrayRectangle[i]);
+		WriteSquare(arraySquare[i]);
 	}
-	FindRectangle(arrayRectangle, 5);
-	FindMaxRectangle(arrayRectangle, 5);
-	delete[] arrayRectangle;
+	FindSquare(arraySquare, 5);
+	FindMaxSquare(arraySquare, 5);
+	delete[] arraySquare;
 }
 
 //2.2.5.4
-void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle)
+void Exchange(Square& firstSquare, Square& secondSquare)
 {
-	Rectangle tempRectangle;
-	tempRectangle.Color = secondRectangle.Color;
-	tempRectangle.Length = secondRectangle.Length;
-	tempRectangle.Width = secondRectangle.Width;
+	Square tempSquare;
+	tempSquare.Color = secondSquare.Color;
+	tempSquare.Length = secondSquare.Length;
+	tempSquare.Width = secondSquare.Width;
 
-	secondRectangle.Color = firstRectangle.Color;
-	secondRectangle.Length = firstRectangle.Length;
-	secondRectangle.Width = firstRectangle.Width;
+	secondSquare.Color = firstSquare.Color;
+	secondSquare.Length = firstSquare.Length;
+	secondSquare.Width = firstSquare.Width;
 
-	firstRectangle.Color = tempRectangle.Color;
-	firstRectangle.Length = tempRectangle.Length;
-	firstRectangle.Width = tempRectangle.Width;
+	firstSquare.Color = tempSquare.Color;
+	firstSquare.Length = tempSquare.Length;
+	firstSquare.Width = tempSquare.Width;
 }
 
 //2.2.5.5
-void FindRectangle(Rectangle* rectangles, int count)
+void FindSquare(Square* squares, int count)
 {
-	Rectangle maxLengthRectangle;
-	maxLengthRectangle.Color = rectangles[0].Color;
-	maxLengthRectangle.Length = rectangles[0].Length;
-	maxLengthRectangle.Width = rectangles[0].Width;
+	Square maxLengthSquare;
+	maxLengthSquare.Color = squares[0].Color;
+	maxLengthSquare.Length = squares[0].Length;
+	maxLengthSquare.Width = squares[0].Width;
 	for (int i = 0; i < count; i++)
 	{
-		if (rectangles[i].Length > maxLengthRectangle.Length)
+		if (squares[i].Length > maxLengthSquare.Length)
 		{
-			maxLengthRectangle.Color = rectangles[i].Color;
-			maxLengthRectangle.Length = rectangles[i].Length;
-			maxLengthRectangle.Width = rectangles[i].Width;
+			maxLengthSquare.Color = squares[i].Color;
+			maxLengthSquare.Length = squares[i].Length;
+			maxLengthSquare.Width = squares[i].Width;
 		}
 	}
-	cout << "Ïðÿìîóãîëüíèê ñ ìàêñèìàëíîé äëèíîé:" << endl
-		<< "Öâåò - " << maxLengthRectangle.Color <<
-		", ðàçìåð - " << maxLengthRectangle.Length << 'x' << maxLengthRectangle.Width
+	cout << "ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº Ñ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»Ð½Ð¾Ð¹ Ð´Ð»Ð¸Ð½Ð¾Ð¹:" << endl
+		<< "Ð¦Ð²ÐµÑ‚ - " << maxLengthSquare.Color <<
+		", Ñ€Ð°Ð·Ð¼ÐµÑ€ - " << maxLengthSquare.Length << 'x' << maxLengthSquare.Width
 		<< endl;
 }
 
 //2.2.5.6
-void FindMaxRectangle(Rectangle* rectangles, int count)
+void FindMaxSquare(Square* squares, int count)
 {
-	Rectangle maxSquareRectangle;
-	maxSquareRectangle.Color = rectangles[0].Color;
-	maxSquareRectangle.Length = rectangles[0].Length;
-	maxSquareRectangle.Width = rectangles[0].Width;
+	Square maxSquareSquare;
+	maxSquareSquare.Color = squares[0].Color;
+	maxSquareSquare.Length = squares[0].Length;
+	maxSquareSquare.Width = squares[0].Width;
 	for (int i = 0; i < count; i++)
 	{
-		if ((rectangles[i].Length * rectangles[i].Width) > (maxSquareRectangle.Length
-			* maxSquareRectangle.Width))
+		if ((squares[i].Length * squares[i].Width) > (maxSquareSquare.Length
+			* maxSquareSquare.Width))
 		{
-			maxSquareRectangle.Color = rectangles[i].Color;
-			maxSquareRectangle.Length = rectangles[i].Length;
-			maxSquareRectangle.Width = rectangles[i].Width;
+			maxSquareSquare.Color = squares[i].Color;
+			maxSquareSquare.Length = squares[i].Length;
+			maxSquareSquare.Width = squares[i].Width;
 		}
 	}
-	cout << "Ïðÿìîóãîëüíèê ñ íàèáîëüøåé ïëîùàäüþ" << endl
-		<< "Öâåò " << maxSquareRectangle.Color <<
-		", ðàçìåð " << maxSquareRectangle.Length << 'x' << maxSquareRectangle.Width
+	cout << "ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº Ñ Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐµÐ¹ Ð¿Ð»Ð¾Ñ‰Ð°Ð´ÑŒÑŽ" << endl
+		<< "Ð¦Ð²ÐµÑ‚ " << maxSquareSquare.Color <<
+		", Ñ€Ð°Ð·Ð¼ÐµÑ€ " << maxSquareSquare.Length << 'x' << maxSquareSquare.Width
 		<< endl;
 }
 
