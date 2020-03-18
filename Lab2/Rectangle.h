@@ -4,32 +4,33 @@
 
 using namespace std;
 // TODO: грам ошибка в названии
-struct Rectanglee
+// Почему-то он мне не давал назвать правильно с одной 'e' на конце
+struct Rectangle
 {
 	double Length = 0;
 	double Width = 0;
 	string Color;
 };
 
-Rectanglee* MakeRectangle(double length, double width, string color);
-Rectanglee* CopyRectangle(Rectanglee* rectangle);
+Rectangle* MakeRectangle(double length, double width, string color);
+Rectangle* CopyRectangle(Rectangle* rectangle);
 void DemoRectangle();
 
 // 2.2.5.1
 // TODO: все функции в файл с прямоугольником
-void WriteRectangle(Rectanglee& rectangle);
+void WriteRectangle(Rectangle& rectangle);
 
 // 2.2.5.2
-void ReadRectangle(Rectanglee& rectangle);
+void ReadRectangle(Rectangle& rectangle);
 
 // 2.2.5.3
 void DemoReadAndWriteRectangles();
 
 // 2.2.5.4
-void Exchange(Rectanglee& firstRectangle, Rectanglee& secondRectangle);
+void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle);
 
 // 2.2.5.5
-void FindRectangle(Rectanglee* rectangles, int count);
+void FindRectangle(Rectangle* rectangles, int count);
 
 // 2.2.5.6
-void FindMaxRectangle(Rectanglee* rectangles, int count);
+void FindMaxRectangle(Rectangle* rectangles, int count);

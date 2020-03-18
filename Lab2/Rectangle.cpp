@@ -1,17 +1,17 @@
 #include "Rectangle.h"
 
-Rectanglee* MakeRectangle(double length, double width, string color)
+Rectangle* MakeRectangle(double length, double width, string color)
 {
-	Rectanglee* rectangle = new Rectanglee;
+	Rectangle* rectangle = new Rectangle;
 	rectangle->Length = length;
 	rectangle->Width = width;
 	rectangle->Color = color;
 	return rectangle;
 }
 
-Rectanglee* CopyRectangle(Rectanglee* rectangle)
+Rectangle* CopyRectangle(Rectangle* rectangle)
 {
-	Rectanglee* copiedRectangle = new Rectanglee;
+	Rectangle* copiedRectangle = new Rectangle;
 	copiedRectangle->Length = rectangle->Length;
 	copiedRectangle->Width = rectangle->Width;
 	copiedRectangle->Color = rectangle->Color;

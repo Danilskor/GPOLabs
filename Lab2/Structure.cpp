@@ -7,13 +7,13 @@ using namespace std;
 void DemoRectangle()
 {
 	//2.2.3.1
-	Rectanglee rectangle;
+	Rectangle rectangle;
 	rectangle.Color = "Красный";
 	rectangle.Length = 5;
 	rectangle.Width = 9;
 
 	//2.2.3.2
-	Rectanglee rectangleInputValue;
+	Rectangle rectangleInputValue;
 	cout << "Введите параметры прямоугольника:" << endl;
 
 	cout << "Введите цвет прямоугольника: ";
@@ -34,7 +34,7 @@ void DemoRectangle()
 		<< rectangleInputValue.Width << endl << endl;
 
 	//2.2.3.3
-	Rectanglee* arrayRectangles = new Rectanglee[3];
+	Rectangle* arrayRectangles = new Rectangle[3];
 	arrayRectangles[0].Color = "Белый";
 	arrayRectangles[0].Length = 12;
 	arrayRectangles[0].Width = 3;
@@ -57,7 +57,7 @@ void DemoRectangle()
 	delete[] arrayRectangles;
 
 	//2.2.4.1
-	Rectanglee* pointerRectangle = &rectangle;
+	Rectangle* pointerRectangle = &rectangle;
 	cout << "Task_2.2.3.1 прямоугольник:" << endl << "Цвет " << pointerRectangle->Color 
 		<<", размеры " << pointerRectangle->Length << 'x' << pointerRectangle->Width << endl;
 	pointerRectangle->Color = "Фиолетовый";
@@ -65,7 +65,7 @@ void DemoRectangle()
 	pointerRectangle->Width = 11;
 
 	//2.2.4.2
-	Rectanglee* secondPointer = &rectangle;
+	Rectangle* secondPointer = &rectangle;
 	cout << endl << "Адрес первого указателя: " << pointerRectangle 
 		<< endl << "Адрес второго указателя: " << secondPointer << endl;
 

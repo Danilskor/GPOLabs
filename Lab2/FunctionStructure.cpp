@@ -5,14 +5,14 @@
 using namespace std;
 
 //2.2.5.1
-void WriteRectangle(Rectanglee& rectangle)
+void WriteRectangle(Rectangle& rectangle)
 {
 	cout << "Цвет прямоугольника " << rectangle.Color << ", размер " <<
 		rectangle.Length << 'x' << rectangle.Width << endl;
 }
 
 //2.2.5.2
-void ReadRectangle(Rectanglee& rectangle)
+void ReadRectangle(Rectangle& rectangle)
 {
 	cout << "Введите цвет прясоугольника: ";
 	getline(cin, rectangle.Color);
@@ -25,7 +25,7 @@ void ReadRectangle(Rectanglee& rectangle)
 //2.2.5.3
 void DemoReadAndWriteRectangles()
 {
-	Rectanglee* arrayRectangle = new Rectanglee[5];
+	Rectangle* arrayRectangle = new Rectangle[5];
 	for (int i = 0; i < 5; i++)
 	{
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -43,9 +43,9 @@ void DemoReadAndWriteRectangles()
 }
 
 //2.2.5.4
-void Exchange(Rectanglee& firstRectangle, Rectanglee& secondRectangle)
+void Exchange(Rectangle& firstRectangle, Rectangle& secondRectangle)
 {
-	Rectanglee tempRectangle;
+	Rectangle tempRectangle;
 	tempRectangle.Color = secondRectangle.Color;
 	tempRectangle.Length = secondRectangle.Length;
 	tempRectangle.Width = secondRectangle.Width;
@@ -60,9 +60,9 @@ void Exchange(Rectanglee& firstRectangle, Rectanglee& secondRectangle)
 }
 
 //2.2.5.5
-void FindRectangle(Rectanglee* rectangles, int count)
+void FindRectangle(Rectangle* rectangles, int count)
 {
-	Rectanglee maxLengthRectangle;
+	Rectangle maxLengthRectangle;
 	maxLengthRectangle.Color = rectangles[0].Color;
 	maxLengthRectangle.Length = rectangles[0].Length;
 	maxLengthRectangle.Width = rectangles[0].Width;
@@ -82,9 +82,9 @@ void FindRectangle(Rectanglee* rectangles, int count)
 }
 
 //2.2.5.6
-void FindMaxRectangle(Rectanglee* rectangles, int count)
+void FindMaxRectangle(Rectangle* rectangles, int count)
 {
-	Rectanglee maxSquareRectangle;
+	Rectangle maxSquareRectangle;
 	maxSquareRectangle.Color = rectangles[0].Color;
 	maxSquareRectangle.Length = rectangles[0].Length;
 	maxSquareRectangle.Width = rectangles[0].Width;
