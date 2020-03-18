@@ -138,7 +138,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Common\Execute.cpp" />
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp" />
     <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp" />
@@ -166,6 +165,7 @@
     <ClCompile Include="Lab2\DynamicStructure.cpp" />
     <ClCompile Include="Lab2\Enum.cpp" />
     <ClCompile Include="Lab2\Exception.cpp" />
+    <ClCompile Include="Lab2\Execute.cpp" />
     <ClCompile Include="Lab2\Flight.cpp" />
     <ClCompile Include="Lab2\FunctionStructure.cpp" />
     <ClCompile Include="Lab2\Movie.cpp" />
@@ -176,13 +176,13 @@
     <ClCompile Include="Menues\Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Common\Execute.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\DynamicStructure.h" />
     <ClInclude Include="Lab2\Enum.h" />
     <ClInclude Include="Lab2\Exception.h" />
+    <ClInclude Include="Lab2\Execute.h" />
     <ClInclude Include="Lab2\Flight.h" />
     <ClInclude Include="Lab2\FunctionStructure.h" />
     <ClInclude Include="Lab2\Movie.h" />

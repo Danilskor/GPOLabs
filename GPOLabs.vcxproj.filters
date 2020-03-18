@@ -144,8 +144,8 @@
     <ClCompile Include="Lab2\Structure.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="Common\Execute.cpp">
-      <Filter>Исходные файлы\Common</Filter>
+    <ClCompile Include="Lab2\Execute.cpp">
+      <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,8 +191,8 @@
     <ClInclude Include="Common\Lab1Header.h">
       <Filter>Файлы заголовков\Lab1</Filter>
     </ClInclude>
-    <ClInclude Include="Common\Execute.h">
-      <Filter>Файлы заголовков\Common</Filter>
+    <ClInclude Include="Lab2\Execute.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
