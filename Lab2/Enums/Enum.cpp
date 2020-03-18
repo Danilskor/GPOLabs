@@ -1,11 +1,5 @@
 ﻿#include "Enum.h"
 #include <iostream>
-#include "ColorEnum.h"
-#include "GenreEnumh.h"
-#include "PhoneCompanyEnum.h"
-#include "SeasonEnum.h"
-#include "StudyTypeEnum.h"
-#include "WeekDayEnum.h"
 
 using namespace std;
 

@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include "Enum.h"
+#include "Enums/Enum.h"
 
 using namespace std;
 
