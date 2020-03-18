@@ -163,7 +163,7 @@
     <ClCompile Include="Lab1\1.1.5.8\Task_1.1.5.8.cpp" />
     <ClCompile Include="Lab2\Circle.cpp" />
     <ClCompile Include="Lab2\DynamicStructure.cpp" />
-    <ClCompile Include="Lab2\Enum.cpp" />
+    <ClCompile Include="Lab2\Enums\Enum.cpp" />
     <ClCompile Include="Lab2\Exception.cpp" />
     <ClCompile Include="Lab2\Execute.cpp" />
     <ClCompile Include="Lab2\Flight.cpp" />
@@ -180,7 +180,13 @@
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\DynamicStructure.h" />
-    <ClInclude Include="Lab2\Enum.h" />
+    <ClInclude Include="Lab2\Enums\ColorEnum.h" />
+    <ClInclude Include="Lab2\Enums\Enum.h" />
+    <ClInclude Include="Lab2\Enums\GenreEnumh.h" />
+    <ClInclude Include="Lab2\Enums\PhoneCompanyEnum.h" />
+    <ClInclude Include="Lab2\Enums\SeasonEnum.h" />
+    <ClInclude Include="Lab2\Enums\StudyTypeEnum.h" />
+    <ClInclude Include="Lab2\Enums\WeekDayEnum.h" />
     <ClInclude Include="Lab2\Exception.h" />
     <ClInclude Include="Lab2\Execute.h" />
     <ClInclude Include="Lab2\Flight.h" />

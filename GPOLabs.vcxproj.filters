@@ -37,6 +37,12 @@
     <Filter Include="Файлы заголовков\Menues">
       <UniqueIdentifier>{76b3f92e-4452-4469-99fa-526b8da16205}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы заголовков\Lab2\Enums">
+      <UniqueIdentifier>{4bebac62-30e3-458a-a0e5-dad39f544043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Lab2\Enum">
+      <UniqueIdentifier>{8abf6583-f69e-436f-a0fd-d284021186a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -123,9 +129,6 @@
     <ClCompile Include="Lab2\DynamicStructure.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="Lab2\Enum.cpp">
-      <Filter>Исходные файлы\Lab2</Filter>
-    </ClCompile>
     <ClCompile Include="Lab2\Exception.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
@@ -146,6 +149,9 @@
     </ClCompile>
     <ClCompile Include="Lab2\Execute.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Enums\Enum.cpp">
+      <Filter>Исходные файлы\Lab2\Enum</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,9 +185,6 @@
     <ClInclude Include="Lab2\DynamicStructure.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\Enum.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Exception.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
@@ -193,6 +196,27 @@
     </ClInclude>
     <ClInclude Include="Lab2\Execute.h">
       <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\PhoneCompanyEnum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\SeasonEnum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\StudyTypeEnum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\WeekDayEnum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\ColorEnum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\Enum.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\Enums\GenreEnumh.h">
+      <Filter>Файлы заголовков\Lab2\Enums</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
