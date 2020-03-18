@@ -179,6 +179,7 @@
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="Lab2\Circle.h" />
+    <ClInclude Include="Lab2\ContactStructure.h" />
     <ClInclude Include="Lab2\DynamicStructure.h" />
     <ClInclude Include="Lab2\Enums\ColorEnum.h" />
     <ClInclude Include="Lab2\Enums\Enum.h" />
@@ -192,7 +193,8 @@
     <ClInclude Include="Lab2\Flight.h" />
     <ClInclude Include="Lab2\Movie.h" />
     <ClInclude Include="Lab2\Rectangle.h" />
-    <ClInclude Include="Lab2\Task_2.2.2.2.h" />
+    <ClInclude Include="Lab2\SongStructure.h" />
+    <ClInclude Include="Lab2\SubjectStructure.h" />
     <ClInclude Include="Lab2\Time.h" />
     <ClInclude Include="Menues\Menu.h" />
   </ItemGroup>

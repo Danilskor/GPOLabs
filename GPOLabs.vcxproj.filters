@@ -167,9 +167,6 @@
     <ClInclude Include="Lab2\Rectangle.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\Task_2.2.2.2.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Time.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
@@ -211,6 +208,15 @@
     </ClInclude>
     <ClInclude Include="Lab2\Enums\GenreEnumh.h">
       <Filter>Файлы заголовков\Lab2\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\SongStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\ContactStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab2\SubjectStructure.h">
+      <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
