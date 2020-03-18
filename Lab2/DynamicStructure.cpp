@@ -19,31 +19,31 @@ void DemoDynamicFlight()
 void DemoDynamicFlights()
 {
 	// TODO: если массив, то в множественном числе
-	Flight* flight = new Flight[4];
-	flight[0].Departure = "Ìîñêâà";
-	flight[0].Destination = "Ñàíêò-Ïåòåðáóðã";
-	flight[0].FlightTimeMinutes = 45;
+	Flight* flights = new Flight[4];
+	flights[0].Departure = "Ìîñêâà";
+	flights[0].Destination = "Ñàíêò-Ïåòåðáóðã";
+	flights[0].FlightTimeMinutes = 45;
 
-	flight[1].Departure = "Òîìñê";
-	flight[1].Destination = "Ìîñêâà";
-	flight[1].FlightTimeMinutes = 190;
+	flights[1].Departure = "Òîìñê";
+	flights[1].Destination = "Ìîñêâà";
+	flights[1].FlightTimeMinutes = 190;
 
-	flight[2].Departure = "Áåðëèí";
-	flight[2].Destination = "Ëîíäîí";
-	flight[2].FlightTimeMinutes = 105;
+	flights[2].Departure = "Áåðëèí";
+	flights[2].Destination = "Ëîíäîí";
+	flights[2].FlightTimeMinutes = 105;
 
-	flight[3].Departure = "Ìîñêâà";
-	flight[3].Destination = "Áàðñåëîíà";
-	flight[3].FlightTimeMinutes = 100;
+	flights[3].Departure = "Ìîñêâà";
+	flights[3].Destination = "Áàðñåëîíà";
+	flights[3].FlightTimeMinutes = 100;
 
 	for (int i = 0; i < 4; i++)
 	{
-		cout << "Ðåéñ " << i << ' ' << flight[i].Departure <<
-			" - " << flight[i].Destination << " íàõîäèòñÿ â ïîë¸òå " <<
-			flight[i].FlightTimeMinutes << endl;
+		cout << "Ðåéñ " << i << ' ' << flights[i].Departure <<
+			" - " << flights[i].Destination << " íàõîäèòñÿ â ïîë¸òå " <<
+			flights[i].FlightTimeMinutes << endl;
 	}
-	FindShortestFlight(flight, 4);
-	delete[] flight;
+	FindShortestFlight(flights, 4);
+	delete[] flights;
 }
 
 //2.2.6.3
