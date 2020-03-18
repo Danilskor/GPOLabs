@@ -87,7 +87,7 @@ void DemoFligth()
 	Flight flight;
 	flight.Destination = "Тыва";
 	flight.Departure = "Лондон";
-	flight.FlifhtTimeMinutes = 255;
+	flight.FlightTimeMinutes = 255;
 
 	//2.2.3.2
 	Flight flightKeyInput;
@@ -97,31 +97,31 @@ void DemoFligth()
 	cout << "Пункт назначения: ";
 	getline(cin, flightKeyInput.Destination);
 	cout <<"Время полета (в минутах): ";
-	cin >> flightKeyInput.FlifhtTimeMinutes;
+	cin >> flightKeyInput.FlightTimeMinutes;
 	cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	cout << "Рейс " << flightKeyInput.Departure <<
 		" - " << flightKeyInput.Destination << " находится в полёте " <<
-		flightKeyInput.FlifhtTimeMinutes << " минут(ы)" << endl;
+		flightKeyInput.FlightTimeMinutes << " минут(ы)" << endl;
 
 	//2.2.3.3
 	Flight* arrayFilghts = new Flight[3];
 	arrayFilghts[0].Departure = "Томск";
 	arrayFilghts[0].Destination = "Кемерово";
-	arrayFilghts[0].FlifhtTimeMinutes = 200;
+	arrayFilghts[0].FlightTimeMinutes = 200;
 
 	arrayFilghts[1].Departure = "Кемерово";
 	arrayFilghts[1].Destination = "Томск";
-	arrayFilghts[1].FlifhtTimeMinutes = 200;
+	arrayFilghts[1].FlightTimeMinutes = 200;
 
 	arrayFilghts[2].Departure = "Новокузнецк";
 	arrayFilghts[2].Destination = "Междуреченск";
-	arrayFilghts[2].FlifhtTimeMinutes = 7;
+	arrayFilghts[2].FlightTimeMinutes = 7;
 
 	for (int i = 0; i < 3; i++)
 	{
 		cout << "Рейс " << i << ' ' << arrayFilghts[i].Departure <<
 			" - " << arrayFilghts[i].Destination << " находится в полёте " <<
-			arrayFilghts[i].FlifhtTimeMinutes << " минут(ы)" << endl;
+			arrayFilghts[i].FlightTimeMinutes << " минут(ы)" << endl;
 	}
 	delete[] arrayFilghts;
 
@@ -129,10 +129,10 @@ void DemoFligth()
 	Flight* pointerFlight = &flight;
 	cout << "2.2.3.1 Рейс " << pointerFlight->Departure <<
 		" - " << pointerFlight->Destination << " находится в полёте " <<
-		pointerFlight->FlifhtTimeMinutes << " минут(ы)" << endl;
+		pointerFlight->FlightTimeMinutes << " минут(ы)" << endl;
 	pointerFlight->Destination = "Астана";
 	pointerFlight->Departure = "Нур-Султан";
-	pointerFlight->FlifhtTimeMinutes = 322;
+	pointerFlight->FlightTimeMinutes = 322;
 
 	Flight* secondPointer = &flight;
 	cout << endl << "Адрес первого указателя: " << pointerFlight << endl <<

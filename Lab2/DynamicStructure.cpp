@@ -9,9 +9,9 @@ void DemoDynamicFlight()
 	Flight* flight = new Flight;
 	flight->Departure = "Ìîñêâà";
 	flight->Destination = "Ñàíêò-Ïåòåðáóðã";
-	flight->FlifhtTimeMinutes = 45;
+	flight->FlightTimeMinutes = 45;
 	cout << "Ðåéñ " << flight->Departure << " - " << flight->Destination <<
-		", íàõîäèòñÿ â ïîë¸òå " << flight->FlifhtTimeMinutes << endl;
+		", íàõîäèòñÿ â ïîë¸òå " << flight->FlightTimeMinutes << endl;
 	delete flight;
 }
 
@@ -22,25 +22,25 @@ void DemoDynamicFlights()
 	Flight* flight = new Flight[4];
 	flight[0].Departure = "Ìîñêâà";
 	flight[0].Destination = "Ñàíêò-Ïåòåðáóðã";
-	flight[0].FlifhtTimeMinutes = 45;
+	flight[0].FlightTimeMinutes = 45;
 
 	flight[1].Departure = "Òîìñê";
 	flight[1].Destination = "Ìîñêâà";
-	flight[1].FlifhtTimeMinutes = 190;
+	flight[1].FlightTimeMinutes = 190;
 
 	flight[2].Departure = "Áåðëèí";
 	flight[2].Destination = "Ëîíäîí";
-	flight[2].FlifhtTimeMinutes = 105;
+	flight[2].FlightTimeMinutes = 105;
 
 	flight[3].Departure = "Ìîñêâà";
 	flight[3].Destination = "Áàðñåëîíà";
-	flight[3].FlifhtTimeMinutes = 100;
+	flight[3].FlightTimeMinutes = 100;
 
 	for (int i = 0; i < 4; i++)
 	{
 		cout << "Ðåéñ " << i << ' ' << flight[i].Departure <<
 			" - " << flight[i].Destination << " íàõîäèòñÿ â ïîë¸òå " <<
-			flight[i].FlifhtTimeMinutes << endl;
+			flight[i].FlightTimeMinutes << endl;
 	}
 	FindShortestFlight(flight, 4);
 	delete[] flight;
@@ -52,19 +52,19 @@ void FindShortestFlight(Flight* flights, int count)
 	Flight shortestFlight;
 	shortestFlight.Departure = flights[0].Departure;
 	shortestFlight.Destination = flights[0].Destination;
-	shortestFlight.FlifhtTimeMinutes = flights[0].FlifhtTimeMinutes;
+	shortestFlight.FlightTimeMinutes = flights[0].FlightTimeMinutes;
 	for (int i = 0; i < count; i++)
 	{
-		if (flights[i].FlifhtTimeMinutes < shortestFlight.FlifhtTimeMinutes)
+		if (flights[i].FlightTimeMinutes < shortestFlight.FlightTimeMinutes)
 		{
 			shortestFlight.Departure = flights[i].Departure;
 			shortestFlight.Destination = flights[i].Destination;
-			shortestFlight.FlifhtTimeMinutes = flights[i].FlifhtTimeMinutes;
+			shortestFlight.FlightTimeMinutes = flights[i].FlightTimeMinutes;
 		}
 	}
 	cout << "Ñàìûé êîðîòêèé ðåéñ " << shortestFlight.Departure << " - " <<
 		shortestFlight.Destination << ", íàõîäèòñÿ â ïîëåòå " <<
-		shortestFlight.FlifhtTimeMinutes << endl;
+		shortestFlight.FlightTimeMinutes << endl;
 }
 
 void DemoMovieWithGenre()
