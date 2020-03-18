@@ -3,7 +3,7 @@
 #include <iostream>
 #include "..\Common\Input.h"
 #include "..\Common\Lab1Header.h"
-#include  "..\Common\Execute.h"
+#include  "..\Lab2\Execute.h"
 
 using namespace std;
 

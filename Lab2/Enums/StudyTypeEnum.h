@@ -7,13 +7,3 @@ enum StudyType
 	Evening,
 	Remote
 };
-
-enum PhoneCompany
-{
-	Samsung,
-	Apple,
-	Meizu,
-	Huawei,
-	Honor,
-	Xiaomi
-};

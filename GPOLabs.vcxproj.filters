@@ -161,16 +161,10 @@
     <ClInclude Include="Common\Input.h">
       <Filter>Файлы заголовков\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\FunctionStructure.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Movie.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
     <ClInclude Include="Lab2\Rectangle.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab2\Structure.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
     <ClInclude Include="Lab2\Task_2.2.2.2.h">

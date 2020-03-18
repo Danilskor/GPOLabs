@@ -190,10 +190,8 @@
     <ClInclude Include="Lab2\Exception.h" />
     <ClInclude Include="Lab2\Execute.h" />
     <ClInclude Include="Lab2\Flight.h" />
-    <ClInclude Include="Lab2\FunctionStructure.h" />
     <ClInclude Include="Lab2\Movie.h" />
     <ClInclude Include="Lab2\Rectangle.h" />
-    <ClInclude Include="Lab2\Structure.h" />
     <ClInclude Include="Lab2\Task_2.2.2.2.h" />
     <ClInclude Include="Lab2\Time.h" />
     <ClInclude Include="Menues\Menu.h" />

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\Lab2\Exception.h"
+#include "Exception.h"
 
 using namespace std;
 

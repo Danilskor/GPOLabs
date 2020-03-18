@@ -13,3 +13,7 @@ struct Flight
 
 Flight* MakeFlight(string departure, string destination, int FlightTimeMinutes); // TODO: аргументы должны именоваться как поля
 Flight* CopyFlight(Flight* flight);
+
+void DemoFligth();
+
+void WrongPointers();

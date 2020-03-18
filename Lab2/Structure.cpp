@@ -1,8 +1,6 @@
-#include "Structure.h"
 #include "Flight.h"
 #include "Movie.h"
 #include "Rectangle.h"
-#include "FunctionStructure.h"
 
 using namespace std;
 
