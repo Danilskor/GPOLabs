@@ -1,14 +1,13 @@
 ﻿#include "Input.h"
 
-bool CheckingForInteger(string value)
+bool CheckForNumber(string value)
 {
 	int size = value.length();
-
-	if (isdigit(value[0]) || value[0] == '-')
+	if (isdigit((unsigned char)value[0]) || (unsigned char)value[0] == '-')
 	{
 		for (int i = 1; i < size; i++)
 		{
-			if (!isdigit(value[i]))
+			if (!isdigit((unsigned char)value[i]))
 			{
 				return false;
 			}
@@ -20,41 +19,16 @@ bool CheckingForInteger(string value)
 	}
 }
 
-int GetValue(int min, int max)
+void GetMenuItem(int& menuItem, int bottomIndex, int topIndex)
 {
-	const int MAX_INTEGER = 11;
-	string inputValue;
-	while (true)
+	if (bottomIndex >= topIndex)
 	{
-		getline(cin, inputValue);
-		if (inputValue.length() <= MAX_INTEGER)
-		{
-			int outputValue;
-
-			if (!CheckingForInteger(inputValue)
-				|| stoll(inputValue) < min
-				|| stoll(inputValue) > max)
-			{
-				cout << endl << "Ошибка! Попробуйте еще раз: ";
-				inputValue.clear();
-			}
-			else
-			{
-				outputValue = stoll(inputValue);
-				return outputValue;
-			}
-		}
-		else
-		{
-			cout << endl << "Ошибка! Попробуйте еще раз: ";
-			inputValue.clear();
-		}
+		throw exception("Error. Верхнее значение меньше/равно нижнему значению.");
 	}
+	do
+	{
+		cout << "Введите значение:";
+		menuItem = ReadValue<int>();
+		cout << endl;
+	} while (!CheckRange(menuItem, bottomIndex, topIndex));
 }
-
-string InputString()
-{
-	string inputValue;
-	getline(cin, inputValue);
-	return inputValue;
-};

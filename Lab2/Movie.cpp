@@ -1,5 +1,5 @@
 #include "Movie.h"
-#include "Enum.h"
+#include "Enums/Enum.h"
 
 Movie* MakeMovie(string name, int DurationMinutes, int year,
 	Genre genre, double rating)

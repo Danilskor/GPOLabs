@@ -4,6 +4,10 @@
 
 using namespace std;
 
+#if defined(max)
+#undef max
+#endif
+
 //2.2.5.1
 void WriteSquare(Square& square)
 {

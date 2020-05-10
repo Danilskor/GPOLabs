@@ -43,6 +43,12 @@
     <Filter Include="Исходные файлы\Lab2\Enum">
       <UniqueIdentifier>{8abf6583-f69e-436f-a0fd-d284021186a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Lab3">
+      <UniqueIdentifier>{48f0009a-67bd-46df-8922-eb7044ea5964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab3">
+      <UniqueIdentifier>{f3b2734c-bd14-47ae-9c6d-e9c4d46cba0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
