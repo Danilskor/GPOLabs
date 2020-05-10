@@ -6,6 +6,7 @@
 #include "Rectangle_Lab3.h"
 #include "Time_Lab3.h"
 #include "Flight_Lab3.h"
+#include "Route.h"
 #include <iostream>
 
 void Lab3();
@@ -22,3 +23,9 @@ void DemoFlightWithTime();
 void WriteFlightToConsole(cFlight* flight);
 void WriteTimeToConsole(cTime* time);
 cTime GetFlightTimeMinutes(cFlight* flight);
+
+void DemoRoute();
+void WriteRouteInCounsole(Route& route);
+void ReadRouteFromConsole(int& number, int& timeAveregeMinutes, int& frequencyMinutes,
+	int& stopsCount, string*& stops);
+Route* FindRouteByStop(Route* routes, int routesCount, string stopName);

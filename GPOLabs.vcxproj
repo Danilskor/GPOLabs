@@ -177,6 +177,7 @@
     <ClCompile Include="Lab3\Lab3_execute.cpp" />
     <ClCompile Include="Lab3\Point.cpp" />
     <ClCompile Include="Lab3\Rectangle_Lab3.cpp" />
+    <ClCompile Include="Lab3\Route.cpp" />
     <ClCompile Include="Lab3\Time_Lab3.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
@@ -207,6 +208,7 @@
     <ClInclude Include="Lab3\Lab3_execute.h" />
     <ClInclude Include="Lab3\Point.h" />
     <ClInclude Include="Lab3\Rectangle_Lab3.h" />
+    <ClInclude Include="Lab3\Route.h" />
     <ClInclude Include="Lab3\Time_Lab3.h" />
     <ClInclude Include="Menues\Menu.h" />
   </ItemGroup>

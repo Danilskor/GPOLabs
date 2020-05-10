@@ -6,6 +6,15 @@ void Lab3()
 {
 	DemoBook();
 	system("pause");
+
+	DemoRectangleWithPoint();
+	system("pause");
+
+	DemoFlightWithTime();
+	system("pause");
+
+	DemoRoute();
+	system("pause");
 }
 
 void DemoBook()
@@ -226,4 +235,99 @@ cTime GetFlightTimeMinutes(cFlight* flight)
 		timeInFlight.SetMinute(minutes);
 		return timeInFlight;
 	}
+}
+
+void DemoRoute()
+{
+	int number;
+	int timeAveregeMinutes;
+	int frequencyMinutes;
+	int stopsCount;
+	string* stops;
+	int arraysSize = 3;
+	Route* routes = new Route[arraysSize];
+
+	for (int i = 0; i < arraysSize; i++)
+	{
+		cout << "Рейс №" << i + 1 << endl;
+		ReadRouteFromConsole(number, timeAveregeMinutes, frequencyMinutes, stopsCount,
+			stops);
+		Route newRoute(number, timeAveregeMinutes, frequencyMinutes, stopsCount,
+			stops);
+		routes[i] = newRoute;
+	}
+
+	for (int i = 0; i < arraysSize; i++)
+	{
+		WriteRouteInCounsole(routes[i]);
+	}
+
+	cout << endl << "Введите название остановки: ";
+	string name;
+	cin.clear();
+
+	getline(cin, name);
+	Route* route = FindRouteByStop(routes, arraysSize, name);
+
+	if (route != nullptr)
+	{
+		cout << "Рейс с данной остановкой: ";
+		WriteRouteInCounsole(*route);
+	}
+	else
+	{
+		cout << "Нет рейса с такой остановкой." << endl;
+	}
+
+	delete[] routes;
+	//delete[] stops;
+}
+
+void WriteRouteInCounsole(Route& route)
+{
+	for (int i = 0; i < route.GetStopsCount() - 1; i++)
+	{
+		cout << route.GetStops()[i] << " - ";
+	}
+	cout << route.GetStops()[route.GetStopsCount() - 1] << ". ";
+	cout << "№" << route.GetNumber() << " продолжительность " << route.GettimeAveregeMinutes() <<
+		" мин. " << " частота: " << route.GetFrequencyMinutes() <<
+		" мин." << endl;
+}
+
+void ReadRouteFromConsole(int& number, int& timeAveregeMinutes,
+	int& frequencyMinutes, int& stopsCount, string*& stops)
+{
+	cout << "Введите количство рейсов: ";
+	number = ReadValueInRange<int>(0, INT_MAX);
+
+	cout << "Введите время рейса в минутах:";
+	timeAveregeMinutes = ReadValueInRange(1, 60);
+
+	cout << "Введите частоту следования маршрута в минутах:";
+	frequencyMinutes = ReadValueInRange(1, 100);
+
+	cout << "Введите количество остановок рейса:";
+	stopsCount = ReadValueInRange(1, 10);
+
+	stops = new string[stopsCount];
+	for (int i = 0; i < stopsCount; i++)
+	{
+		cout << "Введите название остановки №" << i + 1 << ": ";
+		cin.clear();
+		getline(cin, stops[i]);
+	}
+}
+
+Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
+{
+	Route* route;
+	for (int i = 0; i < routesCount; i++)
+	{
+		if ((route = routes[i].FindStop(stopName)) != nullptr)
+		{
+			return route;
+		}
+	}
+	return nullptr;
 }
