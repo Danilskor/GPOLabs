@@ -159,6 +159,24 @@
     <ClCompile Include="Lab2\Enums\Enum.cpp">
       <Filter>Исходные файлы\Lab2\Enum</Filter>
     </ClCompile>
+    <ClCompile Include="Lab3\Lab3_execute.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Book.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Rectangle_Lab3.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Flight_Lab3.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Point.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Time_Lab3.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menues\Menu.h">
@@ -223,6 +241,24 @@
     </ClInclude>
     <ClInclude Include="Lab2\Square.h">
       <Filter>Файлы заголовков\Lab2</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Book.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Lab3_execute.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Point.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Rectangle_Lab3.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Flight_Lab3.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Time_Lab3.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
