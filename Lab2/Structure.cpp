@@ -5,6 +5,10 @@
 
 using namespace std;
 
+#ifdef max
+#undef max
+#endif
+
 void DemoSquare()
 {
 	//2.2.3.1

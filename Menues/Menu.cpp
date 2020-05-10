@@ -5,7 +5,7 @@ int MainMenu()
 	while (true)
 	{
 		PrintMainMenu();
-		int MenuValue = GetValue(0, 2);
+		int MenuValue = ReadValueInRange(0, 3);
 		switch (MenuValue)
 		{
 			case EXIT_MENU_VALUE:
@@ -24,6 +24,12 @@ int MainMenu()
 				Lab2();
 				break;
 			}
+			case 3:
+			{
+				system("cls");
+				Lab3();
+				break;
+			}
 			default:
 				break;
 		}
@@ -34,7 +40,8 @@ void PrintMainMenu()
 {
 	cout << "0. Выход" << endl;
 	cout << "1. Лабораторная 1.1" << endl;
-	cout << "2. Лабораторная 2" << endl << endl;
+	cout << "2. Лабораторная 2" << endl;
+	cout << "3. Лабораторная 3" << endl << endl;
 }
 
 int FirstLabMenu()
@@ -42,7 +49,7 @@ int FirstLabMenu()
 	while (true)
 	{
 		PrintFirstLabMenu();
-		int MenuValue = GetValue(0, 21);
+		int MenuValue = ReadValueInRange(0, 21);
 		cout << endl;
 
 		switch (MenuValue)

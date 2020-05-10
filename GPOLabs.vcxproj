@@ -172,12 +172,16 @@
     <ClCompile Include="Lab2\Rectangle.cpp" />
     <ClCompile Include="Lab2\Structure.cpp" />
     <ClCompile Include="Lab2\Time.cpp" />
+    <ClCompile Include="Lab3\Album_Lab3.cpp" />
+    <ClCompile Include="Lab3\Band_Lab3.cpp" />
     <ClCompile Include="Lab3\Book.cpp" />
     <ClCompile Include="Lab3\Flight_Lab3.cpp" />
+    <ClCompile Include="Lab3\Genre_Lab3.cpp" />
     <ClCompile Include="Lab3\Lab3_execute.cpp" />
     <ClCompile Include="Lab3\Point.cpp" />
     <ClCompile Include="Lab3\Rectangle_Lab3.cpp" />
     <ClCompile Include="Lab3\Route.cpp" />
+    <ClCompile Include="Lab3\Song_Lab3.cpp" />
     <ClCompile Include="Lab3\Time_Lab3.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
@@ -203,12 +207,16 @@
     <ClInclude Include="Lab2\SongStructure.h" />
     <ClInclude Include="Lab2\SubjectStructure.h" />
     <ClInclude Include="Lab2\Time.h" />
+    <ClInclude Include="Lab3\Album_Lab3.h" />
+    <ClInclude Include="Lab3\Band_Lab3.h" />
     <ClInclude Include="Lab3\Book.h" />
     <ClInclude Include="Lab3\Flight_Lab3.h" />
+    <ClInclude Include="Lab3\Genre_Lab3.h" />
     <ClInclude Include="Lab3\Lab3_execute.h" />
     <ClInclude Include="Lab3\Point.h" />
     <ClInclude Include="Lab3\Rectangle_Lab3.h" />
     <ClInclude Include="Lab3\Route.h" />
+    <ClInclude Include="Lab3\Song_Lab3.h" />
     <ClInclude Include="Lab3\Time_Lab3.h" />
     <ClInclude Include="Menues\Menu.h" />
   </ItemGroup>

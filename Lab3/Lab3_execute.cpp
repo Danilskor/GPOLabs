@@ -15,6 +15,8 @@ void Lab3()
 
 	DemoRoute();
 	system("pause");
+
+	DemoBand();
 }
 
 void DemoBook()
@@ -280,7 +282,6 @@ void DemoRoute()
 	}
 
 	delete[] routes;
-	//delete[] stops;
 }
 
 void WriteRouteInCounsole(Route& route)
@@ -330,4 +331,115 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
 		}
 	}
 	return nullptr;
+}
+
+void DemoBand()
+{
+	int firstSongsArraySize = 3;
+	cSong* songsFirst = new cSong[firstSongsArraySize];
+
+	songsFirst[0] = cSong(255, "Say it", Rock);
+	songsFirst[1] = cSong(234, "Друзья", Pop);
+	songsFirst[2] = cSong(457, "keep talking", Dubstep);
+
+
+	int secondSongsArraySize = 4;
+	cSong* songsSecond = new cSong[secondSongsArraySize];
+
+	songsSecond[0] = cSong(142, "Mutter", Rock);
+	songsSecond[1] = cSong(423, "Genesis", Pop);
+	songsSecond[2] = cSong(453, "Aaa", Jazz);
+	songsSecond[3] = cSong(453, "Ludens", Rock);
+
+
+	int thirdSongsArraySize = 5;
+	cSong* songsThird = new cSong[thirdSongsArraySize];
+
+	songsThird[0] = cSong(453, "Blure", Blues);
+	songsThird[1] = cSong(456, "Special Needs", Rock);
+	songsThird[2] = cSong(356, "Blues", Blues);
+	songsThird[3] = cSong(321, "Gods", Jazz);
+	songsThird[4] = cSong(251, "Trip Switch", Dubstep);
+
+	int albumArraySize = 3;
+	cAlbum* albums = new cAlbum[3];
+
+	albums[0].SetName("Super");
+	albums[0].SetYear(1999);
+	albums[0].SetSong(songsFirst, 3);
+
+	albums[1].SetName("Massive");
+	albums[1].SetYear(2001);
+	albums[1].SetSong(songsSecond, 4);
+
+	albums[2].SetName("Black hole");
+	albums[2].SetYear(2019);
+	albums[2].SetSong(songsThird, 5);
+
+	cBand band("30 yeconds", "Описание", albums, 3);
+
+	WriteBandInfoToConsole(&band);
+
+	int songCount = 0;
+	cout << endl << "Все песни:" << endl;
+	cSong** allSongs = band.GetAllSongs(songCount);
+	for (int i = 0; i < songCount; i++)
+	{
+		WriteSongToConsole(allSongs[i]);
+		cout << endl;
+	}
+
+	cout << endl << "Рок: " << endl;
+	cSong** allGenreSongs = band.GetAllSongsGenre(songCount, Rock);
+	for (int i = 0; i < songCount; i++)
+	{
+		WriteSongToConsole(allGenreSongs[i]);
+		cout << endl;
+	}
+
+	cout << endl << "Поиск трека <<Друзья>>: " << endl;
+	WriteSongToConsole(band.FindSong("Друзья"));
+
+	cout << endl << "Поиск альбома с песней <<Друзья>>: " << endl;
+	WriteAlbumToConsole(band.FindAlbum("Друзья"));
+	cout << endl;
+
+	delete[] songsFirst;
+	delete[] songsSecond;
+	delete[] songsThird;
+}
+
+void WriteBandInfoToConsole(cBand* band)
+{
+	cout << "Группа " << band->GetName() << endl;
+	for (int i = 0; i < band->GetAuthorsCount(); i++)
+	{
+		WriteAlbumToConsole(&band->GetAlbum()[i]);
+	}
+}
+
+void WriteSongToConsole(cSong* song)
+{
+	cout << "\"" << song->GetName() << "\"" << " жанр ";
+	WriteSongGenreToConsole(song->GetGenre());
+	cout << " продолжительность: " << song->GetDurationSeconds();
+}
+
+void WriteSongsToConsole(cSong* song, int songCount)
+{
+	for (int i = 0; i < songCount; i++)
+	{
+		WriteSongToConsole(&song[i]);
+		cout << endl;
+	}
+}
+
+void WriteAlbumToConsole(cAlbum* album)
+{
+	cout << "Альбом ";
+	cout << album->GetName();
+	cout << endl;
+	WriteSongsToConsole(album->GetSong(),
+		album->GetSongCounter());
+	cout << endl;
 }

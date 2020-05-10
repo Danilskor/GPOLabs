@@ -7,6 +7,7 @@
 #include "Time_Lab3.h"
 #include "Flight_Lab3.h"
 #include "Route.h"
+#include "Band_Lab3.h"
 #include <iostream>
 
 void Lab3();
@@ -29,3 +30,9 @@ void WriteRouteInCounsole(Route& route);
 void ReadRouteFromConsole(int& number, int& timeAveregeMinutes, int& frequencyMinutes,
 	int& stopsCount, string*& stops);
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
+
+void DemoBand();
+void WriteBandInfoToConsole(cBand* band);
+void WriteSongToConsole(cSong* song);
+void WriteSongsToConsole(cSong* song, int songCount);
+void WriteAlbumToConsole(cAlbum* album);
