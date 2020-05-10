@@ -1,23 +1,11 @@
 #include "Lab3_execute.h"
-#include "Common/Consts/Consts.h"
 
-void main()
+using std::cout;
+
+void Lab3()
 {
-	setlocale(LC_ALL, "ru");
-
 	DemoBook();
 	system("pause");
-
-	DemoRoute();
-	system("pause");
-
-	DemoRectangleWithPoint();
-	system("pause");
-
-	DemoFlightWithTime();
-	system("pause");
-
-	DemoBand();
 }
 
 void DemoBook()
@@ -115,101 +103,6 @@ Book* FindBookByAuthor(Book* books, int booksCount, string author)
 	return nullptr;
 }
 
-void DemoRoute()
-{
-	int number;
-	int timeAveregeMinutes;
-	int frequencyMinutes;
-	int stopsCount;
-	string* stops;
-	int arraysSize = 3;
-	Route* routes = new Route[arraysSize];
-
-	for (int i = 0; i < arraysSize; i++)
-	{
-		cout << "Рейс №" << i + 1 << endl;
-		ReadRouteFromConsole(number,timeAveregeMinutes,frequencyMinutes,stopsCount,
-		stops);
-		Route newRoute(number, timeAveregeMinutes, frequencyMinutes, stopsCount,
-			stops);
-		routes[i] = newRoute;
-	}
-
-	for (int i = 0; i < arraysSize; i++)
-	{
-		WriteRouteInCounsole(routes[i]);
-	}
-
-	cout << endl << "Введите название остановки: ";
-	string name;
-	cin.clear();
-
-	getline(cin, name);
-	Route* route = FindRouteByStop(routes, arraysSize, name);
-
-	if (route != nullptr)
-	{
-		cout << "Рейс с данной остановкой: ";
-		WriteRouteInCounsole(*route);
-	}
-	else
-	{
-		cout << "Нет рейса с такой остановкой." << endl;
-	}
-
-	delete[] routes;
-	//delete[] stops;
-}
-
-void WriteRouteInCounsole(Route& route)
-{
-	for (int i = 0; i < route.GetStopsCount() - 1; i++)
-	{
-		cout << route.GetStops()[i] << " - ";
-	}
-	cout << route.GetStops()[route.GetStopsCount() - 1] << ". ";
-	cout << "№" << route.GetNumber() << " продолжительность " << route.GettimeAveregeMinutes() <<
-		" мин. " << " частота: " << route.GetFrequencyMinutes() <<
-		" мин." << endl;
-}
-
-void ReadRouteFromConsole(int& number, int& timeAveregeMinutes,
-	int& frequencyMinutes, int& stopsCount, string*& stops)
-{
-	cout << "Введите количство рейсов: ";
-	number = ReadValueInRange<int>(0, INT_MAX);
-
-	cout << "Введите время рейса в минутах:";
-	timeAveregeMinutes = ReadValueInRange(1, 60);
-
-	cout << "Введите частоту следования маршрута в минутах:";
-	frequencyMinutes = ReadValueInRange(1, 100);
-
-	cout << "Введите количество остановок рейса:";
-	stopsCount = ReadValueInRange(1, 10);
-
-	stops = new string[stopsCount];
-	for (int i = 0; i < stopsCount; i++)
-	{
-		cout << "Введите название остановки №" << i + 1 << ": ";
-		cin.clear();
-		getline(cin, stops[i]);
-	}
-}
-
-Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
-{
-	Route* route;
-	for (int i = 0; i < routesCount; i++)
-	{
-		if ((route = routes[i].FindStop(stopName)) != nullptr)
-		{
-			return route;
-		}
-	}
-	return nullptr;
-}
-
 void DemoRectangleWithPoint()
 {
 	int rectangelArraySize = 5;
@@ -220,7 +113,7 @@ void DemoRectangleWithPoint()
 	rectangles[3] = cRectangle(3.9, 9.3, &Point(-23.2, 32.3));
 	rectangles[4] = cRectangle(100, 10, &Point(0.1, 0.1));
 
-	for (int i = 0; i < rectangelArraySize; i++ )
+	for (int i = 0; i < rectangelArraySize; i++)
 	{
 		cout << "X = " << rectangles[i].GetCentre()->GetX() << "; Y = " <<
 			rectangles[i].GetCentre()->GetY() << "; Длина = " <<
@@ -288,21 +181,21 @@ void WriteFlightToConsole(cFlight* flight)
 
 void WriteTimeToConsole(cTime* time)
 {
-	cout << time->GetDay() << '.' << time->GetMonth() << '.' << 
+	cout << time->GetDay() << '.' << time->GetMonth() << '.' <<
 		time->GetYear() << ' ' << time->GetHour() << ':' << time->GetMinute();
 }
 
 cTime GetFlightTimeMinutes(cFlight* flight)
 {
-	cTime timeInFlight(0,0,0,0,0);
+	cTime timeInFlight(0, 0, 0, 0, 0);
 
-	int days = flight->GetTimeOFArrival()->GetDay() - 
+	int days = flight->GetTimeOFArrival()->GetDay() -
 		flight->GetTimeOfDeparture()->GetDay();
 
-	int hours = flight->GetTimeOFArrival()->GetHour() - 
+	int hours = flight->GetTimeOFArrival()->GetHour() -
 		flight->GetTimeOfDeparture()->GetHour();
 
-	int minutes = flight->GetTimeOFArrival()->GetMinute() - 
+	int minutes = flight->GetTimeOFArrival()->GetMinute() -
 		flight->GetTimeOfDeparture()->GetMinute();
 
 	if (days != 0)
@@ -333,115 +226,4 @@ cTime GetFlightTimeMinutes(cFlight* flight)
 		timeInFlight.SetMinute(minutes);
 		return timeInFlight;
 	}
-}
-
-void DemoBand()
-{
-	int firstSongsArraySize = 3;
-	cSong* songsFirst = new cSong[firstSongsArraySize];
-
-	songsFirst[0] = cSong(255, "Say it", Rock);
-	songsFirst[1] = cSong(234, "Друзья", Pop);
-	songsFirst[2] = cSong(457, "keep talking", Dubstep);
-	
-
-	int secondSongsArraySize = 4;
-	cSong* songsSecond = new cSong[secondSongsArraySize];
-
-	songsSecond[0] = cSong(142, "Mutter", Rock);
-	songsSecond[1] = cSong(423, "Genesis", Pop);
-	songsSecond[2] = cSong(453, "Aaa", Jazz);
-	songsSecond[3] = cSong(453, "Ludens", Rock);
-	
-
-	int thirdSongsArraySize = 5;
-	cSong* songsThird = new cSong[thirdSongsArraySize];
-
-	songsThird[0] = cSong(453, "Blure", Blues);
-	songsThird[1] = cSong(456, "Special Needs", Rock);
-	songsThird[2] = cSong(356, "Blues", Blues);
-	songsThird[3] = cSong(321, "Gods", Jazz);
-	songsThird[4] = cSong(251, "Trip Switch", Dubstep);
-
-	int albumArraySize = 3;
-	cAlbum* albums = new cAlbum[3];
-
-	albums[0].SetName("Super");
-	albums[0].SetYear(1999);
-	albums[0].SetSong(songsFirst, 3);
-
-	albums[1].SetName("Massive");
-	albums[1].SetYear(2001);
-	albums[1].SetSong(songsSecond, 4);
-
-	albums[2].SetName("Black hole");
-	albums[2].SetYear(2019);
-	albums[2].SetSong(songsThird, 5);
-
-	cBand band("30 yeconds", "Описание", albums, 3);
-	
-	WriteBandInfoToConsole(&band);
-
-	int songCount = 0;
-	cout << endl << "Все песни:" << endl;
-	cSong** allSongs = band.GetAllSongs(songCount);
-	for (int i = 0; i < songCount; i++)
-	{
-		WriteSongToConsole(allSongs[i]);
-		cout << endl;
-	}
-
-	cout << endl << "Рок: " << endl;
-	cSong** allGenreSongs = band.GetAllSongsGenre(songCount, Rock);
-	for (int i = 0; i < songCount; i++)
-	{
-		WriteSongToConsole(allGenreSongs[i]);
-		cout << endl;
-	}
-
-	cout << endl << "Поиск трека <<Друзья>>: " << endl;
-	WriteSongToConsole(band.FindSong("Друзья"));
-
-	cout << endl <<"Поиск альбома с песней <<Друзья>>: " << endl;
-	WriteAlbumToConsole(band.FindAlbum("Друзья"));
-	cout << endl;
-
-	delete[] songsFirst;
-	delete[] songsSecond;
-	delete[] songsThird;
-}
-
-void WriteBandInfoToConsole(cBand* band)
-{
-	cout << "Группа " << band->GetName() << endl;
-	for (int i = 0; i < band->GetauthorsCount(); i++)
-	{
-		WriteAlbumToConsole(&band->GetAlbum()[i]);
-	}
-}
-
-void WriteSongToConsole(cSong* song)
-{
-	cout << "\"" << song->GetName() << "\"" << " жанр ";
-	WriteSongGenreToConsole(song->GetGenre());
-	cout << " продолжительность: " << song->GetDurationSeconds();
-}
-
-void WriteSongsToConsole(cSong* song, int songCount)
-{
-	for (int i = 0; i < songCount; i++)
-	{
-		WriteSongToConsole(&song[i]);
-		cout << endl;
-	}
-}
-
-void WriteAlbumToConsole(cAlbum* album)
-{
-	cout << "Альбом ";
-	cout << album->GetName();
-	cout << endl;
-	WriteSongsToConsole(album->GetSong(),
-		album->GetSongCounter());
-	cout << endl;
 }
