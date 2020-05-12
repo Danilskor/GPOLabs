@@ -1,9 +1,10 @@
-#pragma once
+﻿#pragma once
 
 #include <iostream>
 
 using namespace std;
-
+// TODO: имя файла
+// TODO: имя перечисления
 enum cGenre
 {
 	Rock,

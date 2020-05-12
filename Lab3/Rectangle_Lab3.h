@@ -1,11 +1,12 @@
-#pragma once
+﻿#pragma once
 
 #include <exception>
 #include "Point.h"
 
 
 using namespace std;
-
+// TODO: имя файла
+// TODO: имя класса
 class cRectangle
 {
 private:
@@ -21,7 +22,7 @@ public:
 	void SetWidth(double width);
 	void SetCentre(Point* centre);
 
-	double Getlength();
+	double Getlength(); // TODO: именование
 	double GetWidth();
 	Point* GetCentre();
 

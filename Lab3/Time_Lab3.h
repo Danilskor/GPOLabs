@@ -1,5 +1,6 @@
-#pragma once
-
+﻿#pragma once
+// TODO: имя файла
+// TODO: имя класса
 class cTime
 {
 private:

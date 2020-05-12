@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include <iostream>
 
@@ -17,7 +17,7 @@ private:
 public:
 	Book();
 	Book(string name, int year, int pages, 
-		int authorsCount, string* authors);
+		int authorsCount, string* authors);// TODO: сначала указатель на массив, потом количество
 	~Book();
 
 	

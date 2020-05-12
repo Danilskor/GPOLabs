@@ -1,4 +1,4 @@
-#include "Flight_Lab3.h"
+﻿#include "Flight_Lab3.h"
 
 cFlight::cFlight(int number, string departurePoint, string arrivalPoint,
     cTime* timeOfDeparture, cTime* timeOfArrival)
@@ -29,13 +29,13 @@ void cFlight::SetArrivalPoint(string arrivalPoint)
 {
     this->_arrivalPoint = arrivalPoint;
 }
-
+// TODO: здесь и далее поправить именование всех переменных
 void cFlight::SetTimesDepartureArrival(cTime* timeOfDeparture,
     cTime* timeOfArrival)
 {
     if (*timeOfArrival <= *timeOfDeparture)
     {
-        throw exception("����� ����������� �� ����� ���� ������ ������� ��������");
+        throw exception("Âðåìÿ îòïðàâëåíèÿ íå ìîæåò áûòü áîëüøå âðåìåíè ïðèáûòèÿ");
     }
 
     this->_timeOfArrival = timeOfArrival;
@@ -46,12 +46,12 @@ int cFlight::GetNumber()
 {
     return this->_number;
 }
-
+// TODO: именование
 string cFlight::GetdeparturePoint()
 {
     return this->_departurePoint;
 }
-
+// TODO: именование
 string cFlight::GetarrivalPoint()
 {
     return this->_arrivalPoint;

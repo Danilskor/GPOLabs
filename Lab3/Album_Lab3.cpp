@@ -1,4 +1,4 @@
-#include "Album_Lab3.h"
+﻿#include "Album_Lab3.h"
 
 cAlbum::cAlbum()
 {
@@ -12,15 +12,15 @@ void cAlbum::SetName(string name)
 
 void cAlbum::SetYear(int year)
 {
-	struct tm* timeInfo;
+	struct tm* timeInfo; // TODO: зачем эта переменная? Доделай определение текущего года
 	if (year < 1 || year > 2020)
 	{
-		throw exception("��� ������� ������� ������ ���� �� 0 �� 2020");
+		throw exception("Ãîä âûïóñêà âëüáîìà äîëæåí áûòü îò 0 äî 2020");
 	}
 	this->_year = year;
 }
-
-void cAlbum::SetSong(cSong* song, int songCounter)
+// TODO: массивы в множественном числе!
+void cAlbum::SetSong(cSong* song, int songCounter) // TODO: Count, а не Counter. Counter - так именуются совсем другие объекты
 {
 	this->_song = new cSong[songCounter];
 	this->_songsCount = songCounter;
@@ -29,7 +29,7 @@ void cAlbum::SetSong(cSong* song, int songCounter)
 		this->_song[i] = song[i];
 	}
 }
-
+// TODO: множ. число
 cAlbum::cAlbum(string name, int year, cSong* song, int songCount)
 {
 	this->SetName(name);
@@ -41,17 +41,17 @@ string cAlbum::GetName()
 {
 	return this->_name;
 }
-
+// TODO: грам. ошибка
 int cAlbum::GetYeat()
 {
 	return this->_year;
 }
-
+// TODO: именование
 cSong* cAlbum::GetSong()
 {
 	return this->_song;
 }
-
+// TODO: именование
 int cAlbum::GetSongCounter()
 {
 	return this->_songsCount;

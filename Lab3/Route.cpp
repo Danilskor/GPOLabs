@@ -1,5 +1,5 @@
-#include "Route.h"
-
+﻿#include "Route.h"
+// TODO: именование всего
 Route::Route()
 {
 	this->_stops = nullptr;

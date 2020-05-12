@@ -1,4 +1,4 @@
-#include "Time_Lab3.h"
+﻿#include "Time_Lab3.h"
 #include <exception>
 #include "../Common/Constants/Consts.h"
 
@@ -89,6 +89,7 @@ int cTime::GetMinute()
 
 bool cTime::operator<=(const cTime& other)
 {
+	// TODO: ты тестировал этот оператор? Он работает неправильно!
 	if (this->_day <= other._day && this->_hour <= other._hour &&
 		this->_minute <= other._minute && this->_month <= other._month &&
 		this->_year <= other._year)

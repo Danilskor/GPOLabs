@@ -1,10 +1,11 @@
-#pragma once
+﻿#pragma once
 
 #include "Genre_Lab3.h"
 #include <string>
 
 using namespace std;
-
+// TODO: имя файла
+// TODO: имя класса
 class cSong
 {
 private:

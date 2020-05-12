@@ -1,4 +1,4 @@
-#include "Band_Lab3.h"
+﻿#include "Band_Lab3.h"
 
 void cBand::SetName(string name)
 {
@@ -9,7 +9,7 @@ void cBand::SetDescription(string description)
 {
 	this->_description = description;
 }
-
+// TODO: именование переменных
 void cBand::SetAlbum(cAlbum* album, int authorsCount)
 {
 	if (this->_album != nullptr)
@@ -23,7 +23,7 @@ void cBand::SetAlbum(cAlbum* album, int authorsCount)
 	}
 	this->_albumsCount = authorsCount;
 }
-
+// TODO: именование переменных
 cBand::cBand(string name, string description, cAlbum* album, int authorsCount)
 {
 	this->SetName(name);
@@ -40,12 +40,12 @@ string cBand::GetDescription()
 {
 	return this->_description;
 }
-
+// TODO: альбом или альбомы?
 cAlbum* cBand::GetAlbum()
 {
 	return this->_album;
 }
-
+// TODO: именование
 int cBand::GetAuthorsCount()
 {
 	return this->_albumsCount;
@@ -64,7 +64,7 @@ cSong* cBand::FindSong(string name)
 	}
 	return song;
 }
-
+// TODO: имя чего? Альбома или песни?
 cAlbum* cBand::FindAlbum(string name)
 {
 	for (int i = 0; i < this->_albumsCount; i++)
@@ -77,12 +77,12 @@ cAlbum* cBand::FindAlbum(string name)
 	return nullptr;
 }
 
-cSong** cBand::GetAllSongs(int& songCount)
+cSong** cBand::GetAllSongs(int& songCount) // TODO: множ.
 {
 	songCount = 0;
 	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		songCount = songCount + this->_album[i].GetSongCounter();
+		songCount = songCount + this->_album[i].GetSongCounter();// TODO: +=
 	}
 
 	cSong** allSongs = new cSong*[songCount];
@@ -99,7 +99,7 @@ cSong** cBand::GetAllSongs(int& songCount)
 	}
 	return allSongs;
 }
-
+// TODO: именование не соответствует действию
 cSong** cBand::GetAllSongsGenre(int& songCount, cGenre genre)
 {
 	songCount = 0;

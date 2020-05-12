@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Book.h"
 #include "../Common/Input.h"
@@ -27,12 +27,12 @@ cTime GetFlightTimeMinutes(cFlight* flight);
 
 void DemoRoute();
 void WriteRouteInCounsole(Route& route);
-void ReadRouteFromConsole(int& number, int& timeAveregeMinutes, int& frequencyMinutes,
+void ReadRouteFromConsole(int& number, int& timeAveregeMinutes, int& frequencyMinutes, // TODO: грам ошибки
 	int& stopsCount, string*& stops);
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoBand();
 void WriteBandInfoToConsole(cBand* band);
 void WriteSongToConsole(cSong* song);
-void WriteSongsToConsole(cSong* song, int songCount);
+void WriteSongsToConsole(cSong* song, int songCount); // TODO: множ. число
 void WriteAlbumToConsole(cAlbum* album);
