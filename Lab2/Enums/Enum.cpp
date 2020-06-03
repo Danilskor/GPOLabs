@@ -8,7 +8,6 @@ void DemoEnums()
 {
 	Color color = Red;
 	WeekDay weekDay = Sunday;
-	Genre genre = Horror;
 	StudyType studyType = FullTime;
 	PhoneCompany company = Honor;
 	Season season = Spring;
@@ -29,14 +28,6 @@ void DemoEnums()
 	weekDays[3] = Thursday;
 	weekDays[4] = Saturday;
 	weekDays[5] = Friday;
-
-	Genre* genres = new Genre[6];
-	genres[0] = Comedy;
-	genres[1] = Drama;
-	genres[2] = Thriller;
-	genres[3] = Action;
-	genres[4] = Horror;
-	genres[5] = BlockBuster;
 
 	StudyType* studyTypes = new StudyType[6];
 	studyTypes[0] = Evening;
@@ -67,7 +58,6 @@ void DemoEnums()
 
 	delete[] colors;
 	delete[] weekDays;
-	delete[] genres;
 	delete[] studyTypes;
 	delete[] companies;
 	delete[] seasons;
@@ -159,85 +149,6 @@ Color ReadColor()
 		}
 	}
 }
-
-Genre ReadGenre()
-{
-	cout << "Ââåäèòå öìôðó 0-5" 
-		<< "0 - Êîìåäèÿ" << endl 
-		<< "1 - Äðàìà" << endl
-		<< "2 - Òðèëëåð" << endl
-		<< "3 - Ýêøí" << endl
-		<< "4 - Õîððîð" << endl
-		<< "5 - Áëîêáàñòåð" << endl;
-	int genreNumber;
-	cin >> genreNumber;
-	switch (genreNumber)
-	{
-		case 0:
-		{
-			return Comedy;
-		}
-		case 1:
-		{
-			return Drama;
-		}
-		case 2:
-		{
-			return Thriller;
-		}
-		case 3:
-		{
-			return Action;
-		}
-		case 4:
-		{
-			return Horror;
-		}
-		case 5:
-		{
-			return BlockBuster;
-		}
-	}
-}
-
-void WriteGenre(Genre genre)
-{
-	switch (genre)
-	{
-		case Comedy:
-		{
-			cout << "Êîìåäèÿ";
-			break;
-		}
-		case Drama:
-		{
-			cout << "Äðàìà";
-			break;
-		}
-		case Thriller:
-		{
-			cout << "Òðèëëåð";
-			break;
-		}
-		case Action:
-		{
-			cout << "Ýêøí";
-			break;
-		}
-		case Horror:
-		{
-			cout << "Õîððîð";
-			break;
-		}
-		case BlockBuster:
-		{
-			cout << "Áëîêáàñòåð";
-			break;
-		}
-	}
-}
-
-
 //TODO:
 int CountRed(Color* color, int count)
 {

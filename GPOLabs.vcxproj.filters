@@ -40,14 +40,17 @@
     <Filter Include="Файлы заголовков\Lab2\Enums">
       <UniqueIdentifier>{4bebac62-30e3-458a-a0e5-dad39f544043}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Lab2\Enum">
-      <UniqueIdentifier>{8abf6583-f69e-436f-a0fd-d284021186a8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Исходные файлы\Lab3">
       <UniqueIdentifier>{48f0009a-67bd-46df-8922-eb7044ea5964}</UniqueIdentifier>
     </Filter>
     <Filter Include="Файлы заголовков\Lab3">
       <UniqueIdentifier>{f3b2734c-bd14-47ae-9c6d-e9c4d46cba0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Constants">
+      <UniqueIdentifier>{768265e4-4c5f-4688-b0cd-2fa6e0965ee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Enums">
+      <UniqueIdentifier>{bf145ff1-c1ac-4c87-ac0e-339671e279ee}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -126,25 +129,13 @@
     <ClCompile Include="Common\Input.cpp">
       <Filter>Исходные файлы\Common</Filter>
     </ClCompile>
-    <ClCompile Include="Lab2\Time.cpp">
-      <Filter>Исходные файлы\Lab2</Filter>
-    </ClCompile>
     <ClCompile Include="Lab2\Circle.cpp">
-      <Filter>Исходные файлы\Lab2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab2\DynamicStructure.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
     <ClCompile Include="Lab2\Exception.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="Lab2\Flight.cpp">
-      <Filter>Исходные файлы\Lab2</Filter>
-    </ClCompile>
     <ClCompile Include="Lab2\FunctionStructure.cpp">
-      <Filter>Исходные файлы\Lab2</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab2\Movie.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
     <ClCompile Include="Lab2\Rectangle.cpp">
@@ -156,41 +147,44 @@
     <ClCompile Include="Lab2\Execute.cpp">
       <Filter>Исходные файлы\Lab2</Filter>
     </ClCompile>
-    <ClCompile Include="Lab2\Enums\Enum.cpp">
-      <Filter>Исходные файлы\Lab2\Enum</Filter>
-    </ClCompile>
     <ClCompile Include="Lab3\Lab3_execute.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
     <ClCompile Include="Lab3\Book.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3\Rectangle_Lab3.cpp">
-      <Filter>Исходные файлы\Lab3</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab3\Flight_Lab3.cpp">
-      <Filter>Исходные файлы\Lab3</Filter>
-    </ClCompile>
     <ClCompile Include="Lab3\Point.cpp">
-      <Filter>Исходные файлы\Lab3</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab3\Time_Lab3.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
     <ClCompile Include="Lab3\Route.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3\Band_Lab3.cpp">
+    <ClCompile Include="Lab3\Band.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3\Song_Lab3.cpp">
+    <ClCompile Include="Lab3\Album.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3\Album_Lab3.cpp">
+    <ClCompile Include="Lab3\Flight.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="Lab3\Genre_Lab3.cpp">
+    <ClCompile Include="Lab3\Genre.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Rectangle.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Song.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab3\Time.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="CurrentTime.cpp">
+      <Filter>Исходные файлы\Lab3</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2\Enums\Enum.cpp">
+      <Filter>Исходные файлы\Enums</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -200,22 +194,10 @@
     <ClInclude Include="Common\Input.h">
       <Filter>Файлы заголовков\Common</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\Movie.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab2\Time.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Circle.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\DynamicStructure.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\Exception.h">
-      <Filter>Файлы заголовков\Lab2</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab2\Flight.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
     <ClInclude Include="Common\Lab1Header.h">
@@ -242,9 +224,6 @@
     <ClInclude Include="Lab2\Enums\Enum.h">
       <Filter>Файлы заголовков\Lab2\Enums</Filter>
     </ClInclude>
-    <ClInclude Include="Lab2\Enums\GenreEnumh.h">
-      <Filter>Файлы заголовков\Lab2\Enums</Filter>
-    </ClInclude>
     <ClInclude Include="Lab2\SongStructure.h">
       <Filter>Файлы заголовков\Lab2</Filter>
     </ClInclude>
@@ -266,28 +245,34 @@
     <ClInclude Include="Lab3\Point.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3\Rectangle_Lab3.h">
-      <Filter>Файлы заголовков\Lab3</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab3\Flight_Lab3.h">
-      <Filter>Файлы заголовков\Lab3</Filter>
-    </ClInclude>
-    <ClInclude Include="Lab3\Time_Lab3.h">
-      <Filter>Файлы заголовков\Lab3</Filter>
-    </ClInclude>
     <ClInclude Include="Lab3\Route.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3\Band_Lab3.h">
+    <ClInclude Include="Lab3\Album.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3\Song_Lab3.h">
+    <ClInclude Include="Lab3\Band.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3\Album_Lab3.h">
+    <ClInclude Include="Lab3\Flight.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
-    <ClInclude Include="Lab3\Genre_Lab3.h">
+    <ClInclude Include="Lab3\Genre.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Rectangle.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Song.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab3\Time.h">
+      <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Constants\Consts.h">
+      <Filter>Файлы заголовков\Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentTime.h">
       <Filter>Файлы заголовков\Lab3</Filter>
     </ClInclude>
   </ItemGroup>

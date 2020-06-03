@@ -1,7 +1,6 @@
 ﻿#pragma once
 
 #include "ColorEnum.h"
-#include "GenreEnumh.h"
 #include "PhoneCompanyEnum.h"
 #include "SeasonEnum.h"
 #include "StudyTypeEnum.h"

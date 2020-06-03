@@ -17,7 +17,7 @@ private:
 public:
 	Book();
 	Book(string name, int year, int pages, 
-		int authorsCount, string* authors);// TODO: сначала указатель на массив, потом количество
+		string* authors, int authorsCount);// TODO: сначала указатель на массив, потом количество
 	~Book();
 
 	

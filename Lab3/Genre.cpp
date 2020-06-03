@@ -1,7 +1,7 @@
-#include "Genre_Lab3.h"
+#include "Genre.h"
 
 
-void WriteSongGenreToConsole(cGenre genre)
+void WriteSongGenreToConsole(Genre genre)
 {
 	switch (genre)
 	{

@@ -7,7 +7,7 @@
 using namespace std;
 // TODO: имя файла
 // TODO: имя класса
-class cRectangle
+class Rectangle
 {
 private:
 	double _length;
@@ -15,14 +15,14 @@ private:
 	Point* _centre;
 
 public:
-	cRectangle();
-	cRectangle(double length, double width, Point* centre);
+	Rectangle();
+	Rectangle(double length, double width, Point* centre);
 
 	void SetLength(double length);
 	void SetWidth(double width);
 	void SetCentre(Point* centre);
 
-	double Getlength(); // TODO: именование
+	double GetLength(); // TODO: именование
 	double GetWidth();
 	Point* GetCentre();
 

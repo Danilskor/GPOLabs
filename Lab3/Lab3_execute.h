@@ -1,14 +1,15 @@
 ﻿#pragma once
 
+#include <iostream>
+#include <ctime>
 #include "Book.h"
 #include "../Common/Input.h"
 #include "../Common/Constants/Consts.h"
-#include "Rectangle_Lab3.h"
-#include "Time_Lab3.h"
-#include "Flight_Lab3.h"
+#include "Rectangle.h"
+#include "Time.h"
+#include "Flight.h"
 #include "Route.h"
-#include "Band_Lab3.h"
-#include <iostream>
+#include "Band.h"
 
 void Lab3();
 
@@ -21,18 +22,18 @@ Book* FindBookByAuthor(Book* books, int booksCount, string author);
 void DemoRectangleWithPoint();
 
 void DemoFlightWithTime();
-void WriteFlightToConsole(cFlight* flight);
-void WriteTimeToConsole(cTime* time);
-cTime GetFlightTimeMinutes(cFlight* flight);
+void WriteFlightToConsole(Flight* flight);
+void WriteTimeToConsole(Time* time);
+Time GetFlightTimeMinutes(Flight* flight);
 
 void DemoRoute();
 void WriteRouteInCounsole(Route& route);
-void ReadRouteFromConsole(int& number, int& timeAveregeMinutes, int& frequencyMinutes, // TODO: грам ошибки
-	int& stopsCount, string*& stops);
+void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMinutes, // TODO: грам ошибки
+	string*& stops, int& stopsCount); 
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoBand();
-void WriteBandInfoToConsole(cBand* band);
-void WriteSongToConsole(cSong* song);
-void WriteSongsToConsole(cSong* song, int songCount); // TODO: множ. число
-void WriteAlbumToConsole(cAlbum* album);
+void WriteBandInfoToConsole(Band* band);
+void WriteSongToConsole(Song* songs);
+void WriteSongsToConsole(Song* songs, int songCount); // TODO: множ. число
+void WriteAlbumToConsole(Album* albums);

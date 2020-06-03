@@ -1,7 +1,11 @@
 ﻿#pragma once
+
+#include <ctime>
+#include <exception>
+#include "../Common/Constants/Consts.h"
 // TODO: имя файла
 // TODO: имя класса
-class cTime
+class Time
 {
 private:
 	int _minute;
@@ -11,8 +15,8 @@ private:
 	int _year;
 
 public:
-	cTime(int year,int month, int day,int hour, int minute);
-	cTime();
+	Time(int year,int month, int day, int hour, int minute);
+	Time();
 	
 	void SetMinute(int minute);
 	void SetHour(int hour);
@@ -26,6 +30,8 @@ public:
 	int GetMonth();
 	int GetYear();
 
-	bool operator <= (const cTime& another);
+	bool operator == (const Time& another);
+	bool operator < (const Time& another);
+	bool operator <= (const Time& another);
 };
 

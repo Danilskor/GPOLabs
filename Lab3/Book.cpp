@@ -32,7 +32,7 @@ void Book::SetAuthors(string* authors, int authorsCount)
 }
 
 Book::Book(string name, int year, int pages, 
-	int authorsCount, string* authors)
+	string* authors, int authorsCount)
 {
 	this->SetName(name);
 	this->SetPages(pages);

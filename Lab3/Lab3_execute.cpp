@@ -33,7 +33,7 @@ void DemoBook()
 	{
 		cout << "Книга №" << i + 1 << endl;
 		ReadBookFromConsole(name, year, pages, numberOfAuthors, authors);
-		Book newBook(name, year, pages, numberOfAuthors, authors);
+		Book newBook(name, year, pages, authors, numberOfAuthors);
 		books[i] = newBook;
 	}
 
@@ -117,18 +117,18 @@ Book* FindBookByAuthor(Book* books, int booksCount, string author)
 void DemoRectangleWithPoint()
 {
 	int rectangelArraySize = 5;
-	cRectangle* rectangles = new cRectangle[rectangelArraySize];
-	rectangles[0] = cRectangle(3.1, 5.4, &Point(66.6, -3));
-	rectangles[1] = cRectangle(12.1, 14.6, &Point(77.7, -77.7));
-	rectangles[2] = cRectangle(2.8, 2.9, &Point(0, 0));
-	rectangles[3] = cRectangle(3.9, 9.3, &Point(-23.2, 32.3));
-	rectangles[4] = cRectangle(100, 10, &Point(0.1, 0.1));
+	Rectangle* rectangles = new Rectangle[rectangelArraySize];
+	rectangles[0] = Rectangle(3.1, 5.4, &Point(66.6, -3));
+	rectangles[1] = Rectangle(12.1, 14.6, &Point(77.7, -77.7));
+	rectangles[2] = Rectangle(2.8, 2.9, &Point(0, 0));
+	rectangles[3] = Rectangle(3.9, 9.3, &Point(-23.2, 32.3));
+	rectangles[4] = Rectangle(100, 10, &Point(0.1, 0.1));
 
 	for (int i = 0; i < rectangelArraySize; i++)
 	{
 		cout << "X = " << rectangles[i].GetCentre()->GetX() << "; Y = " <<
 			rectangles[i].GetCentre()->GetY() << "; Длина = " <<
-			rectangles[i].Getlength() << "; Высота = " <<
+			rectangles[i].GetLength() << "; Высота = " <<
 			rectangles[i].GetWidth() << endl;
 	}
 
@@ -147,22 +147,22 @@ void DemoRectangleWithPoint()
 void DemoFlightWithTime()
 {
 	int flightsArraySize = 5;
-	cFlight* flights = new cFlight[flightsArraySize];
+	Flight* flights = new Flight[flightsArraySize];
 
-	flights[0] = cFlight(rand() % 1000000, "Междуреченск", "Томск",
-		&cTime(2020, 9, 28, 16, 5), &cTime(2020, 9, 28, 20, 5));
+	flights[0] = Flight(rand() % 1000000, "Междуреченск", "Томск",
+		&Time(2020, 9, 28, 16, 5), &Time(2020, 9, 28, 20, 5));
 
-	flights[1] = cFlight(rand() % 1000000, "Томск", "Междуреченск",
-		&cTime(2020, 9, 28, 20, 5), &cTime(2020, 9, 29, 0, 5));
+	flights[1] = Flight(rand() % 1000000, "Томск", "Междуреченск",
+		&Time(2020, 9, 28, 20, 5), &Time(2020, 9, 29, 0, 5));
 
-	flights[2] = cFlight(rand() % 1000000, "Новокузнецк", "Москва",
-		&cTime(2020, 11, 10, 11, 16), &cTime(2020, 7, 22, 22, 10));
+	flights[2] = Flight(rand() % 1000000, "Новокузнецк", "Москва",
+		&Time(2020, 11, 10, 11, 16), &Time(2020, 7, 22, 22, 10));
 
-	flights[3] = cFlight(rand() % 1000000, "Новосибирск", "Тверь",
-		&cTime(2020, 1, 2, 3, 4), &cTime(2020, 9, 8, 7, 6));
+	flights[3] = Flight(rand() % 1000000, "Новосибирск", "Тверь",
+		&Time(2020, 1, 2, 3, 4), &Time(2020, 9, 8, 7, 6));
 
-	flights[4] = cFlight(rand() % 1000000, "Омск", "Омск",
-		&cTime(2020, 6, 6, 6, 6), &cTime(2020, 7, 7, 7, 7));
+	flights[4] = Flight(rand() % 1000000, "Омск", "Омск",
+		&Time(2020, 6, 6, 6, 6), &Time(2020, 7, 7, 7, 7));
 
 	for (int i = 0; i < flightsArraySize; i++)
 	{
@@ -180,34 +180,34 @@ void DemoFlightWithTime()
 	delete[] flights;
 }
 
-void WriteFlightToConsole(cFlight* flight)
+void WriteFlightToConsole(Flight* flight)
 {
 	cout << flight->GetNumber() << " " <<
-		flight->GetdeparturePoint() << " - "
-		<< flight->GetarrivalPoint() << " вылет ";
-	WriteTimeToConsole(flight->GetTimeOfDeparture());
+		flight->GetDeparturePoint() << " - "
+		<< flight->GetArrivalPoint() << " вылет ";
+	WriteTimeToConsole(flight->GetDepartureTime());
 	cout << " прибытие ";
-	WriteTimeToConsole(flight->GetTimeOFArrival());
+	WriteTimeToConsole(flight->GetArrivalTime());
 }
 
-void WriteTimeToConsole(cTime* time)
+void WriteTimeToConsole(Time* time)
 {
 	cout << time->GetDay() << '.' << time->GetMonth() << '.' <<
 		time->GetYear() << ' ' << time->GetHour() << ':' << time->GetMinute();
 }
 
-cTime GetFlightTimeMinutes(cFlight* flight)
+Time GetFlightTimeMinutes(Flight* flight)
 {
-	cTime timeInFlight(0, 0, 0, 0, 0);
+	Time timeInFlight(0, 0, 0, 0, 0);
 
-	int days = flight->GetTimeOFArrival()->GetDay() -
-		flight->GetTimeOfDeparture()->GetDay();
+	int days = flight->GetArrivalTime()->GetDay() -
+		flight->GetDepartureTime()->GetDay();
 
-	int hours = flight->GetTimeOFArrival()->GetHour() -
-		flight->GetTimeOfDeparture()->GetHour();
+	int hours = flight->GetArrivalTime()->GetHour() -
+		flight->GetDepartureTime()->GetHour();
 
-	int minutes = flight->GetTimeOFArrival()->GetMinute() -
-		flight->GetTimeOfDeparture()->GetMinute();
+	int minutes = flight->GetArrivalTime()->GetMinute() -
+		flight->GetDepartureTime()->GetMinute();
 
 	if (days != 0)
 	{
@@ -242,7 +242,7 @@ cTime GetFlightTimeMinutes(cFlight* flight)
 void DemoRoute()
 {
 	int number;
-	int timeAveregeMinutes;
+	int timeAverageMinutes;
 	int frequencyMinutes;
 	int stopsCount;
 	string* stops;
@@ -252,9 +252,9 @@ void DemoRoute()
 	for (int i = 0; i < arraysSize; i++)
 	{
 		cout << "Рейс №" << i + 1 << endl;
-		ReadRouteFromConsole(number, timeAveregeMinutes, frequencyMinutes, stopsCount,
-			stops);
-		Route newRoute(number, timeAveregeMinutes, frequencyMinutes, stopsCount,
+		ReadRouteFromConsole(number, timeAverageMinutes, frequencyMinutes, stops,
+			stopsCount);
+		Route newRoute(number, timeAverageMinutes, frequencyMinutes, stopsCount,
 			stops);
 		routes[i] = newRoute;
 	}
@@ -291,19 +291,19 @@ void WriteRouteInCounsole(Route& route)
 		cout << route.GetStops()[i] << " - ";
 	}
 	cout << route.GetStops()[route.GetStopsCount() - 1] << ". ";
-	cout << "№" << route.GetNumber() << " продолжительность " << route.GettimeAveregeMinutes() <<
+	cout << "№" << route.GetNumber() << " продолжительность " << route.GetTimeAverageMinutes() <<
 		" мин. " << " частота: " << route.GetFrequencyMinutes() <<
 		" мин." << endl;
 }
 
-void ReadRouteFromConsole(int& number, int& timeAveregeMinutes,
-	int& frequencyMinutes, int& stopsCount, string*& stops)
+void ReadRouteFromConsole(int& number, int& timeAverageMinutes,
+	int& frequencyMinutes, string*& stops, int& stopsCount)
 {
 	cout << "Введите количство рейсов: ";
 	number = ReadValueInRange<int>(0, INT_MAX);
 
 	cout << "Введите время рейса в минутах:";
-	timeAveregeMinutes = ReadValueInRange(1, 60);
+	timeAverageMinutes = ReadValueInRange(1, 60);
 
 	cout << "Введите частоту следования маршрута в минутах:";
 	frequencyMinutes = ReadValueInRange(1, 100);
@@ -336,33 +336,33 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
 void DemoBand()
 {
 	int firstSongsArraySize = 3;
-	cSong* songsFirst = new cSong[firstSongsArraySize];
+	Song* songsFirst = new Song[firstSongsArraySize];
 
-	songsFirst[0] = cSong(255, "Say it", Rock);
-	songsFirst[1] = cSong(234, "Друзья", Pop);
-	songsFirst[2] = cSong(457, "keep talking", Dubstep);
+	songsFirst[0] = Song(255, "Say it", Rock);
+	songsFirst[1] = Song(234, "Друзья", Pop);
+	songsFirst[2] = Song(457, "keep talking", Dubstep);
 
 
 	int secondSongsArraySize = 4;
-	cSong* songsSecond = new cSong[secondSongsArraySize];
+	Song* songsSecond = new Song[secondSongsArraySize];
 
-	songsSecond[0] = cSong(142, "Mutter", Rock);
-	songsSecond[1] = cSong(423, "Genesis", Pop);
-	songsSecond[2] = cSong(453, "Aaa", Jazz);
-	songsSecond[3] = cSong(453, "Ludens", Rock);
+	songsSecond[0] = Song(142, "Mutter", Rock);
+	songsSecond[1] = Song(423, "Genesis", Pop);
+	songsSecond[2] = Song(453, "Aaa", Jazz);
+	songsSecond[3] = Song(453, "Ludens", Rock);
 
 
 	int thirdSongsArraySize = 5;
-	cSong* songsThird = new cSong[thirdSongsArraySize];
+	Song* songsThird = new Song[thirdSongsArraySize];
 
-	songsThird[0] = cSong(453, "Blure", Blues);
-	songsThird[1] = cSong(456, "Special Needs", Rock);
-	songsThird[2] = cSong(356, "Blues", Blues);
-	songsThird[3] = cSong(321, "Gods", Jazz);
-	songsThird[4] = cSong(251, "Trip Switch", Dubstep);
+	songsThird[0] = Song(453, "Blure", Blues);
+	songsThird[1] = Song(456, "Special Needs", Rock);
+	songsThird[2] = Song(356, "Blues", Blues);
+	songsThird[3] = Song(321, "Gods", Jazz);
+	songsThird[4] = Song(251, "Trip Switch", Dubstep);
 
 	int albumArraySize = 3;
-	cAlbum* albums = new cAlbum[3];
+	Album* albums = new Album[3];
 
 	albums[0].SetName("Super");
 	albums[0].SetYear(1999);
@@ -376,13 +376,13 @@ void DemoBand()
 	albums[2].SetYear(2019);
 	albums[2].SetSong(songsThird, 5);
 
-	cBand band("30 yeconds", "Описание", albums, 3);
+	Band band("30 yeconds", "Описание", albums, 3);
 
 	WriteBandInfoToConsole(&band);
 
 	int songCount = 0;
 	cout << endl << "Все песни:" << endl;
-	cSong** allSongs = band.GetAllSongs(songCount);
+	Song** allSongs = band.GetAllSongs(songCount);
 	for (int i = 0; i < songCount; i++)
 	{
 		WriteSongToConsole(allSongs[i]);
@@ -390,7 +390,7 @@ void DemoBand()
 	}
 
 	cout << endl << "Рок: " << endl;
-	cSong** allGenreSongs = band.GetAllSongsGenre(songCount, Rock);
+	Song** allGenreSongs = band.GetAllGenreSongs(songCount, Rock);
 	for (int i = 0; i < songCount; i++)
 	{
 		WriteSongToConsole(allGenreSongs[i]);
@@ -409,7 +409,7 @@ void DemoBand()
 	delete[] songsThird;
 }
 
-void WriteBandInfoToConsole(cBand* band)
+void WriteBandInfoToConsole(Band* band)
 {
 	cout << "Группа " << band->GetName() << endl;
 	for (int i = 0; i < band->GetAuthorsCount(); i++)
@@ -418,28 +418,28 @@ void WriteBandInfoToConsole(cBand* band)
 	}
 }
 
-void WriteSongToConsole(cSong* song)
+void WriteSongToConsole(Song* songs)
 {
-	cout << "\"" << song->GetName() << "\"" << " жанр ";
-	WriteSongGenreToConsole(song->GetGenre());
-	cout << " продолжительность: " << song->GetDurationSeconds();
+	cout << "\"" << songs->GetName() << "\"" << " жанр ";
+	WriteSongGenreToConsole(songs->GetGenre());
+	cout << " продолжительность: " << songs->GetDurationSeconds();
 }
 
-void WriteSongsToConsole(cSong* song, int songCount)
+void WriteSongsToConsole(Song* songs, int songCount)
 {
 	for (int i = 0; i < songCount; i++)
 	{
-		WriteSongToConsole(&song[i]);
+		WriteSongToConsole(&songs[i]);
 		cout << endl;
 	}
 }
 
-void WriteAlbumToConsole(cAlbum* album)
+void WriteAlbumToConsole(Album* albums)
 {
 	cout << "Альбом ";
-	cout << album->GetName();
+	cout << albums->GetName();
 	cout << endl;
-	WriteSongsToConsole(album->GetSong(),
-		album->GetSongCounter());
+	WriteSongsToConsole(albums->GetSong(),
+		albums->GetSongCounter());
 	cout << endl;
 }

@@ -1,34 +1,35 @@
 ﻿#pragma once
-#include "Song_Lab3.h"
+#include "Song.h"
+#include "../CurrentTime.h"
 #include <exception>
 #include <ctime>
 // TODO: название файла не совпадает с именем класса
 using namespace std;
 // TODO: неправильное название класса - должно быть без приставок
-class cAlbum
+class Album
 {
 private:
 	string _name;
 	int _year;
 	int _songsCount;
-	cSong* _song; // TODO: указатели на массив должны именоваться в множественном числе. Это важно!
+	Song* _songs; // TODO: указатели на массив должны именоваться в множественном числе. Это важно!
 
 public:
-	cAlbum();
+	Album();
 
 	void SetName(string name);
 	void SetYear(int year);
-	void SetSong(cSong* song, int songsCount);
+	void SetSong(Song* songs, int songsCount);
 
-	cAlbum(string name, int year, cSong* song, int songsCount);
+	Album(string name, int year, Song* songs, int songsCount);
 
 	string GetName();
 	int GetYeat();
 	int GetSongCounter();
-	cSong* GetSong();
+	Song* GetSong();
 
-	cSong* FindSong(string songName);
+	Song* FindSong(string songName);
 
-	~cAlbum();
+	~Album();
 };
 

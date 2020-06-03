@@ -5,7 +5,7 @@
 using namespace std;
 // TODO: имя файла
 // TODO: имя перечисления
-enum cGenre
+enum Genre
 {
 	Rock,
 	Dubstep,
@@ -14,4 +14,4 @@ enum cGenre
 	Blues
 };
 
-void WriteSongGenreToConsole(cGenre genre);
+void WriteSongGenreToConsole(Genre genre);

@@ -1,4 +1,5 @@
 ﻿#include "Route.h"
+
 // TODO: именование всего
 Route::Route()
 {
@@ -11,8 +12,8 @@ Route::Route(int number, int timeAvgMin, int frequencyMinutes,
 {
 	this->SetNumber(number);
 	this->SetFrequencyMinutes(frequencyMinutes);
-	this->SetTimeAvgMin(timeAvgMin);
-	this->SetStops(stopsCount, stops);
+	this->SetTimeAverageMinutes(timeAvgMin);
+	this->SetStops(stops, stopsCount);
 }
 
 Route::~Route()
@@ -27,9 +28,9 @@ void Route::SetNumber(int number)
 	this->_number = number;
 }
 
-void Route::SetTimeAvgMin(int timeAveregeMinutes)
+void Route::SetTimeAverageMinutes(int timeAverageMinutes)
 {
-	this->_timeAveregeMinutes = timeAveregeMinutes;
+	this->_timeAverageMinutes = timeAverageMinutes;
 }
 
 void Route::SetFrequencyMinutes(int frequencyMinutes)
@@ -37,7 +38,7 @@ void Route::SetFrequencyMinutes(int frequencyMinutes)
 	this->_frequencyMinutes = frequencyMinutes;
 }
 
-void Route::SetStops(int stopsCount, string* stops)
+void Route::SetStops(string* stops, int stopsCount)
 {
 	if (this->_stops != nullptr)
 	{
@@ -56,9 +57,9 @@ int Route::GetNumber()
 	return this->_number;
 }
 
-int Route::GettimeAveregeMinutes()
+int Route::GetTimeAverageMinutes()
 {
-	return this->_timeAveregeMinutes;
+	return this->_timeAverageMinutes;
 }
 
 int Route::GetFrequencyMinutes()
@@ -96,7 +97,7 @@ Route& Route::operator=(const Route& another)
 	}
 	this->_stopsCount = another._stopsCount;
 	this->_frequencyMinutes = another._frequencyMinutes;
-	this->_timeAveregeMinutes = another._timeAveregeMinutes;
+	this->_timeAverageMinutes = another._timeAverageMinutes;
 	this->_number = another._number;
 	this->_stops = new string[another._stopsCount];
 	for (int i = 0; i < another._stopsCount; i++)

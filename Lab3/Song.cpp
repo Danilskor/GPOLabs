@@ -1,35 +1,35 @@
-#include "Song_Lab3.h"
+#include "Song.h"
 #include <exception>
 
 using std::exception;
 
-cSong::cSong(int durationSeconds, string name, cGenre genre)
+Song::Song(int durationSeconds, string name, Genre genre)
 {
 	this->SetDurationSeconds(durationSeconds);
 	this->SetName(name);
 	this->SetGenre(genre);
 }
 
-cSong::cSong()
+Song::Song()
 {
 }
 
-int cSong::GetDurationSeconds()
+int Song::GetDurationSeconds()
 {
 	return this->_durationSeconds;
 }
 
-string cSong::GetName()
+string Song::GetName()
 {
 	return this->_name;
 }
 
-cGenre cSong::GetGenre()
+Genre Song::GetGenre()
 {
 	return this->_genre;
 }
 
-void cSong::SetDurationSeconds(int durationSeconds)
+void Song::SetDurationSeconds(int durationSeconds)
 {
 	if (durationSeconds <= 0)
 	{
@@ -38,12 +38,12 @@ void cSong::SetDurationSeconds(int durationSeconds)
 	this->_durationSeconds = durationSeconds;
 }
 
-void cSong::SetName(string name)
+void Song::SetName(string name)
 {
 	this->_name = name;
 }
 
-void cSong::SetGenre(cGenre genre)
+void Song::SetGenre(Genre genre)
 {
 	this->_genre = genre;
 }
