@@ -140,6 +140,7 @@
   <ItemGroup>
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="CurrentTime.cpp" />
+    <ClCompile Include="DoubleValidator.cpp" />
     <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp" />
     <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp" />
     <ClCompile Include="Lab1\1.1.2.1\Task_1.1.2.1.cpp" />
@@ -182,12 +183,14 @@
     <ClCompile Include="Lab3\Time.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
+    <ClCompile Include="Ring.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common\Constants\Consts.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="CurrentTime.h" />
+    <ClInclude Include="DoubleValidator.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\ContactStructure.h" />
     <ClInclude Include="Lab2\Enums\ColorEnum.h" />
@@ -213,6 +216,7 @@
     <ClInclude Include="Lab3\Song.h" />
     <ClInclude Include="Lab3\Time.h" />
     <ClInclude Include="Menues\Menu.h" />
+    <ClInclude Include="Ring.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

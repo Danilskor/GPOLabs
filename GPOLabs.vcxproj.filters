@@ -192,6 +192,12 @@
     <ClCompile Include="Lab2\Enums\Enum.cpp">
       <Filter>Исходные файлы\Enums</Filter>
     </ClCompile>
+    <ClCompile Include="Ring.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleValidator.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menues\Menu.h">
@@ -280,6 +286,12 @@
     </ClInclude>
     <ClInclude Include="CurrentTime.h">
       <Filter>Файлы заголовков\Lab3</Filter>
+    </ClInclude>
+    <ClInclude Include="Ring.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleValidator.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
