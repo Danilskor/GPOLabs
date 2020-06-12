@@ -2,8 +2,6 @@
 
 void Lab2()
 {
-	// TODO: русские символы зашакалены
-
 	cout << "Task_2.2.1.1 and Task_2.2.1.2 - Обработка исключений." << endl;
 	DemoSort();
 	system("pause");

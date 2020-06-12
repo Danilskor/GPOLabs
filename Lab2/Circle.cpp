@@ -38,5 +38,4 @@ void DemoCircle()
 	delete copyCircle1;
 	delete copyCircle2;
 	delete copyCircle3;
-	// TODO: утечка памяти, исправить
 }

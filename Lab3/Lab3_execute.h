@@ -28,12 +28,12 @@ Time GetFlightTimeMinutes(Flight* flight);
 
 void DemoRoute();
 void WriteRouteInCounsole(Route& route);
-void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMinutes, // TODO: грам ошибки
+void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMinutes, 
 	string*& stops, int& stopsCount); 
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoBand();
 void WriteBandInfoToConsole(Band* band);
 void WriteSongToConsole(Song* songs);
-void WriteSongsToConsole(Song* songs, int songCount); // TODO: множ. число
+void WriteSongsToConsole(Song* songs, int songCount);
 void WriteAlbumToConsole(Album* albums);

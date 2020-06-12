@@ -29,7 +29,7 @@ void Flight::SetArrivalPoint(string arrivalPoint)
 {
     this->_arrivalPoint = arrivalPoint;
 }
-// TODO: здесь и далее поправить именование всех переменных
+
 void Flight::SetTimesDepartureArrival(Time* departureTime,
     Time* arrivalTime)
 {
@@ -46,12 +46,12 @@ int Flight::GetNumber()
 {
     return this->_number;
 }
-// TODO: именование
+
 string Flight::GetDeparturePoint()
 {
     return this->_departurePoint;
 }
-// TODO: именование
+
 string Flight::GetArrivalPoint()
 {
     return this->_arrivalPoint;

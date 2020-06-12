@@ -4,9 +4,7 @@
 #include "Windows.h"
 
 using namespace std;
-// TODO: грам ошибка в названии
-// Я не мог его правильно назвать, потому что 
-// Rectangle конфликтует с каким-то другим классом
+
 struct Square
 {
 	double Length = 0;
@@ -19,7 +17,6 @@ Square* CopySquare(Square* square);
 void DemoSquare();
 
 // 2.2.5.1
-// TODO: все функции в файл с прямоугольником
 void WriteSquare(Square& square);
 
 // 2.2.5.2

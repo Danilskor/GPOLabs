@@ -9,7 +9,7 @@ void Band::SetDescription(string description)
 {
 	this->_description = description;
 }
-// TODO: именование переменных
+
 void Band::SetAlbum(Album* albums, int authorsCount)
 {
 	if (this->_albums != nullptr)
@@ -23,7 +23,7 @@ void Band::SetAlbum(Album* albums, int authorsCount)
 	}
 	this->_albumsCount = authorsCount;
 }
-// TODO: именование переменных
+
 Band::Band(string name, string description, Album* albums, int authorsCount)
 {
 	this->SetName(name);
@@ -40,13 +40,13 @@ string Band::GetDescription()
 {
 	return this->_description;
 }
-// TODO: альбом или альбомы?
+
 Album* Band::GetAlbum()
 {
 	return this->_albums;
 }
-// TODO: именование
-int Band::GetAuthorsCount()
+
+int Band::GetAlbumsCount()
 {
 	return this->_albumsCount;
 }
@@ -64,7 +64,7 @@ Song* Band::FindSong(string name)
 	}
 	return songs;
 }
-// TODO: имя чего? Альбома или песни?
+
 Album* Band::FindAlbum(string name)
 {
 	for (int i = 0; i < this->_albumsCount; i++)
@@ -77,15 +77,15 @@ Album* Band::FindAlbum(string name)
 	return nullptr;
 }
 
-Song** Band::GetAllSongs(int& songCount) // TODO: множ.
+Song** Band::GetAllSongs(int& songsCount) 
 {
-	songCount = 0;
+	songsCount = 0;
 	for (int i = 0; i < this->_albumsCount; i++)
 	{
-		songCount = songCount + this->_albums[i].GetSongCounter();// TODO: +=
+		songsCount += this->_albums[i].GetSongCounter();
 	}
 
-	Song** allSongs = new Song*[songCount];
+	Song** allSongs = new Song*[songsCount];
 	int j = 0;
 	for (int i = 0; i < this->_albumsCount; i++)
 	{
@@ -99,7 +99,7 @@ Song** Band::GetAllSongs(int& songCount) // TODO: множ.
 	}
 	return allSongs;
 }
-// TODO: именование не соответствует действию
+
 Song** Band::GetAllGenreSongs(int& songCount, Genre genre)
 {
 	songCount = 0;

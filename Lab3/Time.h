@@ -3,8 +3,7 @@
 #include <ctime>
 #include <exception>
 #include "../Common/Constants/Consts.h"
-// TODO: имя файла
-// TODO: имя класса
+
 class Time
 {
 private:

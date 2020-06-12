@@ -9,5 +9,5 @@ struct Subject
 	string Name;
 	int StudyHours;
 	string TeacherName;
-	short int Grade; // TODO: Mark. Score - это счет в игре
+	short int Grade;
 };

@@ -149,10 +149,9 @@ Color ReadColor()
 		}
 	}
 }
-//TODO:
+
 int CountRed(Color* color, int count)
 {
-	// TODO: избавиться от дублирования со следующей функцией
 	int redCounter = 0;
 	for (int i = 0; i < count; i++)
 	{

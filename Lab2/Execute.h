@@ -1,5 +1,5 @@
 ﻿#pragma once
-// TODO: если подключает только вторую лабу, тогда это должно быть в папке второй лабы
+
 #include <iostream>
 #include "Circle.h"
 #include "Enums/Enum.h"

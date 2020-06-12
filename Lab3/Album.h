@@ -3,16 +3,16 @@
 #include "../CurrentTime.h"
 #include <exception>
 #include <ctime>
-// TODO: название файла не совпадает с именем класса
+
 using namespace std;
-// TODO: неправильное название класса - должно быть без приставок
+
 class Album
 {
 private:
 	string _name;
 	int _year;
 	int _songsCount;
-	Song* _songs; // TODO: указатели на массив должны именоваться в множественном числе. Это важно!
+	Song* _songs; 
 
 public:
 	Album();

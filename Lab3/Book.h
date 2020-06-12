@@ -17,11 +17,8 @@ private:
 public:
 	Book();
 	Book(string name, int year, int pages, 
-		string* authors, int authorsCount);// TODO: сначала указатель на массив, потом количество
-	~Book();
-
+		string* authors, int authorsCount);
 	
-
 	void SetName(string name);
 	void SetYear(int year);
 	void SetPages(int pages);
@@ -36,5 +33,7 @@ public:
 	Book* FindAuthor(string author);
 
 	Book& operator = (const Book& other);
+
+	~Book();
 };
 

@@ -3,7 +3,6 @@
 void Task_1_1_5_4()
 {
 	size_t size = 10;
-	//TODO: 10 в переменную и использовать далее
 	double* array = new double[size];
 
 	for (int i = 0; i < size; i++)
@@ -24,7 +23,6 @@ void Task_1_1_5_4()
 		{
 			if (array[j] > array[j + 1])
 			{
-				//TODO: грам. ошибка
 				double tempoarry = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = tempoarry;

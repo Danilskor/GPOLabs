@@ -2,7 +2,6 @@
 
 void Task_1_1_5_1()
 {
-	//TODO: 5 в переменную, и использовать в циклах
 	size_t size = 5;
 	double* array = new double[size];
 

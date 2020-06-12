@@ -3,7 +3,6 @@
 void Task_1_1_5_5()
 {
 	size_t size = 10;
-	//TODO: 10 в переменную и использовать далее
 	int* array = new int[size];
 
 	for (int i = 0; i < size; i++)

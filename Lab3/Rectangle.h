@@ -5,8 +5,7 @@
 
 
 using namespace std;
-// TODO: имя файла
-// TODO: имя класса
+
 class Rectangle
 {
 private:
@@ -22,7 +21,7 @@ public:
 	void SetWidth(double width);
 	void SetCentre(Point* centre);
 
-	double GetLength(); // TODO: именование
+	double GetLength(); 
 	double GetWidth();
 	Point* GetCentre();
 

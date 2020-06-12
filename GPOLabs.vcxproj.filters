@@ -52,6 +52,12 @@
     <Filter Include="Исходные файлы\Enums">
       <UniqueIdentifier>{bf145ff1-c1ac-4c87-ac0e-339671e279ee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Lab4">
+      <UniqueIdentifier>{a1e6f0b1-f241-45a9-b775-e7e19e742e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab4">
+      <UniqueIdentifier>{b8ec7570-4fe0-48da-b181-3877deaa0280}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

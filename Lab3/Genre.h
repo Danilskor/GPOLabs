@@ -3,8 +3,7 @@
 #include <iostream>
 
 using namespace std;
-// TODO: имя файла
-// TODO: имя перечисления
+
 enum Genre
 {
 	Rock,

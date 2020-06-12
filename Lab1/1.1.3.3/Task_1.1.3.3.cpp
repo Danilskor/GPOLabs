@@ -10,7 +10,7 @@ double GetPower(double base, int exponent)
 	return base;
 }
 
-void DemoGetPower(double base, int exponent) //TODO: неправильно сделал задачу, читай задание
+void DemoGetPower(double base, int exponent)
 {
 	cout << base << " ^ " << exponent << " = " << GetPower(base, exponent) << endl;
 }
