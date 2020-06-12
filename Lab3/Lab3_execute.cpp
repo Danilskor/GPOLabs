@@ -409,15 +409,6 @@ void DemoBand()
 	delete[] songsThird;
 }
 
-void WriteBandInfoToConsole(Band* band)
-{
-	cout << "Группа " << band->GetName() << endl;
-	for (int i = 0; i < band->GetAuthorsCount(); i++)
-	{
-		WriteAlbumToConsole(&band->GetAlbum()[i]);
-	}
-}
-
 void WriteSongToConsole(Song* songs)
 {
 	cout << "\"" << songs->GetName() << "\"" << " жанр ";

@@ -142,6 +142,7 @@
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="CurrentTime.cpp" />
     <ClCompile Include="DoubleValidator.cpp" />
+    <ClCompile Include="GeometricProgram.cpp" />
     <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp" />
     <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp" />
     <ClCompile Include="Lab1\1.1.2.1\Task_1.1.2.1.cpp" />
@@ -193,6 +194,7 @@
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="CurrentTime.h" />
     <ClInclude Include="DoubleValidator.h" />
+    <ClInclude Include="GeometricProgram.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\ContactStructure.h" />
     <ClInclude Include="Lab2\Enums\ColorEnum.h" />
