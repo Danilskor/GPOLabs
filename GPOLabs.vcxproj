@@ -138,6 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="CurrentTime.cpp" />
     <ClCompile Include="DoubleValidator.cpp" />
@@ -186,6 +187,7 @@
     <ClCompile Include="Ring.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Common\Constants\Consts.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />

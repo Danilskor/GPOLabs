@@ -198,6 +198,9 @@
     <ClCompile Include="DoubleValidator.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menues\Menu.h">
@@ -291,6 +294,9 @@
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="DoubleValidator.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
   </ItemGroup>
