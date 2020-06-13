@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="cRectangle">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="cRectangle" Hidden="true" />
+      <Method Name="GetCentre" Hidden="true" />
+      <Method Name="Getlength" Hidden="true" />
+      <Method Name="GetWidth" Hidden="true" />
+      <Method Name="SetCentre" Hidden="true" />
+      <Method Name="SetLength" Hidden="true" />
+      <Method Name="SetWidth" Hidden="true" />
+    </Members>
+    <AssociationLine Name="_centre" Type="Point">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.535" Y="0.077" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEQAABABAAAAAAABAEAAAABAAgAEAAAAQ=</HashCode>
+      <FileName>Lab_3\cRectangle.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_centre" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Point">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="GetX" Hidden="true" />
+      <Method Name="GetY" Hidden="true" />
+      <Method Name="Point" Hidden="true" />
+      <Method Name="SetX" Hidden="true" />
+      <Method Name="SetY" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAgAYAAAAAAAAAAAAAAAAAYAAAAAAAAAA=</HashCode>
+      <FileName>Lab_3\Point.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cTime">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="cTime" Hidden="true" />
+      <Method Name="GetDay" Hidden="true" />
+      <Method Name="GetHour" Hidden="true" />
+      <Method Name="GetMinute" Hidden="true" />
+      <Method Name="GetMonth" Hidden="true" />
+      <Method Name="GetYear" Hidden="true" />
+      <Method Name="operator&lt;=" Hidden="true" />
+      <Method Name="SetDay" Hidden="true" />
+      <Method Name="SetHour" Hidden="true" />
+      <Method Name="SetMinute" Hidden="true" />
+      <Method Name="SetMonth" Hidden="true" />
+      <Method Name="SetYear" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAGAAZAAAEAAQMGAAAAAAAABADAAAgAAAA=</HashCode>
+      <FileName>Lab_3\cTime.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cFlight">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Members>
+      <Method Name="cFlight" Hidden="true" />
+      <Method Name="GetNumber" Hidden="true" />
+      <Method Name="GetPointOfArrival" Hidden="true" />
+      <Method Name="GetPointOfDeparture" Hidden="true" />
+      <Method Name="GetTimeOFArrival" Hidden="true" />
+      <Method Name="GetTimeOfDeparture" Hidden="true" />
+      <Method Name="SetNumber" Hidden="true" />
+      <Method Name="SetPointDeparture" Hidden="true" />
+      <Method Name="SetPointOfArrival" Hidden="true" />
+      <Method Name="SetTimesDepartureArrival" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>FAAAAABAAAAAAAAAAgFAAAQABAAAAAAAEMAACADAAAA=</HashCode>
+      <FileName>Lab_3\cFlight.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_timeOfDeparture" />
+      <Field Name="_timeOfArrival" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="cSong">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="cSong" Hidden="true" />
+      <Method Name="GetDurationSeconds" Hidden="true" />
+      <Method Name="GetGenre" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="SetDurationSeconds" Hidden="true" />
+      <Method Name="SetGenre" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CACAIAAAAEAAAAAAAAAAABAAAAAIACAAAAAAwAAABAA=</HashCode>
+      <FileName>Lab_3\cSong.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_genre" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="cBand">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~cBand" Hidden="true" />
+      <Method Name="cBand" Hidden="true" />
+      <Method Name="FindAlbum" Hidden="true" />
+      <Method Name="FindSong" Hidden="true" />
+      <Method Name="GetAlbum" Hidden="true" />
+      <Method Name="GetAlbumCount" Hidden="true" />
+      <Method Name="GetAllGenreSongs" Hidden="true" />
+      <Method Name="GetAllSongs" Hidden="true" />
+      <Method Name="GetDescription" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="SetAlbum" Hidden="true" />
+      <Method Name="SetDescription" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAkAAAAAAEIAACAgAAAKAgIAACAIAAQAQABAI=</HashCode>
+      <FileName>Lab_3\cBand.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_album" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="cAlbum">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <Members>
+      <Method Name="~cAlbum" Hidden="true" />
+      <Method Name="cAlbum" Hidden="true" />
+      <Method Name="FindSong" Hidden="true" />
+      <Method Name="GetName" Hidden="true" />
+      <Method Name="GetSong" Hidden="true" />
+      <Method Name="GetSongCounter" Hidden="true" />
+      <Method Name="GetYeat" Hidden="true" />
+      <Method Name="SetName" Hidden="true" />
+      <Method Name="SetSong" Hidden="true" />
+      <Method Name="SetYear" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAIAAAAAAAAAAAAAIAAAIAQIIAAAQAAAFAQAggBAA=</HashCode>
+      <FileName>Lab_3\cAlbum.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_song" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="sGenre">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAEAAAAAAAAKAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Lab_3\sGenre.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

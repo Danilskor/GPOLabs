@@ -378,7 +378,6 @@ void DemoBand()
 
 	Band band("30 yeconds", "Описание", albums, 3);
 
-	WriteBandInfoToConsole(&band);
 
 	int songCount = 0;
 	cout << endl << "Все песни:" << endl;

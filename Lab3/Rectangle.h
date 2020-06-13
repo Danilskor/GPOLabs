@@ -2,6 +2,7 @@
 
 #include <exception>
 #include "Point.h"
+#include "../DoubleValidator.h"
 
 
 using namespace std;

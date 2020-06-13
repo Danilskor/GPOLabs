@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Lab3/Rectangle.h"
 #include <Windows.h>
 #include "Common/Lab1Header.h"
 #include "Menues/Menu.h"

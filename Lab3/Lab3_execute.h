@@ -33,7 +33,6 @@ void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMi
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoBand();
-void WriteBandInfoToConsole(Band* band);
 void WriteSongToConsole(Song* songs);
 void WriteSongsToConsole(Song* songs, int songCount);
 void WriteAlbumToConsole(Album* albums);
