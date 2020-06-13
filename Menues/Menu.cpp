@@ -1,11 +1,11 @@
 ﻿#include "Menu.h"
 
-int MainMenu()
+int MainMenu(GeometricProgram* lab4)
 {
 	while (true)
 	{
 		PrintMainMenu();
-		int MenuValue = ReadValueInRange(0, 3);
+		int MenuValue = ReadValueInRange(0, 4);
 		switch (MenuValue)
 		{
 			case EXIT_MENU_VALUE:
@@ -30,8 +30,12 @@ int MainMenu()
 				Lab3();
 				break;
 			}
-			default:
+			case 4:
+			{
+				system("cls");
+				GeometricProgrammMenu(lab4);
 				break;
+			}
 		}
 	}
 }
@@ -41,7 +45,8 @@ void PrintMainMenu()
 	cout << "0. Выход" << endl;
 	cout << "1. Лабораторная 1.1" << endl;
 	cout << "2. Лабораторная 2" << endl;
-	cout << "3. Лабораторная 3" << endl << endl;
+	cout << "3. Лабораторная 3" << endl;
+	cout << "4. Лабораторная 4" << endl << endl;
 }
 
 int FirstLabMenu()
@@ -225,4 +230,45 @@ void PrintFirstLabMenu()
 	cout << "21. Лабораторная 5.7" << endl;
 	cout << "22. Лабораторная 5.8" << endl;
 	cout << "Введите число от 0 до 22: ";
+}
+
+void PrintGeometricProgrammMenu()
+{
+	cout << "1. Прямоугольник" << endl;
+	cout << "2. Кольцо" << endl;
+	cout << "3. Коллизии" << endl;
+	cout << "0. Выход" << endl;
+}
+
+void GeometricProgrammMenu(GeometricProgram* geometricProgram)
+{
+	while (true)
+	{
+		PrintGeometricProgrammMenu();
+		int MenuValue = ReadValueInRange(0, 3);
+		cout << endl;
+
+		switch (MenuValue)
+		{
+			case 1:
+			{
+				geometricProgram->DemoRectangle();
+				break;
+			}
+			case 2:
+			{
+				geometricProgram->DemoRing();
+				break;
+			}
+			case 3:
+			{
+				geometricProgram->DemoCollision();
+				break;
+			}
+			case EXIT_MENU_VALUE:
+			{
+				return;
+			}
+		}
+	}
 }

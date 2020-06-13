@@ -11,6 +11,6 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	GeometricProgram lab4;
-	MainMenu();
+	MainMenu(&lab4);
 	return 0;
 }

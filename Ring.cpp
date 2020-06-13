@@ -1,6 +1,4 @@
 #include "Ring.h"
-
-#include "Ring.h"
 #include <exception>
 
 int Ring::AllRingsCount = 0;
@@ -15,12 +13,12 @@ void Ring::AssertOnPositiveValue(double value)
 
 Ring::Ring(double innerRadius, double outerRadius, Point* centre)
 {
-	SetInOutRadii(innerRadius, outerRadius);
+	SetInOutRadiuses(innerRadius, outerRadius);
 	SetCentre(centre);
 	AllRingsCount++;
 }
 
-void Ring::SetInOutRadii(double innerRadius, double outerRadius)
+void Ring::SetInOutRadiuses(double innerRadius, double outerRadius)
 {
 	DoubleValidator::AssertPositiveValue(innerRadius);
 	DoubleValidator::AssertPositiveValue(outerRadius);

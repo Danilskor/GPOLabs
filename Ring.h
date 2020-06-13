@@ -20,7 +20,7 @@ private:
 public:
 	Ring(double innerRadius, double outerRadius, Point* centre);
 
-	void SetInOutRadii(double innerRadius, double outerRadius);
+	void SetInOutRadiuses(double innerRadius, double outerRadius);
 	void SetCentre(Point* centre);
 
 	double GetInnerRadius();

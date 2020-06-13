@@ -13,4 +13,5 @@ class GeometricProgram
 public:
     void DemoCollision();
     void DemoRing();
+    void DemoRectangle();
 };
