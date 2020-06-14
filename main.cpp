@@ -3,7 +3,7 @@
 #include <Windows.h>
 #include "Common/Lab1Header.h"
 #include "Menues/Menu.h"
-#include "GeometricProgram.h"
+#include "Lab4/GeometricProgram.h"
 
 int main()
 {

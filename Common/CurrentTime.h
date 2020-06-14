@@ -1,6 +1,6 @@
 #pragma once
 
 #include <ctime>
-#include "Common/Constants/Consts.h"
+#include "Constants/Consts.h"
 
 int GetCurrentYear();

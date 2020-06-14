@@ -2,7 +2,7 @@
 
 #include <exception>
 #include "Point.h"
-#include "../DoubleValidator.h"
+#include "../Lab4/DoubleValidator.h"
 
 
 using namespace std;

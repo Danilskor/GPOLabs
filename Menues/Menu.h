@@ -5,7 +5,7 @@
 #include "..\Common\Lab1Header.h"
 #include  "..\Lab2\Execute.h"
 #include "../Lab3/Lab3_execute.h"
-#include "../GeometricProgram.h"
+#include "../Lab4/GeometricProgram.h"
 
 using namespace std;
 

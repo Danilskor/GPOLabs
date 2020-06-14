@@ -192,24 +192,6 @@
     <ClCompile Include="Lab2\Enums\Enum.cpp">
       <Filter>Исходные файлы\Enums</Filter>
     </ClCompile>
-    <ClCompile Include="Ring.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="DoubleValidator.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="CollisionManager.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="GeometricProgram.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
-    <ClCompile Include="Common\CurrentTime.cpp">
-      <Filter>Исходные файлы\Common</Filter>
-    </ClCompile>
-    <ClCompile Include="Lab4\GeometricProgram.cpp">
-      <Filter>Исходные файлы\Lab4</Filter>
-    </ClCompile>
     <ClCompile Include="Lab4\Ring.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
@@ -218,6 +200,12 @@
     </ClCompile>
     <ClCompile Include="Lab4\DoubleValidator.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\GeometricProgram.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CurrentTime.cpp">
+      <Filter>Исходные файлы\Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -311,29 +299,17 @@
     <ClInclude Include="Ring.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="DoubleValidator.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="CollisionManager.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="GeometricProgram.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
-    <ClInclude Include="Common\CurrentTime.h">
-      <Filter>Исходные файлы\Common</Filter>
-    </ClInclude>
     <ClInclude Include="Lab4\DoubleValidator.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="Lab4\GeometricProgram.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
-    <ClInclude Include="Lab4\Ring.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
     <ClInclude Include="Lab4\CollisionManager.h">
       <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CurrentTime.h">
+      <Filter>Файлы заголовков\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

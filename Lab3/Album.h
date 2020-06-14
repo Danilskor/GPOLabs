@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "Song.h"
-#include "../CurrentTime.h"
+#include "../Common/CurrentTime.h"
 #include <exception>
 #include <ctime>
 

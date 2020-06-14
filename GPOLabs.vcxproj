@@ -138,12 +138,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Common\CurrentTime.cpp" />
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="CurrentTime.cpp" />
-    <ClCompile Include="DoubleValidator.cpp" />
-    <ClCompile Include="GeometricProgram.cpp" />
     <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp" />
     <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp" />
     <ClCompile Include="Lab1\1.1.2.1\Task_1.1.2.1.cpp" />
@@ -190,17 +187,13 @@
     <ClCompile Include="Lab4\Ring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
-    <ClCompile Include="Ring.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Common\Constants\Consts.h" />
     <ClInclude Include="Common\CurrentTime.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="CurrentTime.h" />
-    <ClInclude Include="DoubleValidator.h" />
-    <ClInclude Include="GeometricProgram.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\ContactStructure.h" />
     <ClInclude Include="Lab2\Enums\ColorEnum.h" />
@@ -228,7 +221,6 @@
     <ClInclude Include="Lab4\CollisionManager.h" />
     <ClInclude Include="Lab4\DoubleValidator.h" />
     <ClInclude Include="Lab4\GeometricProgram.h" />
-    <ClInclude Include="Lab4\Ring.h" />
     <ClInclude Include="Menues\Menu.h" />
     <ClInclude Include="Ring.h" />
   </ItemGroup>
