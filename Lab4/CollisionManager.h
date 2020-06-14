@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cmath>
-#include "Lab3/Rectangle.h"
+#include "../Lab3/Rectangle.h"
 #include "Ring.h"
 
 static class CollisionManager

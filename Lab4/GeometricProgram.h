@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Ring.h"
-#include "Lab3/Rectangle.h"
+#include "../Lab3/Rectangle.h"
 #include "CollisionManager.h"
 #include "DoubleValidator.h"
 #include <iostream>

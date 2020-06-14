@@ -204,6 +204,21 @@
     <ClCompile Include="GeometricProgram.cpp">
       <Filter>Исходные файлы\Lab4</Filter>
     </ClCompile>
+    <ClCompile Include="Common\CurrentTime.cpp">
+      <Filter>Исходные файлы\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\GeometricProgram.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\Ring.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\CollisionManager.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab4\DoubleValidator.cpp">
+      <Filter>Исходные файлы\Lab4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menues\Menu.h">
@@ -303,6 +318,21 @@
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
     <ClInclude Include="GeometricProgram.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CurrentTime.h">
+      <Filter>Исходные файлы\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\DoubleValidator.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\GeometricProgram.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\Ring.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\CollisionManager.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
   </ItemGroup>

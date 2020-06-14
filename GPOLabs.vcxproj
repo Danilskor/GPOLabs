@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Common\CurrentTime.cpp" />
     <ClCompile Include="Common\Input.cpp" />
     <ClCompile Include="CurrentTime.cpp" />
     <ClCompile Include="DoubleValidator.cpp" />
@@ -183,6 +184,10 @@
     <ClCompile Include="Lab3\Route.cpp" />
     <ClCompile Include="Lab3\Song.cpp" />
     <ClCompile Include="Lab3\Time.cpp" />
+    <ClCompile Include="Lab4\CollisionManager.cpp" />
+    <ClCompile Include="Lab4\DoubleValidator.cpp" />
+    <ClCompile Include="Lab4\GeometricProgram.cpp" />
+    <ClCompile Include="Lab4\Ring.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
     <ClCompile Include="Ring.cpp" />
@@ -190,6 +195,7 @@
   <ItemGroup>
     <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Common\Constants\Consts.h" />
+    <ClInclude Include="Common\CurrentTime.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
     <ClInclude Include="CurrentTime.h" />
@@ -219,6 +225,10 @@
     <ClInclude Include="Lab3\Route.h" />
     <ClInclude Include="Lab3\Song.h" />
     <ClInclude Include="Lab3\Time.h" />
+    <ClInclude Include="Lab4\CollisionManager.h" />
+    <ClInclude Include="Lab4\DoubleValidator.h" />
+    <ClInclude Include="Lab4\GeometricProgram.h" />
+    <ClInclude Include="Lab4\Ring.h" />
     <ClInclude Include="Menues\Menu.h" />
     <ClInclude Include="Ring.h" />
   </ItemGroup>

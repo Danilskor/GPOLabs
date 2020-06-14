@@ -2,7 +2,7 @@
 
 #pragma once
 #include <cmath>
-#include "Lab3/Point.h"
+#include "../Lab3/Point.h"
 #include "DoubleValidator.h"
 
 class Ring
