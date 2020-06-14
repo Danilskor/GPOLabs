@@ -140,7 +140,6 @@
   <ItemGroup>
     <ClCompile Include="Common\CurrentTime.cpp" />
     <ClCompile Include="Common\Input.cpp" />
-    <ClCompile Include="CurrentTime.cpp" />
     <ClCompile Include="Lab1\1.1.1.1\Task_1.1.1.1.cpp" />
     <ClCompile Include="Lab1\1.1.1.2\Task_1.1.1.2.cpp" />
     <ClCompile Include="Lab1\1.1.2.1\Task_1.1.2.1.cpp" />

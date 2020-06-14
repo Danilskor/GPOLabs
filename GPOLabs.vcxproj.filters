@@ -186,9 +186,6 @@
     <ClCompile Include="Lab3\Time.cpp">
       <Filter>Исходные файлы\Lab3</Filter>
     </ClCompile>
-    <ClCompile Include="CurrentTime.cpp">
-      <Filter>Исходные файлы\Lab3</Filter>
-    </ClCompile>
     <ClCompile Include="Lab2\Enums\Enum.cpp">
       <Filter>Исходные файлы\Enums</Filter>
     </ClCompile>
