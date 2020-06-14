@@ -184,6 +184,17 @@
     <ClCompile Include="Lab4\DoubleValidator.cpp" />
     <ClCompile Include="Lab4\GeometricProgram.cpp" />
     <ClCompile Include="Lab4\Ring.cpp" />
+    <ClCompile Include="Lab5\CertificateDiscount.cpp" />
+    <ClCompile Include="Lab5\DiscountBase.cpp" />
+    <ClCompile Include="Lab5\Lab5.cpp" />
+    <ClCompile Include="Lab5\PaidUser.cpp" />
+    <ClCompile Include="Lab5\PercentDiscount.cpp" />
+    <ClCompile Include="Lab5\Person.cpp" />
+    <ClCompile Include="Lab5\Post.cpp" />
+    <ClCompile Include="Lab5\Product.cpp" />
+    <ClCompile Include="Lab5\Student.cpp" />
+    <ClCompile Include="Lab5\Teacher.cpp" />
+    <ClCompile Include="Lab5\User.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menues\Menu.cpp" />
   </ItemGroup>
@@ -220,6 +231,18 @@
     <ClInclude Include="Lab4\CollisionManager.h" />
     <ClInclude Include="Lab4\DoubleValidator.h" />
     <ClInclude Include="Lab4\GeometricProgram.h" />
+    <ClInclude Include="Lab5\CategoryType.h" />
+    <ClInclude Include="Lab5\CertificateDiscount.h" />
+    <ClInclude Include="Lab5\DiscountBase.h" />
+    <ClInclude Include="Lab5\Lab5.h" />
+    <ClInclude Include="Lab5\PaidUser.h" />
+    <ClInclude Include="Lab5\PercentDiscount.h" />
+    <ClInclude Include="Lab5\Person.h" />
+    <ClInclude Include="Lab5\Post.h" />
+    <ClInclude Include="Lab5\Product.h" />
+    <ClInclude Include="Lab5\Student.h" />
+    <ClInclude Include="Lab5\Teacher.h" />
+    <ClInclude Include="Lab5\User.h" />
     <ClInclude Include="Menues\Menu.h" />
     <ClInclude Include="Ring.h" />
   </ItemGroup>

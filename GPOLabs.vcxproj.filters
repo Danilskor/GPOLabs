@@ -58,6 +58,12 @@
     <Filter Include="Файлы заголовков\Lab4">
       <UniqueIdentifier>{b8ec7570-4fe0-48da-b181-3877deaa0280}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Lab5">
+      <UniqueIdentifier>{b1397ead-b9c6-47cb-adda-b222dfaf5b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Lab5">
+      <UniqueIdentifier>{3174b45a-3d3d-4bfa-89b3-046f08b54e2d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -204,6 +210,39 @@
     <ClCompile Include="Common\CurrentTime.cpp">
       <Filter>Исходные файлы\Common</Filter>
     </ClCompile>
+    <ClCompile Include="Lab5\Post.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\User.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\CertificateDiscount.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\DiscountBase.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Lab5.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\PaidUser.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\PercentDiscount.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Person.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Product.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Student.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab5\Teacher.cpp">
+      <Filter>Исходные файлы\Lab5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Menues\Menu.h">
@@ -307,6 +346,42 @@
     </ClInclude>
     <ClInclude Include="Common\CurrentTime.h">
       <Filter>Файлы заголовков\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\PercentDiscount.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Person.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Post.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Product.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Teacher.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\User.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\CategoryType.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\CertificateDiscount.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\DiscountBase.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Lab5.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\PaidUser.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab5\Student.h">
+      <Filter>Файлы заголовков\Lab5</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

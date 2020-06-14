@@ -11,15 +11,13 @@ private:
 	string _patronymic;
 
 public:
+	Person(string name, string surname, string patronymic);
 
 	void SetName(string name);
 	void SetSurname(string surname);
 	void SetPatronymic(string patronymic);
 
-
 	string GetName();
 	string GetSurname();
 	string GetPatronymic();
-
-	Person(string name, string surname, string patronymic);
 };

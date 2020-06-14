@@ -5,7 +5,7 @@ int MainMenu(GeometricProgram* lab4)
 	while (true)
 	{
 		PrintMainMenu();
-		int MenuValue = ReadValueInRange(0, 4);
+		int MenuValue = ReadValueInRange(0, 5);
 		switch (MenuValue)
 		{
 			case EXIT_MENU_VALUE:
@@ -36,6 +36,12 @@ int MainMenu(GeometricProgram* lab4)
 				GeometricProgrammMenu(lab4);
 				break;
 			}
+			case 5:
+			{
+				system("cls");
+				Lab5();
+				break;
+			}
 		}
 	}
 }
@@ -46,7 +52,8 @@ void PrintMainMenu()
 	cout << "1. Лабораторная 1.1" << endl;
 	cout << "2. Лабораторная 2" << endl;
 	cout << "3. Лабораторная 3" << endl;
-	cout << "4. Лабораторная 4" << endl << endl;
+	cout << "4. Лабораторная 4" << endl;
+	cout << "5. Лабораторная 5" << endl << endl;
 }
 
 int FirstLabMenu()
