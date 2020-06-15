@@ -290,12 +290,6 @@
     <ClInclude Include="Common\Constants\Consts.h">
       <Filter>Файлы заголовков\Constants</Filter>
     </ClInclude>
-    <ClInclude Include="CurrentTime.h">
-      <Filter>Файлы заголовков\Lab3</Filter>
-    </ClInclude>
-    <ClInclude Include="Ring.h">
-      <Filter>Файлы заголовков\Lab4</Filter>
-    </ClInclude>
     <ClInclude Include="Lab4\DoubleValidator.h">
       <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
@@ -307,6 +301,9 @@
     </ClInclude>
     <ClInclude Include="Common\CurrentTime.h">
       <Filter>Файлы заголовков\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4\Ring.h">
+      <Filter>Файлы заголовков\Lab4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

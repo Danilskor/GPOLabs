@@ -1,7 +1,7 @@
 ﻿#pragma once
 
-#include "Genre.h"
 #include <string>
+#include "Genre.h"
 
 using namespace std;
 

@@ -1,5 +1,6 @@
 ﻿#include "DoubleValidator.h"
 
+
 bool DoubleValidator::IsValuePositive(double value)
 {
 	return (value >= 0.0);

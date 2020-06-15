@@ -1,7 +1,8 @@
 ﻿#pragma once
 
 #include <string>
-#include "Windows.h"
+#include <iostream>
+#include <limits>
 
 using namespace std;
 

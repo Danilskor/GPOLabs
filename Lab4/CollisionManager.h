@@ -4,6 +4,8 @@
 #include "../Lab3/Rectangle.h"
 #include "Ring.h"
 
+#define NOGDI
+
 static class CollisionManager
 {
 public:

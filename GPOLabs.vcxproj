@@ -192,7 +192,6 @@
     <ClInclude Include="Common\CurrentTime.h" />
     <ClInclude Include="Common\Lab1Header.h" />
     <ClInclude Include="Common\Input.h" />
-    <ClInclude Include="CurrentTime.h" />
     <ClInclude Include="Lab2\Circle.h" />
     <ClInclude Include="Lab2\ContactStructure.h" />
     <ClInclude Include="Lab2\Enums\ColorEnum.h" />
@@ -220,8 +219,8 @@
     <ClInclude Include="Lab4\CollisionManager.h" />
     <ClInclude Include="Lab4\DoubleValidator.h" />
     <ClInclude Include="Lab4\GeometricProgram.h" />
+    <ClInclude Include="Lab4\Ring.h" />
     <ClInclude Include="Menues\Menu.h" />
-    <ClInclude Include="Ring.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,4 @@
 ﻿#include "Square.h"
-#include <iostream>
-#include <limits>
 
 using namespace std;
 
