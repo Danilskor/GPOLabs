@@ -22,10 +22,10 @@ public:
 	string GetName();
 	string GetDescription();
 	Album* GetAlbum();
-	int GetAuthorsCount(); // TODO: нет такого поля!
+	int GetAlbumsCount(); // TODO: нет такого поля!
 
 	Song* FindSong(string name);
-	Album* FindAlbum(string name);
+	Album* FindAlbumSong(string name);
 
 	Song** GetAllSongs(int& songCount); // TODO: неправильное название переменной
 	Song** GetAllGenreSongs(int& songCount, Genre genre); // TODO: неправильное название переменной

@@ -35,5 +35,5 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 void DemoBand();
 void WriteBandInfoToConsole(Band* band);
 void WriteSongToConsole(Song* songs);
-void WriteSongsToConsole(Song* songs, int songCount); // TODO: множ. число
+void WriteSongsToConsole(Song* songs, int songsCount); // TODO: множ. число
 void WriteAlbumToConsole(Album* albums);

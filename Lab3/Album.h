@@ -24,8 +24,8 @@ public:
 	Album(string name, int year, Song* songs, int songsCount);
 
 	string GetName();
-	int GetYeat();
-	int GetSongCounter();
+	int GetYear();
+	int GetSongsCount();
 	Song* GetSong();
 
 	Song* FindSong(string songName);

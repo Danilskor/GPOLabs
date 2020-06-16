@@ -35,7 +35,7 @@ void Flight::SetTimesDepartureArrival(Time* departureTime,
 {
     if (*arrivalTime <= *departureTime)
     {
-        throw exception("Âðåìÿ îòïðàâëåíèÿ íå ìîæåò áûòü áîëüøå âðåìåíè ïðèáûòèÿ");
+        throw exception("Arrival time must be less then departure time");
     }
 
     this->_arrivalTime = arrivalTime;

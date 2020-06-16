@@ -401,7 +401,7 @@ void DemoBand()
 	WriteSongToConsole(band.FindSong("Друзья"));
 
 	cout << endl << "Поиск альбома с песней <<Друзья>>: " << endl;
-	WriteAlbumToConsole(band.FindAlbum("Друзья"));
+	WriteAlbumToConsole(band.FindAlbumSong("Друзья"));
 	cout << endl;
 
 	delete[] songsFirst;
@@ -412,7 +412,7 @@ void DemoBand()
 void WriteBandInfoToConsole(Band* band)
 {
 	cout << "Группа " << band->GetName() << endl;
-	for (int i = 0; i < band->GetAuthorsCount(); i++)
+	for (int i = 0; i < band->GetAlbumsCount(); i++)
 	{
 		WriteAlbumToConsole(&band->GetAlbum()[i]);
 	}
@@ -440,6 +440,6 @@ void WriteAlbumToConsole(Album* albums)
 	cout << albums->GetName();
 	cout << endl;
 	WriteSongsToConsole(albums->GetSong(),
-		albums->GetSongCounter());
+		albums->GetSongsCount());
 	cout << endl;
 }

@@ -17,7 +17,7 @@ private:
 public:
 	Route();
 	Route(int number, int timeAverageMinutes, int frequencyMinutes, // TODO: грам. ошибки
-		int stopsCount, string* stops);
+		string* stops, int stopsCount);
 	~Route();
 
 	void SetNumber(int number);

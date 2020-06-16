@@ -8,7 +8,7 @@ Route::Route()
 }
 
 Route::Route(int number, int timeAvgMin, int frequencyMinutes,
-	int stopsCount, string* stops)
+	string* stops, int stopsCount)
 {
 	this->SetNumber(number);
 	this->SetFrequencyMinutes(frequencyMinutes);
@@ -20,8 +20,6 @@ Route::~Route()
 {
 	delete[] this->_stops;
 }
-
-
 
 void Route::SetNumber(int number)
 {
