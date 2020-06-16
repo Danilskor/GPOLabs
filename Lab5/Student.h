@@ -1,10 +1,10 @@
-#pragma once
+﻿#pragma once
 #include "Person.h"
 
 class Student : public Person
 {
 private:
-	int _recordBookNumber;
+	int _recordBookNumber; //TODO: number имеет много переводов, его лучше не использовать. Если речь про уникальный номер, то это Id
 	int _entranceYear;
 
 public:

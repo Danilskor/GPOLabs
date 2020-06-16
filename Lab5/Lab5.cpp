@@ -1,4 +1,4 @@
-#include "Lab5.h"
+﻿#include "Lab5.h"
 
 void ShowName(Person* person)
 {
@@ -43,7 +43,7 @@ void DemoInheritance()
 
 void DemoRefactoring()
 {
-	User** users = new User * [8]
+	User** users = new User * [8] //TODO: магические числа перенести в переменные
 	{
 		new User(100000, "morkovka1995", "1995morkovka"),
 		new User(100001, "ilon_mask", "X ae A-12"),
@@ -57,13 +57,13 @@ void DemoRefactoring()
 
 	string login = "megazver";
 	string password = "password";
-	User* loginedUser = Login(users, 8, login, password);
+	User* loginedUser = Login(users, 8, login, password); //TODO: мч
 
 	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
 
 	login = "system_exe";
 	password = "UgfkDGmU";
-	loginedUser = Login(users, 8, login, password);
+	loginedUser = Login(users, 8, login, password); //TODO: мч
 
 	cout << "Signed in as: " << loginedUser->GetLogin() << endl;
 
@@ -76,7 +76,7 @@ void DemoRefactoring()
 		cout << "Exception: " << ex.what() << endl;;
 	}
 
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < 8; i++) //TODO: магическое число
 	{
 		delete users[i];
 	}
@@ -104,7 +104,7 @@ void Lab5()
 	system("pause");
 	DemoRefactoring();
 	system("pause");
-	Product** products = new Product * [4]
+	Product** products = new Product * [4] //TODO: магическое число
 	{
 		new Product(TVs, "BetterTV", 5000.0),
 		new Product(Phones, "Suphone", 1500.0),
@@ -116,15 +116,15 @@ void Lab5()
 	CertificateDiscount certificate(Phones, 300.0);
 
 	cout << endl << "Check with 99% discount on Fans: ";
-	ShowCheckWithDiscount(&percent, products, 4);
+	ShowCheckWithDiscount(&percent, products, 4); //TODO: мч
 
 	cout << endl << endl << "Check with 300 bonus sertificate for Fans:" << endl;
-	ShowCheckWithDiscount(&certificate, products, 4);
+	ShowCheckWithDiscount(&certificate, products, 4); //TODO: мч
 
 	cout << endl;
 	cout << "Amount left on certificate: " << certificate.GetAmount() << endl;
 	
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 4; i++) //TODO: мч
 	{
 		delete products[i];
 	}
