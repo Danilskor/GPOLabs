@@ -7,12 +7,12 @@ Route::Route()
 	this->_stopsCount = 0;
 }
 
-Route::Route(int number, int timeAvgMin, int frequencyMinutes,
+Route::Route(int number, int timeAveragMinutes, int frequencyMinutes,
 	string* stops, int stopsCount)
 {
 	this->SetNumber(number);
 	this->SetFrequencyMinutes(frequencyMinutes);
-	this->SetTimeAverageMinutes(timeAvgMin);
+	this->SetTimeAverageMinutes(timeAveragMinutes);
 	this->SetStops(stops, stopsCount);
 }
 
@@ -75,7 +75,7 @@ string* Route::GetStops()
 	return this->_stops;
 }
 
-Route* Route::FindStop(string name)
+Route* Route::FindStops(string name)
 {
 	for (int i = 0; i < this->_stopsCount; i++)
 	{

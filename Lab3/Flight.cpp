@@ -6,7 +6,7 @@ Flight::Flight(int number, string departurePoint, string arrivalPoint,
     SetNumber(number);
     SetPointDeparture(departurePoint);
     SetArrivalPoint(arrivalPoint);
-    SetTimesDepartureArrival(departureTime, arrivalTime);
+    SetTimeDepartureArrival(departureTime, arrivalTime);
 }
 
 Flight::Flight()
@@ -30,7 +30,7 @@ void Flight::SetArrivalPoint(string arrivalPoint)
     this->_arrivalPoint = arrivalPoint;
 }
 // TODO: здесь и далее поправить именование всех переменных
-void Flight::SetTimesDepartureArrival(Time* departureTime,
+void Flight::SetTimeDepartureArrival(Time* departureTime,
     Time* arrivalTime)
 {
     if (*arrivalTime <= *departureTime)

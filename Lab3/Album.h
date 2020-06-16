@@ -19,16 +19,16 @@ public:
 
 	void SetName(string name);
 	void SetYear(int year);
-	void SetSong(Song* songs, int songsCount);
+	void SetSongs(Song* songs, int songsCount);
 
 	Album(string name, int year, Song* songs, int songsCount);
 
 	string GetName();
 	int GetYear();
 	int GetSongsCount();
-	Song* GetSong();
+	Song* GetSongs();
 
-	Song* FindSong(string songName);
+	Song* FindSongs(string songName);
 
 	~Album();
 };

@@ -31,7 +31,7 @@ public:
 	int GetStopsCount();
 	string* GetStops();
 
-	Route* FindStop(string name);
+	Route* FindStops(string name);
 
 	Route& operator=(const Route& another);
 };

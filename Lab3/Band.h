@@ -15,20 +15,20 @@ public:
 
 	void SetName(string name);
 	void SetDescription(string description);
-	void SetAlbum(Album* albums, int authorsNumber);// TODO: неправильные имена переменных - обоих!
+	void SetAlbums(Album* albums, int albumsCount);// TODO: неправильные имена переменных - обоих!
 
-	Band(string name, string description, Album* albums, int authorsNumber); // TODO: неправильное название переменной
+	Band(string name, string description, Album* albums, int albumsNumber); // TODO: неправильное название переменной
 
 	string GetName();
 	string GetDescription();
-	Album* GetAlbum();
+	Album* GetAlbums();
 	int GetAlbumsCount(); // TODO: нет такого поля!
 
-	Song* FindSong(string name);
-	Album* FindAlbumSong(string name);
+	Song* FindSongName(string name);
+	Album* FindAlbumName(string name);
 
-	Song** GetAllSongs(int& songCount); // TODO: неправильное название переменной
-	Song** GetAllGenreSongs(int& songCount, Genre genre); // TODO: неправильное название переменной
+	Song** GetAllSongs(int& songsCount); // TODO: неправильное название переменной
+	Song** GetAllGenreSongs(int& songsCount, Genre genre); // TODO: неправильное название переменной
 
 	~Band();
 };

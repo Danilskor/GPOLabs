@@ -23,21 +23,21 @@ void DemoBook()
 {
 	string name;
 	int year;
-	int numberOfAuthors;
+	int authorsNumber;
 	int pages;
 	string* authors;
-	int arraysSize = 1;
-	Book* books = new Book[arraysSize];
+	int arraySize = 1;
+	Book* books = new Book[arraySize];
 
-	for (int i = 0; i < arraysSize; i++)
+	for (int i = 0; i < arraySize; i++)
 	{
 		cout << "Книга №" << i + 1 << endl;
-		ReadBookFromConsole(name, year, pages, numberOfAuthors, authors);
-		Book newBook(name, year, pages, authors, numberOfAuthors);
+		ReadBookFromConsole(name, year, pages, authorsNumber, authors);
+		Book newBook(name, year, pages, authors, authorsNumber);
 		books[i] = newBook;
 	}
 
-	for (int i = 0; i < arraysSize; i++)
+	for (int i = 0; i < arraySize; i++)
 	{
 		WriteBookInConsole(books[i]);
 	}
@@ -47,7 +47,7 @@ void DemoBook()
 
 	string* author = new string;
 	getline(cin, *author);
-	Book* book = FindBookByAuthor(books, arraysSize, *author);
+	Book* book = FindBookByAuthor(books, arraySize, *author);
 
 	if (book != nullptr)
 	{
@@ -325,7 +325,7 @@ Route* FindRouteByStop(Route* routes, int routesCount, string stopName)
 	Route* route;
 	for (int i = 0; i < routesCount; i++)
 	{
-		if ((route = routes[i].FindStop(stopName)) != nullptr)
+		if ((route = routes[i].FindStops(stopName)) != nullptr)
 		{
 			return route;
 		}
@@ -366,15 +366,15 @@ void DemoBand()
 
 	albums[0].SetName("Super");
 	albums[0].SetYear(1999);
-	albums[0].SetSong(songsFirst, 3);
+	albums[0].SetSongs(songsFirst, 3);
 
 	albums[1].SetName("Massive");
 	albums[1].SetYear(2001);
-	albums[1].SetSong(songsSecond, 4);
+	albums[1].SetSongs(songsSecond, 4);
 
 	albums[2].SetName("Black hole");
 	albums[2].SetYear(2019);
-	albums[2].SetSong(songsThird, 5);
+	albums[2].SetSongs(songsThird, 5);
 
 	Band band("30 yeconds", "Описание", albums, 3);
 
@@ -398,10 +398,10 @@ void DemoBand()
 	}
 
 	cout << endl << "Поиск трека <<Друзья>>: " << endl;
-	WriteSongToConsole(band.FindSong("Друзья"));
+	WriteSongToConsole(band.FindSongName("Друзья"));
 
 	cout << endl << "Поиск альбома с песней <<Друзья>>: " << endl;
-	WriteAlbumToConsole(band.FindAlbumSong("Друзья"));
+	WriteAlbumToConsole(band.FindAlbumName("Друзья"));
 	cout << endl;
 
 	delete[] songsFirst;
@@ -414,7 +414,7 @@ void WriteBandInfoToConsole(Band* band)
 	cout << "Группа " << band->GetName() << endl;
 	for (int i = 0; i < band->GetAlbumsCount(); i++)
 	{
-		WriteAlbumToConsole(&band->GetAlbum()[i]);
+		WriteAlbumToConsole(&band->GetAlbums()[i]);
 	}
 }
 
@@ -439,7 +439,7 @@ void WriteAlbumToConsole(Album* albums)
 	cout << "Альбом ";
 	cout << albums->GetName();
 	cout << endl;
-	WriteSongsToConsole(albums->GetSong(),
+	WriteSongsToConsole(albums->GetSongs(),
 		albums->GetSongsCount());
 	cout << endl;
 }

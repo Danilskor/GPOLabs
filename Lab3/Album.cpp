@@ -2,7 +2,7 @@
 
 Album::Album()
 {
-	this->SetSong(nullptr, 0);
+	this->SetSongs(nullptr, 0);
 }
 
 void Album::SetName(string name)
@@ -19,7 +19,7 @@ void Album::SetYear(int year)
 	this->_year = year;
 }
 // TODO: массивы в множественном числе!
-void Album::SetSong(Song* songs, int songsCount) // TODO: Count, а не Counter. Counter - так именуются совсем другие объекты
+void Album::SetSongs(Song* songs, int songsCount) // TODO: Count, а не Counter. Counter - так именуются совсем другие объекты
 {
 	this->_songs = new Song[songsCount];
 	this->_songsCount = songsCount;
@@ -33,7 +33,7 @@ Album::Album(string name, int year, Song* songs, int songsCount)
 {
 	this->SetName(name);
 	this->SetYear(year);
-	this->SetSong(songs, songsCount);
+	this->SetSongs(songs, songsCount);
 }
 
 string Album::GetName()
@@ -46,7 +46,7 @@ int Album::GetYear()
 	return this->_year;
 }
 // TODO: именование
-Song* Album::GetSong()
+Song* Album::GetSongs()
 {
 	return this->_songs;
 }
@@ -56,13 +56,13 @@ int Album::GetSongsCount()
 	return this->_songsCount;
 }
 
-Song* Album::FindSong(string songName)
+Song* Album::FindSongs(string songName)
 {
 	for (int i = 0; i < this->_songsCount; i++)
 	{
-		if (this->GetSong()[i].GetName() == songName)
+		if (this->GetSongs()[i].GetName() == songName)
 		{
-			return &this->GetSong()[i];
+			return &this->GetSongs()[i];
 		}
 	}
 	return nullptr;
