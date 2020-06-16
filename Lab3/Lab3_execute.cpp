@@ -254,8 +254,8 @@ void DemoRoute()
 		cout << "Πειρ Ή" << i + 1 << endl;
 		ReadRouteFromConsole(number, timeAverageMinutes, frequencyMinutes, stops,
 			stopsCount);
-		Route newRoute(number, timeAverageMinutes, frequencyMinutes, stopsCount,
-			stops);
+		Route newRoute(number, timeAverageMinutes, frequencyMinutes, stops,
+			stopsCount);
 		routes[i] = newRoute;
 	}
 
