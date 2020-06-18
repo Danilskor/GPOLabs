@@ -2,7 +2,7 @@
 
 void Student::SetRecordBookNumber(int recordBookNumber)
 {
-	this->_recordBookNumber = recordBookNumber;
+	this->_recordBookID = recordBookNumber;
 }
 
 void Student::SetEntranceYear(int entranceYear)
@@ -12,7 +12,7 @@ void Student::SetEntranceYear(int entranceYear)
 
 int Student::GetRecordBookNumber()
 {
-	return this->_recordBookNumber;
+	return this->_recordBookID;
 }
 
 int Student::GetEntranceYear()

@@ -1,5 +1,4 @@
 ﻿#pragma once
-#pragma once //TODO: зачем два pragma once?
 #include <iostream>
 #include "Person.h"
 #include "Student.h"
