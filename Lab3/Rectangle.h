@@ -5,8 +5,7 @@
 
 
 using namespace std;
-// TODO: имя файла
-// TODO: имя класса
+
 class Rectangle
 {
 private:

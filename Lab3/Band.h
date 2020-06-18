@@ -1,34 +1,32 @@
 ﻿#pragma once
 #include "Album.h"
-// TODO: название файла
-// TODO: название класса
 class Band
 {
 private:
 
 	string _name;
 	string _description;
-	Album* _albums; // TODO: множественное число
+	Album* _albums;
 	int _albumsCount;
 
 public:
 
 	void SetName(string name);
 	void SetDescription(string description);
-	void SetAlbums(Album* albums, int albumsCount);// TODO: неправильные имена переменных - обоих!
+	void SetAlbums(Album* albums, int albumsCount);
 
-	Band(string name, string description, Album* albums, int albumsNumber); // TODO: неправильное название переменной
+	Band(string name, string description, Album* albums, int albumsNumber); // TODO: не number, а count как поле
 
 	string GetName();
 	string GetDescription();
 	Album* GetAlbums();
-	int GetAlbumsCount(); // TODO: нет такого поля!
+	int GetAlbumsCount();
 
 	Song* FindSongName(string name);
 	Album* FindAlbumName(string name);
 
-	Song** GetAllSongs(int& songsCount); // TODO: неправильное название переменной
-	Song** GetAllGenreSongs(int& songsCount, Genre genre); // TODO: неправильное название переменной
+	Song** GetAllSongs(int& songsCount);
+	Song** GetAllGenreSongs(int& songsCount, Genre genre);
 
 	~Band();
 };

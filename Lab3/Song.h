@@ -4,8 +4,7 @@
 #include <string>
 
 using namespace std;
-// TODO: имя файла
-// TODO: имя класса
+
 class Song
 {
 private:

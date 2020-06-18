@@ -18,8 +18,8 @@ void Album::SetYear(int year)
 	}
 	this->_year = year;
 }
-// TODO: массивы в множественном числе!
-void Album::SetSongs(Song* songs, int songsCount) // TODO: Count, а не Counter. Counter - так именуются совсем другие объекты
+
+void Album::SetSongs(Song* songs, int songsCount)
 {
 	this->_songs = new Song[songsCount];
 	this->_songsCount = songsCount;
@@ -28,7 +28,7 @@ void Album::SetSongs(Song* songs, int songsCount) // TODO: Count, а не Counte
 		this->_songs[i] = songs[i];
 	}
 }
-// TODO: множ. число
+
 Album::Album(string name, int year, Song* songs, int songsCount)
 {
 	this->SetName(name);
@@ -40,17 +40,17 @@ string Album::GetName()
 {
 	return this->_name;
 }
-// TODO: грам. ошибка
+
 int Album::GetYear()
 {
 	return this->_year;
 }
-// TODO: именование
+
 Song* Album::GetSongs()
 {
 	return this->_songs;
 }
-// TODO: именование
+
 int Album::GetSongsCount()
 {
 	return this->_songsCount;

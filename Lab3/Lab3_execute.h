@@ -16,7 +16,7 @@ void Lab3();
 void DemoBook();
 void WriteBookInConsole(Book& book);
 void ReadBookFromConsole(string& name, int& year, int& pages, 
-	int& numberOfAuthors, string*& authors);
+	int& numberOfAuthors, string*& authors); // TODO: именование! of, порядок аргументов, каунт вместо намбер
 Book* FindBookByAuthor(Book* books, int booksCount, string author);
 
 void DemoRectangleWithPoint();
@@ -28,12 +28,12 @@ Time GetFlightTimeMinutes(Flight* flight);
 
 void DemoRoute();
 void WriteRouteInCounsole(Route& route);
-void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMinutes, // TODO: грам ошибки
+void ReadRouteFromConsole(int& number, int& timeAverageMinutes, int& frequencyMinutes,
 	string*& stops, int& stopsCount); 
 Route* FindRouteByStop(Route* routes, int routesCount, string stopName);
 
 void DemoBand();
 void WriteBandInfoToConsole(Band* band);
 void WriteSongToConsole(Song* songs);
-void WriteSongsToConsole(Song* songs, int songsCount); // TODO: множ. число
+void WriteSongsToConsole(Song* songs, int songsCount);
 void WriteAlbumToConsole(Album* albums);

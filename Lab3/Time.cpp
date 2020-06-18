@@ -17,6 +17,7 @@ Time::Time()
 
 void Time::SetYear(int year)
 {
+	// TODO: зачем CurrentTime, если ты его не используешь?
 	if (year < 0 || year > 2020)
 	{
 		throw exception("Year must be in range from 0 to 2020");

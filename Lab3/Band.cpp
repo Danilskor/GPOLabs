@@ -9,7 +9,7 @@ void Band::SetDescription(string description)
 {
 	this->_description = description;
 }
-// TODO: именование переменных
+
 void Band::SetAlbums(Album* albums, int albumsCount)
 {
 	if (this->_albums != nullptr)
@@ -23,7 +23,7 @@ void Band::SetAlbums(Album* albums, int albumsCount)
 	}
 	this->_albumsCount = albumsCount;
 }
-// TODO: именование переменных
+
 Band::Band(string name, string description, Album* albums, int albumsCount)
 {
 	this->SetName(name);
@@ -40,12 +40,12 @@ string Band::GetDescription()
 {
 	return this->_description;
 }
-// TODO: альбом или альбомы?
+
 Album* Band::GetAlbums()
 {
 	return this->_albums;
 }
-// TODO: именование
+
 int Band::GetAlbumsCount()
 {
 	return this->_albumsCount;
@@ -64,7 +64,7 @@ Song* Band::FindSongName(string name)
 	}
 	return songs;
 }
-// TODO: имя чего? Альбома или песни?
+
 Album* Band::FindAlbumName(string name)
 {
 	for (int i = 0; i < this->_albumsCount; i++)
@@ -99,7 +99,7 @@ Song** Band::GetAllSongs(int& songsCount) // TODO: множ.
 	}
 	return allSongs;
 }
-// TODO: именование не соответствует действию
+
 Song** Band::GetAllGenreSongs(int& songsCount, Genre genre)
 {
 	songsCount = 0;

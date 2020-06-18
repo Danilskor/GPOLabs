@@ -9,24 +9,24 @@ class Route
 {
 private:
 	int _number;
-	int _timeAverageMinutes; // TODO: грам ошибки
+	int _timeAverageMinutes; // TODO: именование! порядок слов
 	int _frequencyMinutes;
 	int _stopsCount;
 	string* _stops;
 
 public:
 	Route();
-	Route(int number, int timeAverageMinutes, int frequencyMinutes, // TODO: грам. ошибки
+	Route(int number, int timeAverageMinutes, int frequencyMinutes,
 		string* stops, int stopsCount);
 	~Route();
 
 	void SetNumber(int number);
-	void SetTimeAverageMinutes(int timeAverageMinutes); // TODO: именование, грам. ошибки, никаких сокращений!
+	void SetTimeAverageMinutes(int timeAverageMinutes); // TODO: именование! порядок слов
 	void SetFrequencyMinutes(int frequencyMinutes);
-	void SetStops(string* stops, int stopsCount);// TODO: сначала указатель, потом количество
+	void SetStops(string* stops, int stopsCount);
 
 	int GetNumber();
-	int GetTimeAverageMinutes();// TODO: именование, регистры, грам ошибки
+	int GetTimeAverageMinutes(); // TODO: именование! порядок слов
 	int GetFrequencyMinutes();
 	int GetStopsCount();
 	string* GetStops();

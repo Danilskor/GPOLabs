@@ -17,7 +17,7 @@ private:
 public:
 	Book();
 	Book(string name, int year, int pages, 
-		string* authors, int authorsCount);// TODO: сначала указатель на массив, потом количество
+		string* authors, int authorsCount);
 	~Book();
 
 	
@@ -29,7 +29,7 @@ public:
 
 	int GetYear();
 	int GetPages();
-	int GetAutorsCount();
+	int GetAutorsCount(); // TODO: грамошибка
 	string& GetName();
 	string* GetAuthors();
 
