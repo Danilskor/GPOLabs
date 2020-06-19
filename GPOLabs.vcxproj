@@ -214,6 +214,10 @@
     <ClInclude Include="Lab3\Time.h" />
     <ClInclude Include="Menues\Menu.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lab3\Lab3_1.png" />
+    <Image Include="Lab3\Lab3_2.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
