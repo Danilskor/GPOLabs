@@ -384,4 +384,15 @@
       <Filter>Файлы заголовков\Lab5</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lab5\Lab5_1.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Lab5\Lab5_2.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Lab5\Lab5_3.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
