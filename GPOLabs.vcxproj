@@ -222,6 +222,9 @@
     <ClInclude Include="Lab4\Ring.h" />
     <ClInclude Include="Menues\Menu.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Lab4\Lab4.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
