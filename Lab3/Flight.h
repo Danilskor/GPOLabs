@@ -21,7 +21,7 @@ public:
 	void SetNumber(int number);
 	void SetPointDeparture(string departurePoint);
 	void SetArrivalPoint(string arrivalPoint);
-	void SetTimeDepartureArrival(Time* departureTime, Time* arrivalTime); // TODO: именование! Порядок слов, союз And
+	void SetDepartureAndArrivalTime(Time* departureTime, Time* arrivalTime); // TODO: именование! Порядок слов, союз And
 
 	int GetNumber();
 	string GetDeparturePoint();

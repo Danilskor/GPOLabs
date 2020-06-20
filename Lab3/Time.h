@@ -3,6 +3,7 @@
 #include <ctime>
 #include <exception>
 #include "../Common/Constants/Consts.h"
+#include "../CurrentTime.h"
 
 class Time
 {

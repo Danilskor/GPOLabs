@@ -11,7 +11,7 @@ Route::Route(int number, int timeAveragMinutes, int frequencyMinutes,
 {
 	this->SetNumber(number);
 	this->SetFrequencyMinutes(frequencyMinutes);
-	this->SetTimeAverageMinutes(timeAveragMinutes);
+	this->SetAverageTimeMinutes(timeAveragMinutes);
 	this->SetStops(stops, stopsCount);
 }
 
@@ -25,9 +25,9 @@ void Route::SetNumber(int number)
 	this->_number = number;
 }
 
-void Route::SetTimeAverageMinutes(int timeAverageMinutes)
+void Route::SetAverageTimeMinutes(int timeAverageMinutes)
 {
-	this->_timeAverageMinutes = timeAverageMinutes;
+	this->_averageTimeMinutes = timeAverageMinutes;
 }
 
 void Route::SetFrequencyMinutes(int frequencyMinutes)
@@ -54,9 +54,9 @@ int Route::GetNumber()
 	return this->_number;
 }
 
-int Route::GetTimeAverageMinutes()
+int Route::GetAverageTimeMinutes()
 {
-	return this->_timeAverageMinutes;
+	return this->_averageTimeMinutes;
 }
 
 int Route::GetFrequencyMinutes()
@@ -94,7 +94,7 @@ Route& Route::operator=(const Route& another)
 	}
 	this->_stopsCount = another._stopsCount;
 	this->_frequencyMinutes = another._frequencyMinutes;
-	this->_timeAverageMinutes = another._timeAverageMinutes;
+	this->_averageTimeMinutes = another._averageTimeMinutes;
 	this->_number = another._number;
 	this->_stops = new string[another._stopsCount];
 	for (int i = 0; i < another._stopsCount; i++)

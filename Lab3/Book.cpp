@@ -50,7 +50,7 @@ int Book::GetPages()
 	return this->_pages;
 }
 // TODO: именование
-int Book::GetAutorsCount()
+int Book::GetAuthorsCount()
 {
 	return this->_authorsCount;
 }

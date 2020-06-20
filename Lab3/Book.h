@@ -29,7 +29,7 @@ public:
 
 	int GetYear();
 	int GetPages();
-	int GetAutorsCount(); // TODO: грамошибка
+	int GetAuthorsCount(); // TODO: грамошибка
 	string& GetName();
 	string* GetAuthors();
 

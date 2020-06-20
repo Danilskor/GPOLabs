@@ -16,7 +16,7 @@ void Lab3();
 void DemoBook();
 void WriteBookInConsole(Book& book);
 void ReadBookFromConsole(string& name, int& year, int& pages, 
-	int& numberOfAuthors, string*& authors); // TODO: именование! of, порядок аргументов, каунт вместо намбер
+	 string*& authors, int& authorsCount); // TODO: именование! of, порядок аргументов, каунт вместо намбер
 Book* FindBookByAuthor(Book* books, int booksCount, string author);
 
 void DemoRectangleWithPoint();

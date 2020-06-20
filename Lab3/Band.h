@@ -15,7 +15,7 @@ public:
 	void SetDescription(string description);
 	void SetAlbums(Album* albums, int albumsCount);
 
-	Band(string name, string description, Album* albums, int albumsNumber); // TODO: не number, а count как поле
+	Band(string name, string description, Album* albums, int albumsCount); // TODO: не number, а count как поле
 
 	string GetName();
 	string GetDescription();

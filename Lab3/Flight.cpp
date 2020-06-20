@@ -6,7 +6,7 @@ Flight::Flight(int number, string departurePoint, string arrivalPoint,
     SetNumber(number);
     SetPointDeparture(departurePoint);
     SetArrivalPoint(arrivalPoint);
-    SetTimeDepartureArrival(departureTime, arrivalTime);
+    SetDepartureAndArrivalTime(departureTime, arrivalTime);
 }
 
 Flight::Flight()
@@ -30,7 +30,7 @@ void Flight::SetArrivalPoint(string arrivalPoint)
     this->_arrivalPoint = arrivalPoint;
 }
 
-void Flight::SetTimeDepartureArrival(Time* departureTime,
+void Flight::SetDepartureAndArrivalTime(Time* departureTime,
     Time* arrivalTime)
 {
     if (*arrivalTime <= *departureTime)

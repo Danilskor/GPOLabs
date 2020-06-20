@@ -23,7 +23,7 @@ void DemoBook()
 {
 	string name;
 	int year;
-	int authorsNumber;
+	int authorsCount;
 	int pages;
 	string* authors;
 	int arraySize = 1;
@@ -32,8 +32,8 @@ void DemoBook()
 	for (int i = 0; i < arraySize; i++)
 	{
 		cout << " нига є" << i + 1 << endl;
-		ReadBookFromConsole(name, year, pages, authorsNumber, authors);
-		Book newBook(name, year, pages, authors, authorsNumber);
+		ReadBookFromConsole(name, year, pages, authors, authorsCount);
+		Book newBook(name, year, pages, authors, authorsCount);
 		books[i] = newBook;
 	}
 
@@ -65,18 +65,18 @@ void DemoBook()
 
 void WriteBookInConsole(Book& book)
 {
-	for (int i = 0; i < book.GetAutorsCount() - 1; i++)
+	for (int i = 0; i < book.GetAuthorsCount() - 1; i++)
 	{
 		cout << book.GetAuthors()[i] << ", ";
 	}
-	cout << book.GetAuthors()[book.GetAutorsCount() - 1] << " ";
+	cout << book.GetAuthors()[book.GetAuthorsCount() - 1] << " ";
 	cout << book.GetName() << ". ";
 	cout << book.GetYear() << ". ";
 	cout << "- " << book.GetPages() << "c." << endl;
 }
 
-void ReadBookFromConsole(string& name, int& year, int& pages, int&
-	authorsCount, string*& authors)
+void ReadBookFromConsole(string& name, int& year, int& pages,
+	string*& authors, int& authorsCount)
 {
 	cout << "¬ведите название книги:";
 	cin.clear();
@@ -291,7 +291,7 @@ void WriteRouteInCounsole(Route& route)
 		cout << route.GetStops()[i] << " - ";
 	}
 	cout << route.GetStops()[route.GetStopsCount() - 1] << ". ";
-	cout << "є" << route.GetNumber() << " продолжительность " << route.GetTimeAverageMinutes() <<
+	cout << "є" << route.GetNumber() << " продолжительность " << route.GetAverageTimeMinutes() <<
 		" мин. " << " частота: " << route.GetFrequencyMinutes() <<
 		" мин." << endl;
 }
